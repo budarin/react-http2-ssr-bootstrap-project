@@ -9,6 +9,7 @@ const config = {
     target: 'node',
     watch: true,
     cache: true,
+    profile: true,
     devtool: 'cheap-module-eval-source-map',
     entry: ['webpack/hot/poll?1000', './src/server/index.js'],
     output: {

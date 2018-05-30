@@ -10,6 +10,7 @@ const config = {
     target: 'node',
     watch: false,
     cache: false,
+    profile: true,
     // devtool: 'hidden-source-map',
     entry: './src/server/index.js',
     output: {

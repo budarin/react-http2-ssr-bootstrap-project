@@ -15,8 +15,8 @@ const config = {
     },
     output: {
         path: path.resolve('./dist'),
-        filename: '[name].[hash].js',
-        chunkFilename: '[name].[chunkhash].chunk.js',
+        filename: '[name].js',
+        chunkFilename: '[name].js',
         publicPath: '/',
     },
     optimization: {

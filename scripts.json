@@ -33,8 +33,22 @@
         }
     },
     {
+        "name": "server-build",
+        "command": "webpack --config ./src/config/server/webpack.config.prod.babel.js",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    },
+    {
+        "name": "client-build",
+        "command": "webpack --config ./src/config/client/webpack.config.prod.babel.js",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    },
+    {
         "name": "build",
-        "command": "",
+        "command": "rimraf ./.tmp && rimraf ./dist && webpack --config ./src/config/webpack.config.prod.babel.js",
         "env": {
             "NODE_ENV": "production"
         }

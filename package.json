@@ -5,7 +5,7 @@
     "scripts": {
         "start-client": "prun start-client",
         "start-server": "prun start-server",
-        "build": "set NODE_ENV=production ",
+        "build": "prun build",
         "upgrade": "npx flow stop && ncu --upgradeAll && npm install && npx flow",
         "flow-typed": "npx flow-typed install --skip --overwrite",
         "postinstall": "npm run flow-typed",
@@ -76,6 +76,7 @@
         "debug": "^3.1.0",
         "mime-types": "^2.1.18",
         "react": "^16.4.0",
-        "react-dom": "^16.4.0"
+        "react-dom": "^16.4.0",
+        "rimraf": "^2.6.2"
     }
 }

@@ -11,6 +11,7 @@ const config = {
     mode: 'development',
     target: 'web',
     cache: true,
+    profile: true,
     devtool: 'inline-cheap-module-source-map',
     entry: {
         client: [

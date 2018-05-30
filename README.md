@@ -2,6 +2,7 @@
 
 Simple React project with SSR
 - React
+- SSR
 - babel
 - webpack
 - HMR
