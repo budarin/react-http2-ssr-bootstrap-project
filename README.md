@@ -9,7 +9,7 @@ Simple React project with SSR
 - flow
 - prettier
 - eslint
-- stylelint
+- stylelint (css-next, postcss-preset-env, cssnano)
 
 .babelrc используется webpack и node-babel для транспиляции конфигов и утилит
 для react-loader все настройки находятся в ./config/babelLoaderConfig.json
