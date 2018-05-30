@@ -1,0 +1,42 @@
+[
+    {
+        "name": "start-client",
+        "command": "webpack-dev-server --mode development --config ./src/config/client/webpack.config.babel.js",
+        "env": {
+            "NODE_ENV": "development"
+        }
+    },
+    {
+        "name": "server-compile",
+        "command": "webpack --config ./src/config/server/webpack.config.babel.js",
+        "env": {
+            "NODE_ENV": "development"
+        }
+    },
+    {
+        "name": "server-monitoring",
+        "command": "nodemon -w dist/server.js dist/server.js",
+        "env": {
+            "NODE_ENV": "development"
+        }
+    },
+    {
+        "name": "ensureServerIsCreated",
+        "command": "npx babel-node ./src/tools/ensureServerIsCreated.js"
+    },
+    {
+        "name": "start-server",
+        "command":
+            "prun ensureServerIsCreated && concurrently --kill-others \"prun server-compile\" \"prun server-monitoring\"",
+        "env": {
+            "NODE_ENV": "development"
+        }
+    },
+    {
+        "name": "build",
+        "command": "",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[ignore]
+<PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/.idea/.*
+<PROJECT_ROOT>/.git/.*
+<PROJECT_ROOT>/.tmp/.*
+
+[include]
+
+[libs]
+
+[options]
+include_warnings=true
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+
+[lints]
+
