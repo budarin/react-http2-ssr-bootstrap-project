@@ -5,8 +5,9 @@ const { HTTP2_HEADER_PATH } = http2.constants;
 
 function isLegalRoute(headers: Object) {
     const fullPath = headers[HTTP2_HEADER_PATH];
+    const legalRoutes = ['/'];
 
-    return fullPath === '/';
+    return legalRoutes.indexOf(fullPath) > -1;
 }
 
 export default isLegalRoute;

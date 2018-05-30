@@ -1,7 +1,9 @@
 // @flow
 
 function isLegalAsset(asset: string): boolean {
-    return asset === '/bundle.js';
+    const legalAssets = ['icon.ico', '/bundle.js'];
+
+    return legalAssets.indexOf(asset) > -1;
 }
 
 export default isLegalAsset;

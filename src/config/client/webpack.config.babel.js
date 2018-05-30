@@ -56,9 +56,9 @@ const config = {
             ignored: /node_modules/,
         },
         https: {
-            key: fs.readFileSync('src/config/certs/server.key'),
-            cert: fs.readFileSync('src/config/certs/server.crt'),
-            ca: fs.readFileSync('src/config/certs/cacert.crt'),
+            key: fs.readFileSync('certs/server.key'),
+            cert: fs.readFileSync('certs/server.crt'),
+            ca: fs.readFileSync('certs/cacert.crt'),
         },
     },
 };

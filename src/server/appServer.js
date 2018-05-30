@@ -12,6 +12,9 @@ const app = (stream: Object, headers: Object) => {
         pushAssets(stream);
         renderApp(stream);
     } else {
+        // handle static file for non pushed assets
+        // only for development mode
+        // nginx will do it in production
         sendStaticFile(stream, headers);
     }
 };

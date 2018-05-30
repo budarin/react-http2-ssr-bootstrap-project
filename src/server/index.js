@@ -3,16 +3,17 @@ import fs from 'fs';
 import debug from 'debug';
 import http2 from 'http2';
 
-import env from '../utils/env';
 import '../common/babelHelpers';
+
+import env from '../utils/env';
 import appServer from './appServer';
 
 const log = debug('app:server');
 const logError = debug('app:server:error');
 const { SERVER_HOST, SERVER_PORT, SERVER_URL } = env;
 const options = {
-    key: fs.readFileSync('./src/config/certs/server.key'),
-    cert: fs.readFileSync('./src/config/certs/server.crt'),
+    key: fs.readFileSync('certs/server.key'),
+    cert: fs.readFileSync('certs/server.crt'),
     allowHTTP1: true,
 };
 
