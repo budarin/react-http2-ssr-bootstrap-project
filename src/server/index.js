@@ -3,7 +3,7 @@ import fs from 'fs';
 import debug from 'debug';
 import http2 from 'http2';
 
-import app from './server';
+import appServer from './appServer';
 import '../common/babelHelpers';
 import env from '../../.env.json';
 
@@ -34,7 +34,7 @@ process.on('uncaughtException', err => {
     shutdown(1);
 });
 
-server.on('stream', app);
+server.on('stream', appServer);
 server.listen(SERVER_PORT, SERVER_HOST);
 
 log(`Сервер запущен по адресу: ${SERVER_URL || 'error'}`);

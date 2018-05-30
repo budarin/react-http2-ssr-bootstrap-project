@@ -4,14 +4,14 @@ import webpack from 'webpack';
 import babelConfig from './babelLoaderConfig.json';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-import env from '../../../.env.json';
+import env from '../../utils/env';
 
 const { STATIC_HOST, STATIC_PORT, STATIC_URL } = env;
 const config = {
     mode: 'development',
     target: 'web',
     cache: true,
-    profile: true,
+    profile: false,
     devtool: 'inline-cheap-module-source-map',
     entry: {
         client: [

@@ -3,3 +3,4 @@
 /node-modules/
 /flow-typed/
 /package-lock.json
+/.babelrc

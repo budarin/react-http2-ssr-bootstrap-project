@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const dir = path.resolve('./dist');
-const filePath = path.resolve('./dist/server.js');
+const filePath = path.resolve('./dist/appServer.js');
 
 if (!fs.existsSync(filePath)) {
     if (!fs.existsSync(dir)) {

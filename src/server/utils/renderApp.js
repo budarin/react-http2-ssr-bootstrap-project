@@ -3,7 +3,7 @@ import * as React from 'react';
 import { renderToNodeStream } from 'react-dom/server';
 
 import App from '../../common/App';
-import env from '../../../.env.json';
+import env from '../../utils/env';
 
 function renderApp(stream: Object) {
     const appStream = renderToNodeStream(<App />);

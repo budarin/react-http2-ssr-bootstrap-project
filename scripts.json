@@ -52,5 +52,13 @@
         "env": {
             "NODE_ENV": "production"
         }
+    },
+    {
+        "name": "upgrade",
+        "command": "npx flow stop && ncu --upgradeAll && npm install && npx flow"
+    },
+    {
+        "name": "flow-typed",
+        "command": "npx flow-typed install --skip --overwrite"
     }
 ]

@@ -1,15 +1,13 @@
 {
-  "presets": [
-    "env"
-  ],
-  "plugins": [
-    "syntax-trailing-function-commas",
-    "syntax-dynamic-import",
-    [
-      "transform-object-rest-spread",
-      {
-        "useBuiltIns": true
-      }
+    "presets": ["env", "flow"],
+    "plugins": [
+        "syntax-trailing-function-commas",
+        "syntax-dynamic-import",
+        [
+            "transform-object-rest-spread",
+            {
+                "useBuiltIns": true
+            }
+        ]
     ]
-  ]
 }
