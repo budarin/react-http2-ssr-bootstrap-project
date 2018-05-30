@@ -32,12 +32,68 @@ const config = {
                 },
                 exclude: path.resolve('node_modules'),
             },
+            {
+                test: /\.(svg|png|jpg|gif)$/,
+                include: path.resolve('./src'),
+                exclude: path.resolve('node_modules'),
+                use: {
+                    loader: 'image-size-loader',
+                    options: {
+                        digest: 'hex',
+                        hash: 'sha512',
+                        name: 'img/[name].[hash].[ext]',
+                        context: path.resolve(__dirname, 'src'),
+                    },
+                },
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: 'fake-style-loader',
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                            import: false,
+                            // This breaks HMR (CSS Modules change name because their hash changes)
+                            modules: true,
+                            // importLoaders: 1,
+                            localIdentName: '[hash:base64]',
+                            // This breaks background-image and other relative paths
+                            // Monitor this: https://github.com/webpack/style-loader/pull/124
+                            // sourceMap: DEV,
+                            sourceMap: false,
+                            // CSSNano Options
+                            minimize: {
+                                safe: true,
+                                calc: false,
+                                zindex: false,
+                                colormin: false,
+                                discardComments: { removeAll: true },
+                            },
+                        },
+                    },
+                    {
+                        loader: 'postcss-loader',
+                    },
+                ],
+            },
         ],
     },
     resolve: {
         extensions: ['*', '.js', '.jsx'],
         modules: ['node_modules', path.resolve('./src')],
     },
+    plugins: [
+        new webpack.DefinePlugin({
+            __BROWSER__: false,
+            __SERVER__: true,
+            __DEV__: false,
+            __PROD__: true,
+        }),
+    ],
 };
 
 export default config;

@@ -2,20 +2,27 @@
   <dictionary name="Administrator">
     <words>
       <w>babelrc</w>
+      <w>browserlist</w>
       <w>cacert</w>
       <w>chunkhash</w>
+      <w>colormin</w>
       <w>devtool</w>
       <w>dotenv</w>
       <w>enoent</w>
       <w>eslint</w>
       <w>hsrv</w>
+      <w>ident</w>
       <w>lodash</w>
       <w>minify</w>
+      <w>mixins</w>
       <w>nghttp</w>
       <w>nginx</w>
       <w>nodemon</w>
+      <w>postcss</w>
       <w>prun</w>
       <w>rimraf</w>
+      <w>useable</w>
+      <w>zindex</w>
     </words>
   </dictionary>
 </component>
