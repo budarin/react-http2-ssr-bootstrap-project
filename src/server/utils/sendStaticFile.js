@@ -4,14 +4,17 @@ import http2 from 'http2';
 import mime from 'mime-types';
 
 import serverRoot from './serverRoot';
+import isLegalAsset from './isLegalAsset';
 import respondToStreamError from './respondToStreamError';
 
 const { HTTP2_HEADER_PATH } = http2.constants;
 
-function sendStaticFile(stream: Object) {
+function sendStaticFile(stream: Object, headers: Object) {
     const fullPath = headers[HTTP2_HEADER_PATH];
 
-    if (fullPath !== '/bundle.js') {
+    if (isLegalAsset('/bundle.js')) {
+        console.log('>> Illegal static file:', fullPath);
+
         return;
     }
 

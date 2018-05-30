@@ -12,7 +12,7 @@ const app = (stream: Object, headers: Object) => {
         pushAssets(stream);
         renderApp(stream);
     } else {
-        sendStaticFile(stream);
+        sendStaticFile(stream, headers);
     }
 };
 

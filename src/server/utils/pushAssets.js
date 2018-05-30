@@ -1,13 +1,10 @@
 // @flow
 import pushAsset from './pushAsset';
+import getFileDescription from './getFileDescription';
 
 function pushAssets(stream: Object) {
     if (process.env.NODE_ENV === 'production') {
-        pushAsset(stream, {
-            path: '/client.js',
-            fullPath: './client.js',
-            headers: { 'content-type': 'application/javascript' },
-        });
+        pushAsset(stream, getFileDescription('client.js'));
     }
 }
 
