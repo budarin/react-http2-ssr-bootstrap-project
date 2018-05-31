@@ -63,7 +63,7 @@
     },
     {
         "name": "test",
-        "command": "jest --notify --detectOpenHandles --no-cache",
+        "command": "jest --detectOpenHandles --no-cache",
         "env": {
             "BROWSER": true
         }
