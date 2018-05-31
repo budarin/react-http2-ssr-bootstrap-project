@@ -1,5 +1,5 @@
 {
-    "presets": ["env", "flow"],
+    "presets": [["env", {"modules": false}], "flow"],
     "plugins": [
         "syntax-trailing-function-commas",
         "syntax-dynamic-import",

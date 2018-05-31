@@ -10,7 +10,8 @@
         "flow-typed": "prun flow-typed",
         "postinstall": "npm run flow-typed",
         "precommit": "lint-staged",
-        "test": "echo \"No test specified\" && exit 0"
+        "test": "prun test",
+        "test-watch": "prun test-watch"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [
@@ -29,10 +30,37 @@
     ],
     "author": "Vadim Budarin",
     "license": "ISC",
+    "jest": {
+        "preset": "jest-puppeteer",
+        "cacheDirectory": "<rootDir>/.tmp/jest",
+        "coverageDirectory": "<rootDir>/.tmp/coverage",
+        "globalSetup": "<rootDir>/src/config/jest/globalSetup.js",
+        "globalTeardown": "<rootDir>/src/config/jest/globalTearDown.js",
+        "testEnvironment": "<rootDir>/src/config/jest/puppeteer_environment.js",
+        "moduleFileExtensions": [
+            "js",
+            "jsx"
+        ],
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/config/jest/mocks/fileMock.js",
+            "\\.(css)$": "identity-obj-proxy"
+        },
+        "testPathIgnorePatterns": [
+            "/node_modules/"
+        ],
+        "globals": {
+            "__DEV__": true,
+            "__PROD__": false,
+            "__BROWSER__": true,
+            "__SERVER__": false
+        },
+        "notifyMode": "failure"
+    },
     "devDependencies": {
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
         "babel-eslint": "^8.2.3",
+        "babel-jest": "^23.0.1",
         "babel-loader": "^7.1.4",
         "babel-minify-webpack-plugin": "^0.3.1",
         "babel-plugin-external-helpers": "^6.22.0",
@@ -65,22 +93,28 @@
         "fake-style-loader": "^1.0.1",
         "flow-bin": "^0.73.0",
         "flow-typed": "^2.4.0",
+        "identity-obj-proxy": "^3.0.0",
         "image-size-loader": "^0.7.0",
+        "jest": "^23.1.0",
+        "jest-environment-node": "^23.1.0",
+        "jest-puppeteer": "^3.0.1",
         "nodemon": "^1.17.5",
         "optimize-js-plugin": "0.0.4",
         "postcss": "^6.0.22",
         "postcss-cssnext": "^3.1.0",
         "postcss-loader": "^2.1.5",
         "postcss-preset-env": "^5.1.0",
-        "prettier": "^1.13.2",
+        "prettier": "^1.13.3",
         "prun": "^1.0.1",
+        "puppeteer": "^1.4.0",
         "react-hot-loader": "^4.2.0",
+        "react-test-renderer": "^16.4.0",
         "style-loader": "^0.21.0",
         "stylelint": "^9.2.1",
         "stylelint-config-recommended": "^2.1.0",
         "stylelint-no-unsupported-browser-features": "^3.0.0",
         "stylelint-order": "^0.8.1",
-        "webpack": "^4.10.1",
+        "webpack": "^4.10.2",
         "webpack-cli": "^2.1.4",
         "webpack-dev-server": "^3.1.4",
         "webpack-node-externals": "^1.7.2"

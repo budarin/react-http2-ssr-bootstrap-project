@@ -60,5 +60,20 @@
     {
         "name": "flow-typed",
         "command": "npx flow-typed install --skip --overwrite"
+    },
+    {
+        "name": "test",
+        "command": "jest --notify --detectOpenHandles --no-cache",
+        "env": {
+            "BROWSER": true
+        }
+    },
+    {
+        "name": "test-watch",
+        "command": "jest --watch --onlyChanged --notify --detectOpenHandles",
+        "env": {
+            "BROWSER": true,
+            "SHOW_BROWSER": true
+        }
     }
 ]

@@ -22,6 +22,7 @@
       <w>postcss</w>
       <w>prun</w>
       <w>rimraf</w>
+      <w>teardown</w>
       <w>useable</w>
       <w>zindex</w>
     </words>
