@@ -11,6 +11,7 @@ Simple React project with SSR
 - eslint
 - stylelint (css-next, postcss-preset-env, cssnano)
 - jest
+- puppeteer
 
 .babelrc используется webpack и node-babel для транспиляции конфигов и утилит
 для react-loader все настройки находятся в ./config/babelLoaderConfig.json
