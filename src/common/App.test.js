@@ -1,18 +1,10 @@
-const timeout = 10000;
+import React from 'react';
+import renderer from 'react-test-renderer';
+import App from './App';
 
-describe(
-    '/ (Home Page)',
-    () => {
-        let page;
-        beforeAll(async () => {
-            page = await global.browser.newPage();
-            await page.goto('https://localhost');
-        }, timeout);
-
-        it('should load without error', async () => {
-            const text = await page.evaluate(() => document.body.textContent);
-            expect(text).toContain('Hello World');
-        });
-    },
-    timeout,
-);
+describe('Home Page', () => {
+    it('renders correctly', () => {
+        const tree = renderer.create(<App />).toJSON();
+        expect(tree).toMatchSnapshot();
+    });
+});

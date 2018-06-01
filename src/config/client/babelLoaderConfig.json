@@ -1,6 +1,5 @@
 {
     "babelrc": false,
-    "cacheIdentifier": "client",
     "cacheDirectory": ".tmp/client",
     "presets": [
         [

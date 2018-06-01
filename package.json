@@ -37,6 +37,9 @@
         "globalSetup": "<rootDir>/src/config/jest/globalSetup.js",
         "globalTeardown": "<rootDir>/src/config/jest/globalTearDown.js",
         "testEnvironment": "<rootDir>/src/config/jest/puppeteer_environment.js",
+        "transform": {
+            "^.+\\.js$": "<rootDir>/src/config/jest/transformer.js"
+        },
         "moduleFileExtensions": [
             "js",
             "jsx"

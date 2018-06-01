@@ -70,7 +70,7 @@
     },
     {
         "name": "test-watch",
-        "command": "jest --watch --onlyChanged --notify --detectOpenHandles",
+        "command": "jest --watch --onlyChanged --notify",
         "env": {
             "BROWSER": true,
             "SHOW_BROWSER": true
