@@ -6,18 +6,18 @@ import babelConfig from './babelLoaderConfig.json';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = {
-    mode: 'production',
-    target: 'node',
     watch: false,
     cache: false,
     profile: true,
+    target: 'node',
+    mode: 'production',
     // devtool: 'hidden-source-map',
     entry: './src/server/index.js',
     output: {
-        path: path.resolve('./dist'),
         publicPath: '/',
         filename: 'server.js',
         libraryTarget: 'commonjs2',
+        path: path.resolve('./dist'),
     },
     optimization: {
         minimizer: [new MinifyPlugin(), new OptimizeJsPlugin({ sourceMap: false })],
@@ -88,10 +88,10 @@ const config = {
     },
     plugins: [
         new webpack.DefinePlugin({
-            __BROWSER__: false,
-            __SERVER__: true,
             __DEV__: false,
             __PROD__: true,
+            __SERVER__: true,
+            __BROWSER__: false,
         }),
     ],
 };

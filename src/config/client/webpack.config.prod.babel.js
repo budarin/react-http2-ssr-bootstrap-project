@@ -5,23 +5,23 @@ import babelConfig from './babelLoaderConfig.json';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = {
-    mode: 'production',
     target: 'web',
     cache: false,
     profile: true,
     devtool: 'none',
+    mode: 'production',
     entry: {
         client: './src/client/index.js',
     },
     output: {
-        path: path.resolve('./dist'),
-        filename: '[name].js',
-        chunkFilename: '[name].js',
         publicPath: '/',
+        filename: '[name].js',
+        path: path.resolve('./dist'),
+        chunkFilename: '[name].js',
     },
     optimization: {
-        minimizer: [new MinifyPlugin(), new OptimizeJsPlugin({ sourceMap: false })],
         occurrenceOrder: true,
+        minimizer: [new MinifyPlugin(), new OptimizeJsPlugin({ sourceMap: false })],
     },
     module: {
         rules: [
@@ -40,9 +40,9 @@ const config = {
                 use: {
                     loader: 'image-size-loader',
                     options: {
-                        name: 'img/[name].[hash].[ext]',
-                        hash: 'sha512',
                         digest: 'hex',
+                        hash: 'sha512',
+                        name: 'img/[name].[hash].[ext]',
                         context: path.resolve(__dirname, 'src'),
                     },
                 },
@@ -59,16 +59,16 @@ const config = {
                     {
                         loader: 'css-loader',
                         options: {
+                            // This breaks background-image and other relative paths
+                            // Monitor this: https://github.com/webpack/style-loader/pull/124
+                            // sourceMap: DEV,
+                            url: false,
+                            import: false,
+                            sourceMap: false,
                             // This breaks HMR (CSS Modules change name because their hash changes)
                             modules: true,
                             // importLoaders: 1,
                             localIdentName: '[hash:base64]',
-                            // This breaks background-image and other relative paths
-                            // Monitor this: https://github.com/webpack/style-loader/pull/124
-                            // sourceMap: DEV,
-                            sourceMap: false,
-                            import: false,
-                            url: false,
                             // CSSNano Options
                             minimize: {
                                 // safe: true,
@@ -92,10 +92,10 @@ const config = {
     },
     plugins: [
         new webpack.DefinePlugin({
-            __BROWSER__: true,
-            __SERVER__: false,
             __DEV__: false,
             __PROD__: true,
+            __BROWSER__: true,
+            __SERVER__: false,
         }),
     ],
 };

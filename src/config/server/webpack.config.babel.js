@@ -8,18 +8,18 @@ import env from '../../utils/env';
 
 const { STATIC_URL } = env;
 const config = {
-    mode: 'development',
-    target: 'node',
     watch: true,
     cache: true,
+    target: 'node',
     profile: false,
+    mode: 'development',
     devtool: 'cheap-module-eval-source-map',
     entry: ['webpack/hot/poll?1000', './src/server/index.js'],
     output: {
-        path: path.resolve('./dist'),
         publicPath: '/',
         filename: 'server.js',
         libraryTarget: 'commonjs2',
+        path: path.resolve('./dist'),
     },
     module: {
         rules: [
@@ -75,10 +75,10 @@ const config = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
-            __BROWSER__: false,
-            __SERVER__: true,
             __DEV__: true,
             __PROD__: false,
+            __SERVER__: true,
+            __BROWSER__: false,
         }),
     ],
     externals: [nodeExternals({ whitelist: ['webpack/hot/poll?1000'] })],

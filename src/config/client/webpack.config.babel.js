@@ -63,8 +63,8 @@ const config = {
                         loader: 'css-loader',
                         options: {
                             modules: true,
-                            localIdentName: '[name].[local]_[hash:7]',
                             sourceMap: false,
+                            localIdentName: '[name].[local]_[hash:7]',
                         },
                     },
                     {
@@ -81,26 +81,26 @@ const config = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
-            __BROWSER__: true,
-            __SERVER__: false,
             __DEV__: true,
             __PROD__: false,
+            __BROWSER__: true,
+            __SERVER__: false,
         }),
     ],
     devServer: {
-        port: STATIC_PORT,
-        host: STATIC_HOST,
         hot: true,
         overlay: true,
+        port: STATIC_PORT,
+        host: STATIC_HOST,
         historyApiFallback: true,
         headers: { 'Access-Control-Allow-Origin': '*' },
         watchOptions: {
             ignored: /node_modules/,
         },
         https: {
+            ca: fs.readFileSync('certs/cacert.crt'),
             key: fs.readFileSync('certs/server.key'),
             cert: fs.readFileSync('certs/server.crt'),
-            ca: fs.readFileSync('certs/cacert.crt'),
         },
     },
 };
