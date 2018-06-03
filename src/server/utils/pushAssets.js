@@ -4,7 +4,7 @@ import getFileDescription from './getFileDescription';
 
 function pushAssets(stream: Object) {
     pushAsset(stream, getFileDescription('app.css'));
-    pushAsset(stream, getFileDescription('manifest.json'));
+    // pushAsset(stream, getFileDescription('manifest.json'));
 
     if (process.env.NODE_ENV === 'production') {
         pushAsset(stream, getFileDescription('client.js'));
