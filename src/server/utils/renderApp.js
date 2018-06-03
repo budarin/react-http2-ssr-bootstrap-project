@@ -19,7 +19,7 @@ function renderApp(stream: Object) {
             <head>
                 <meta charset="UTF-8">
                 <title>React SSR project</title>
-                <link rel="preload" href="manifest.json" as="script">
+                <link rel="preload" href="/manifest.json" as="script">
                 <meta name="theme-color" content="#E6492F">
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
                 <meta name="Description" content="Simple SSR React project.">
