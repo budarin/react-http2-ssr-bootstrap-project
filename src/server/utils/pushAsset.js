@@ -1,6 +1,13 @@
 // @flow
+import path from 'path';
 import http2 from 'http2';
 import respondToStreamError from './respondToStreamError';
+
+let serverRoot = './dist';
+
+if (__PROD__) {
+    serverRoot = '';
+}
 
 const { HTTP2_HEADER_PATH } = http2.constants;
 const pushAsset = (stream: Object, file: Object) => {
@@ -13,7 +20,14 @@ const pushAsset = (stream: Object, file: Object) => {
         console.log('>> Pushing:', file.path);
 
         pushStream.on('error', err => respondToStreamError(err, pushStream));
-        pushStream.respondWithFile(file.fullPath, file.headers);
+
+        const absFilePath = path.resolve(path.join(serverRoot, file.filePath));
+
+        try {
+            pushStream.respondWithFile(absFilePath, file.headers);
+        } catch (err) {
+            console.log('pushing error', err);
+        }
     });
 };
 

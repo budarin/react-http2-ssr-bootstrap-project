@@ -5,7 +5,7 @@ function getFileDescription(file: string) {
     return {
         path: `/${file}`,
         filePath: `./${file}`,
-        headers: mime.lookup(file),
+        headers: { 'content-type': mime.lookup(file) },
     };
 }
 
