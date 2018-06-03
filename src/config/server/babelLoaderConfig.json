@@ -26,7 +26,7 @@
     ],
     "env": {
         "production": {
-            "plugins": ["transform-react-inline-elements", "transform-react-constant-elements"]
+            "plugins": ["external-helpers", "transform-react-inline-elements", "transform-react-constant-elements"]
         },
         "development": {
             "plugins": ["transform-react-jsx-self", "transform-react-jsx-source"]

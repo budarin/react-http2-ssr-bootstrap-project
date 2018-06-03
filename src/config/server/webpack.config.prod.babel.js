@@ -11,8 +11,8 @@ const config = {
     profile: true,
     target: 'node',
     mode: 'production',
-    devtool: 'cheap-module-eval-source-map',
-    entry: './src/server/index.js',
+    // devtool: 'cheap-module-eval-source-map',
+    entry: ['./src/common/babelHelpers.js', './src/server/index.js'],
     output: {
         publicPath: '/',
         filename: 'server.js',
