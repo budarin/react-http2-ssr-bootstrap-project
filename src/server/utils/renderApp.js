@@ -13,6 +13,8 @@ function renderApp(stream: Object) {
         ':status': 200,
     });
 
+    // it's unnecessary to push app.css - css applies at runtime in App.js
+    // it's only for demonstration of push technology
     stream.write(`
             <!DOCTYPE html>
             <html lang="en">
