@@ -5,11 +5,11 @@ import sendStaticFile from './utils/sendStaticFile';
 import logServerRequest from './utils/logServerRequest';
 import isLegalRoute from './utils/isLegalRoute';
 
-const app = (stream: Object, headers: Object) => {
+const app = async (stream: Object, headers: Object) => {
     logServerRequest(headers);
 
     if (isLegalRoute(headers)) {
-        pushAssets(stream);
+        await pushAssets(stream);
         renderApp(stream);
     } else {
         // handle static file for non pushed assets
