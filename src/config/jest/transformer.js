@@ -1,20 +1,6 @@
 const babelConfig = require('../client/babelLoaderConfig.json');
 
-babelConfig.presets = [
-    [
-        'env',
-        {
-            loose: true,
-            modules: 'commonjs',
-            useBuiltIns: true,
-            debug: true,
-            targets: {
-                browsers: ['Chrome >= 63', 'Firefox >= 58', 'Safari >= 11', 'iOS >= 10.3', 'Edge >= 41'],
-            },
-        },
-    ],
-    'react',
-    'flow',
-];
+// env preset should produce commonjs for jest
+babelConfig.presets[0][1].modules = 'commonjs';
 
 module.exports = require('babel-jest').createTransformer(babelConfig);
