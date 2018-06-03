@@ -5,19 +5,19 @@ import babelConfig from './babelLoaderConfig.json';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = {
-    target: 'web',
     cache: false,
+    target: 'web',
     profile: true,
     devtool: 'none',
     mode: 'production',
     entry: {
-        client: './src/client/index.js',
+        client: ['./src/common/babelHelpers.js', './src/client/index.js'],
     },
     output: {
         publicPath: '/',
         filename: '[name].js',
-        path: path.resolve('./dist'),
         chunkFilename: '[name].js',
+        path: path.resolve('./dist'),
     },
     optimization: {
         occurrenceOrder: true,

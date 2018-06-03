@@ -6,9 +6,9 @@
             "env",
             {
                 "loose": true,
+                "debug": true,
                 "modules": false,
                 "useBuiltIns": true,
-                "debug": true,
                 "targets": {
                     "browsers": ["Chrome >= 63", "Firefox >= 58", "Safari >= 11", "iOS >= 10.3", "Edge >= 41"]
                 }
@@ -18,7 +18,6 @@
         "flow"
     ],
     "plugins": [
-        "external-helpers",
         "syntax-dynamic-import",
         "transform-class-properties",
         "syntax-trailing-function-commas",

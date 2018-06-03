@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import '../common/babelHelpers';
 import App from '../common/App';
 
 function renderApp() {

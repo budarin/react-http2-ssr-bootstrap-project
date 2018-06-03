@@ -8,10 +8,10 @@ import env from '../../utils/env';
 
 const { STATIC_HOST, STATIC_PORT, STATIC_URL } = env;
 const config = {
-    mode: 'development',
-    target: 'web',
     cache: true,
+    target: 'web',
     profile: false,
+    mode: 'development',
     devtool: 'inline-cheap-module-source-map',
     entry: {
         client: [
@@ -23,9 +23,9 @@ const config = {
     },
     output: {
         filename: '[name].js',
+        publicPath: STATIC_URL,
         chunkFilename: '[name].js',
         path: path.resolve('./dist'),
-        publicPath: STATIC_URL,
         hotUpdateChunkFilename: '[id].[hash].hot-update.js',
     },
     module: {

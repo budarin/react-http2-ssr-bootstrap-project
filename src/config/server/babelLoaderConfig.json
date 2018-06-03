@@ -6,9 +6,9 @@
             "env",
             {
                 "loose": true,
+                "debug": true,
                 "modules": false,
                 "useBuiltIns": true,
-                "debug": true,
                 "targets": {
                     "node": "current"
                 }
