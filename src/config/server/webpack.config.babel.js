@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import babelConfig from './babelLoaderConfig.json';
 import nodeExternals from 'webpack-node-externals';
-// import CopyWebpackPlugin from 'copy-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 import env from '../../utils/env';
 
@@ -74,6 +74,12 @@ const config = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
+        new CopyWebpackPlugin([
+            { from: './src/common/manifest.json' },
+            { from: './src/common/favicon.ico' },
+            { from: './src/common/android-chrome-192x192.png' },
+            { from: './src/common/android-chrome-512x512.png' },
+        ]),
         new webpack.DefinePlugin({
             __DEV__: true,
             __PROD__: false,

@@ -20,6 +20,7 @@ function renderApp(stream: Object) {
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
                 <meta name="Description" content="Simple SSR React project.">
+                <link rel="manifest" href="/manifest.json">
                 <title>React SSR project</title>
             </head>
             <body>

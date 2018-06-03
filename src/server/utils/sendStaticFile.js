@@ -13,7 +13,7 @@ function sendStaticFile(stream: Object, headers: Object) {
     const fullPath = headers[HTTP2_HEADER_PATH];
     const responseMimeType = mime.lookup(fullPath);
 
-    if (isLegalAsset('/bundle.js')) {
+    if (!isLegalAsset(fullPath)) {
         console.log('>> Illegal static file:', fullPath);
 
         return;

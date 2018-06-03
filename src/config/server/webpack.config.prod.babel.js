@@ -3,7 +3,7 @@ import OptimizeJsPlugin from 'optimize-js-plugin';
 import MinifyPlugin from 'babel-minify-webpack-plugin';
 
 import babelConfig from './babelLoaderConfig.json';
-// import CopyWebpackPlugin from 'copy-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = {
     watch: false,
@@ -87,6 +87,12 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
+        new CopyWebpackPlugin([
+            { from: './src/common/manifests' },
+            { from: './src/common/favicon.ico' },
+            { from: './src/common/android-chrome-192x192.png' },
+            { from: './src/common/android-chrome-512x512.png' },
+        ]),
         new webpack.DefinePlugin({
             __DEV__: false,
             __PROD__: true,
