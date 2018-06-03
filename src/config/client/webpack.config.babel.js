@@ -45,7 +45,7 @@ const config = {
                 use: {
                     loader: 'image-size-loader',
                     options: {
-                        name: 'img/[name].[hash:7].[ext]',
+                        name: 'img/[name].[hash:8].[ext]',
                         context: path.resolve(__dirname, 'src'),
                     },
                 },

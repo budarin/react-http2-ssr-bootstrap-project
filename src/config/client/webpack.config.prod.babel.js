@@ -1,8 +1,8 @@
 import path from 'path';
+import webpack from 'webpack';
 import OptimizeJsPlugin from 'optimize-js-plugin';
 import MinifyPlugin from 'babel-minify-webpack-plugin';
 import babelConfig from './babelLoaderConfig.json';
-// import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = {
     cache: false,
@@ -42,7 +42,7 @@ const config = {
                     options: {
                         digest: 'hex',
                         hash: 'sha512',
-                        name: 'img/[name].[hash].[ext]',
+                        name: 'img/[name].[hash:8].[ext]',
                         context: path.resolve(__dirname, 'src'),
                     },
                 },
@@ -59,22 +59,14 @@ const config = {
                     {
                         loader: 'css-loader',
                         options: {
-                            // This breaks background-image and other relative paths
-                            // Monitor this: https://github.com/webpack/style-loader/pull/124
-                            // sourceMap: DEV,
-                            url: false,
-                            import: false,
                             sourceMap: false,
-                            // This breaks HMR (CSS Modules change name because their hash changes)
                             modules: true,
                             // importLoaders: 1,
-                            localIdentName: '[hash:base64]',
-                            // CSSNano Options
+                            localIdentName: '[hash:base64:8]',
+                            // cssnano options
                             minimize: {
                                 // safe: true,
-                                calc: false,
                                 zindex: false,
-                                colormin: false,
                                 discardComments: { removeAll: true },
                             },
                         },

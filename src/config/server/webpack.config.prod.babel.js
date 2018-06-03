@@ -1,9 +1,9 @@
 import path from 'path';
-import OptimizeJsPlugin from 'optimize-js-plugin';
+import webpack from 'webpack';
 import MinifyPlugin from 'babel-minify-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 import babelConfig from './babelLoaderConfig.json';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const config = {
     watch: false,
@@ -11,7 +11,7 @@ const config = {
     profile: true,
     target: 'node',
     mode: 'production',
-    // devtool: 'hidden-source-map',
+    devtool: 'cheap-module-eval-source-map',
     entry: './src/server/index.js',
     output: {
         publicPath: '/',
@@ -20,7 +20,7 @@ const config = {
         path: path.resolve('./dist'),
     },
     optimization: {
-        minimizer: [new MinifyPlugin(), new OptimizeJsPlugin({ sourceMap: false })],
+        minimizer: [new MinifyPlugin()],
     },
     module: {
         rules: [
@@ -41,7 +41,8 @@ const config = {
                     options: {
                         digest: 'hex',
                         hash: 'sha512',
-                        name: 'img/[name].[hash].[ext]',
+                        publicPath: '/',
+                        name: 'img/[name].[hash:8].[ext]',
                         context: path.resolve(__dirname, 'src'),
                     },
                 },
@@ -55,22 +56,14 @@ const config = {
                     {
                         loader: 'css-loader',
                         options: {
-                            url: false,
-                            import: false,
-                            // This breaks HMR (CSS Modules change name because their hash changes)
                             modules: true,
-                            // importLoaders: 1,
-                            localIdentName: '[hash:base64]',
-                            // This breaks background-image and other relative paths
-                            // Monitor this: https://github.com/webpack/style-loader/pull/124
-                            // sourceMap: DEV,
-                            sourceMap: false,
-                            // CSSNano Options
+                            importLoaders: 1,
+                            localIdentName: '[hash:base64:8]',
+                            sourceMap: true,
+                            // cssnano options
                             minimize: {
-                                safe: true,
-                                calc: false,
+                                // safe: true,
                                 zindex: false,
-                                colormin: false,
                                 discardComments: { removeAll: true },
                             },
                         },
@@ -89,7 +82,7 @@ const config = {
     plugins: [
         new CopyWebpackPlugin([
             { from: './src/common/app.css' },
-            { from: './src/common/manifests' },
+            { from: './src/common/manifest.json' },
             { from: './src/common/favicon.ico' },
             { from: './src/common/android-chrome-192x192.png' },
             { from: './src/common/android-chrome-512x512.png' },

@@ -3,8 +3,6 @@ import fs from 'fs';
 import debug from 'debug';
 import http2 from 'http2';
 
-import '../common/babelHelpers';
-
 import env from '../utils/env';
 import appServer from './appServer';
 
