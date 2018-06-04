@@ -57,7 +57,6 @@ const config = {
                         options: {
                             modules: true,
                             minimize: false,
-                            importLoaders: 1,
                             localIdentName: '[name].[local]_[hash:7]',
                         },
                     },
