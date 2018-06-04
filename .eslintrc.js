@@ -79,7 +79,7 @@ module.exports = {
         'import/first': 1,
         'import/no-dynamic-require': 1,
         'import/no-deprecated': 1,
-        'import/no-extraneous-dependencies': 0, // нужно настроить для нас
+        // 'import/no-extraneous-dependencies': 0, // нужно настроить для нас
 
         'max-len': 0,
     },
