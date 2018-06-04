@@ -10,6 +10,7 @@
       <w>cssnano</w>
       <w>devtool</w>
       <w>dotenv</w>
+      <w>ecma</w>
       <w>enoent</w>
       <w>eslint</w>
       <w>flowtype</w>
@@ -24,7 +25,9 @@
       <w>postcss</w>
       <w>prun</w>
       <w>rimraf</w>
+      <w>serviceworker</w>
       <w>teardown</w>
+      <w>unmount</w>
       <w>useable</w>
       <w>zindex</w>
     </words>
