@@ -23,7 +23,12 @@ module.exports = {
         jasmine: true,
         serviceworker: true,
     },
-    globals: {},
+    globals: {
+        __DEV__: true,
+        __PROD__: true,
+        __SERVER__: true,
+        __BROWSER__: true,
+    },
     rules: {
         'prettier/prettier': 'error',
         'react/sort-comp': [
