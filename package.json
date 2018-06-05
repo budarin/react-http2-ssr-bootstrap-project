@@ -32,21 +32,22 @@
     "license": "ISC",
     "jest": {
         "preset": "jest-puppeteer",
-        "cacheDirectory": "<rootDir>/.tmp/jest",
-        "coverageDirectory": "<rootDir>/.tmp/coverage",
-        "globalSetup": "<rootDir>/src/config/jest/globalSetup.js",
-        "globalTeardown": "<rootDir>/src/config/jest/globalTearDown.js",
-        "testEnvironment": "<rootDir>/src/config/jest/puppeteer_environment.js",
+        "rootDir": "src",
+        "cacheDirectory": "../.tmp/jest",
+        "coverageDirectory": "../.tmp/coverage",
+        "globalSetup": "<rootDir>/config/jest/globalSetup.js",
+        "globalTeardown": "<rootDir>/config/jest/globalTearDown.js",
+        "testEnvironment": "<rootDir>/config/jest/puppeteer_environment.js",
         "transform": {
-            "^.+\\.js$": "<rootDir>/src/config/jest/transformer.js"
+            "^.+\\.js$": "<rootDir>/config/jest/transformer.js"
         },
         "moduleFileExtensions": [
             "js",
             "jsx"
         ],
         "moduleNameMapper": {
-            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/config/jest/mocks/fileMock.js",
-            "\\.(css)$": "<rootDir>/src/config/jest/mocks/styleMock.js"
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/mocks/fileMock.js",
+            "\\.(css)$": "<rootDir>/config/jest/mocks/styleMock.js"
         },
         "testPathIgnorePatterns": [
             "/node_modules/"
@@ -118,8 +119,8 @@
         "stylelint-config-recommended": "^2.1.0",
         "stylelint-no-unsupported-browser-features": "^3.0.0",
         "stylelint-order": "^0.8.1",
-        "webpack": "^4.10.2",
-        "webpack-cli": "^3.0.1",
+        "webpack": "^4.11.0",
+        "webpack-cli": "^3.0.2",
         "webpack-dev-server": "^3.1.4",
         "webpack-node-externals": "^1.7.2"
     },
