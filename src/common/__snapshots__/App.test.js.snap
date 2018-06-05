@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Page renders correctly 1`] = `
+exports[`Home Page test renders correctly 1`] = `
 <p>
   Hello World!
 </p>

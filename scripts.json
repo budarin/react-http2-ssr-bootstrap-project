@@ -70,7 +70,7 @@
     },
     {
         "name": "test-watch",
-        "command": "jest --watch --onlyChanged --notify",
+        "command": "jest --watch --onlyChanged --watchman",
         "env": {
             "BROWSER": true,
             "SHOW_BROWSER": true
