@@ -7,6 +7,7 @@ describe(
 
         beforeAll(async () => {
             page = await global.browser.newPage();
+
             await page.goto('https://localhost');
         }, timeout);
 
