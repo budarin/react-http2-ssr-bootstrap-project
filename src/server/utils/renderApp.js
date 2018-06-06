@@ -5,12 +5,16 @@ import { renderToNodeStream } from 'react-dom/server';
 import env from '../../utils/env';
 import App from '../../common/App';
 
+const headers = { 'content-type': 'text/html; charset=utf-8' };
+const preLoadingResources = [
+    '</default.css>; rel="preload"; as="style";',
+    // `<${env.STATIC_URL}client.js>; rel="preload"; as="script";`,
+];
+
 function renderApp(req: Object, res: Object) {
     console.log('>> Render app');
 
     const isHttp2 = req.httpVersion.startsWith('2.');
-    const headers = { 'content-type': 'text/html; charset=utf-8' };
-    const preLoadingResources = ['<default.css>; rel="preload"; as="style";'];
 
     // preload should not be used with push
     if (isHttp2 === false) {
@@ -18,10 +22,6 @@ function renderApp(req: Object, res: Object) {
     }
 
     res.writeHead(200, headers);
-
-    // it's unnecessary to push default.css - css applies at runtime in App.js
-    // it's only for demonstration of push technology
-
     res.write(`
         <!DOCTYPE html>
         <html lang="en">
