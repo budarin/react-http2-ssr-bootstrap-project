@@ -13,7 +13,7 @@ async function pushAssets(req: Object, res: Object) {
 
     // it's unnecessary to push app.css - css applies at runtime in App.js
     // it's only for demonstration of push technology
-    pushAsset(stream, getFileDescription('app.css'));
+    pushAsset(stream, getFileDescription('default.css'));
     // pushAsset(stream, getFileDescription('manifest.json'));
 
     if (process.env.NODE_ENV === 'production') {

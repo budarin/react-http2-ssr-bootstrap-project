@@ -1,6 +1,6 @@
 // @flow
 const legalAssets: Array<string> = [
-    '/app.css',
+    '/default.css',
     '/bundle.js',
     '/favicon.ico',
     '/manifest.json',

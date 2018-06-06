@@ -80,7 +80,7 @@ const config = {
     },
     plugins: [
         new CopyWebpackPlugin([
-            { from: './src/common/app.css' },
+            { from: './src/common/default.css' },
             { from: './src/common/manifest.json' },
             { from: './src/common/favicon.ico' },
             { from: './src/common/android-chrome-192x192.png' },

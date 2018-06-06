@@ -12,7 +12,7 @@ function renderApp(req: Object, res: Object) {
 
     res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
 
-    // it's unnecessary to push app.css - css applies at runtime in App.js
+    // it's unnecessary to push default.css - css applies at runtime in App.js
     // it's only for demonstration of push technology
     // preload should not be used with push
 
@@ -27,8 +27,8 @@ function renderApp(req: Object, res: Object) {
             <meta name="Description" content="Simple SSR React project.">
             <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
             <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-            ${isHttp2 ? '' : '<link rel="preload" type="text/css" href="/app.css" as="style" />'}
-            <link rel="stylesheet" type="text/css" href="/app.css" />
+            ${isHttp2 ? '' : '<link rel="preload" type="text/css" href="/default.css" as="style" />'}
+            <link rel="stylesheet" type="text/css" href="/default.css" />
         </head>
         <body>
             <div id="app">`);
