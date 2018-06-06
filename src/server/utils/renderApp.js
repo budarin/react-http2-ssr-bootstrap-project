@@ -26,7 +26,7 @@ function renderApp(stream: Object) {
                 <meta name="Description" content="Simple SSR React project.">
                 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-                <link rel="preload" type="text/css" href="/app.css" as="style" />
+                <!--<link rel="preload" type="text/css" href="/app.css" as="style" /> preload if is not supported http2-->
                 <link rel="stylesheet" type="text/css" href="/app.css" />
             </head>
             <body>
