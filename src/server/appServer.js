@@ -5,18 +5,20 @@ import sendStaticFile from './utils/sendStaticFile';
 import logServerRequest from './utils/logServerRequest';
 import isLegalRoute from './utils/isLegalRoute';
 
-const app = async (stream: Object, headers: Object) => {
-    logServerRequest(headers);
+const app = async (req, res) => {
+    const isHttp2 = req.httpVersion.startsWith('2.');
 
-    if (isLegalRoute(headers)) {
-        await pushAssets(stream);
+    logServerRequest(req);
 
-        renderApp(stream);
+    if (isLegalRoute(req.url)) {
+        await pushAssets(res, isHttp2);
+
+        renderApp(req, res, isHttp2);
     } else {
         // only for development mode
         // handle static files for non pushed assets
         // nginx will do it in production
-        sendStaticFile(stream, headers);
+        sendStaticFile(req, res);
     }
 };
 

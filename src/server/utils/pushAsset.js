@@ -10,6 +10,7 @@ if (__PROD__) {
 }
 
 const { HTTP2_HEADER_PATH } = http2.constants;
+
 const pushAsset = (stream: Object, file: Object) => {
     stream.pushStream({ [HTTP2_HEADER_PATH]: file.path }, { parent: stream.id }, (err, pushStream) => {
         if (err) {

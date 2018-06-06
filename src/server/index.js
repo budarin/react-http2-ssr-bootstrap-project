@@ -15,7 +15,7 @@ const options = {
     allowHTTP1: true,
 };
 
-const server = http2.createSecureServer(options);
+const server = http2.createSecureServer(options, appServer);
 const shutdown = code => {
     log('Останавливаем сервер ...');
     server.close();
@@ -33,7 +33,6 @@ process.on('uncaughtException', err => {
     shutdown(1);
 });
 
-server.on('stream', appServer);
 server.listen(SERVER_PORT, SERVER_HOST);
 
 log(`Сервер запущен по адресу: ${SERVER_URL || 'error'}`);

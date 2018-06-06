@@ -1,31 +1,25 @@
 // @flow
+import fs from 'fs';
 import path from 'path';
-import http2 from 'http2';
 import mime from 'mime-types';
-
 import isLegalAsset from './isLegalAsset';
-import respondToStreamError from './respondToStreamError';
 
 const serverRootPath = './dist';
-const { HTTP2_HEADER_PATH } = http2.constants;
 
-function sendStaticFile(stream: Object, headers: Object) {
-    const fullPath = headers[HTTP2_HEADER_PATH];
-    const responseMimeType = mime.lookup(fullPath);
+function sendStaticFile(req, res) {
+    const { url } = req;
+    const filePath = path.resolve(path.join(serverRootPath, url));
 
-    if (!isLegalAsset(fullPath)) {
-        console.log('>> Illegal static file:', fullPath);
+    if (!isLegalAsset(url)) {
+        console.log('>> Illegal static file:', url);
 
         return;
     }
 
-    console.log('>> Static file:', fullPath);
+    console.log('>> Static file:', req.url);
 
-    stream.respondWithFile(
-        path.resolve(path.join(serverRootPath, fullPath)),
-        { 'content-type': responseMimeType },
-        { onError: err => respondToStreamError(err, stream) },
-    );
+    res.writeHead(200, { 'content-type': mime.lookup(url) });
+    fs.createReadStream(filePath).pipe(res);
 }
 
 export default sendStaticFile;

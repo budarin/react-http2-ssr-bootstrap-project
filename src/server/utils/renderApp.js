@@ -5,18 +5,14 @@ import { renderToNodeStream } from 'react-dom/server';
 import env from '../../utils/env';
 import App from '../../common/App';
 
-function renderApp(stream: Object) {
+function renderApp(req: Object, res: Object, isHttp2: boolean) {
     console.log('>> Render app');
 
-    stream.respond({
-        'content-type': 'text/html; charset=utf-8',
-        ':status': 200,
-    });
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
 
     // it's unnecessary to push app.css - css applies at runtime in App.js
     // it's only for demonstration of push technology
-    stream.write(`
-            <!DOCTYPE html>
+    res.write(`<!DOCTYPE html>
             <html lang="en">
             <head>
                 <meta charset="UTF-8">
@@ -26,7 +22,7 @@ function renderApp(stream: Object) {
                 <meta name="Description" content="Simple SSR React project.">
                 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-                <!--<link rel="preload" type="text/css" href="/app.css" as="style" /> preload if is not supported http2-->
+                ${isHttp2 ? '' : '<link rel="preload" type="text/css" href="/app.css" as="style" />'}
                 <link rel="stylesheet" type="text/css" href="/app.css" />
             </head>
             <body>
@@ -35,14 +31,14 @@ function renderApp(stream: Object) {
     const appStream = renderToNodeStream(<App />);
 
     appStream.on('end', () => {
-        stream.end(`</div>
-                <script src="${env.STATIC_URL}client.js"></script>
+        res.end(`</div>
+                <script src="${env.STATIC_URL}client.js" defer></script>
             </body>
             <html>`);
     });
 
     appStream.pipe(
-        stream,
+        res,
         { end: false },
     );
 }
