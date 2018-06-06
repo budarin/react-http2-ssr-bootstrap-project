@@ -13,8 +13,8 @@ const app = async (stream: Object, headers: Object) => {
 
         renderApp(stream);
     } else {
-        // handle static file for non pushed assets
         // only for development mode
+        // handle static files for non pushed assets
         // nginx will do it in production
         sendStaticFile(stream, headers);
     }
