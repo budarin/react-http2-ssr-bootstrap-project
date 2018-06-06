@@ -6,14 +6,12 @@ import logServerRequest from './utils/logServerRequest';
 import isLegalRoute from './utils/isLegalRoute';
 
 const app = async (req, res) => {
-    const isHttp2 = req.httpVersion.startsWith('2.');
-
     logServerRequest(req);
 
     if (isLegalRoute(req)) {
-        await pushAssets(res, isHttp2);
+        await pushAssets(req, res);
 
-        renderApp(req, res, isHttp2);
+        renderApp(req, res);
     } else {
         // only for development mode
         // handle static files for non pushed assets

@@ -5,13 +5,17 @@ import { renderToNodeStream } from 'react-dom/server';
 import env from '../../utils/env';
 import App from '../../common/App';
 
-function renderApp(req: Object, res: Object, isHttp2: boolean) {
+function renderApp(req: Object, res: Object) {
     console.log('>> Render app');
+
+    const isHttp2 = req.httpVersion.startsWith('2.');
 
     res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
 
     // it's unnecessary to push app.css - css applies at runtime in App.js
     // it's only for demonstration of push technology
+    // preload should not be used with push
+
     res.write(`<!DOCTYPE html>
             <html lang="en">
             <head>
