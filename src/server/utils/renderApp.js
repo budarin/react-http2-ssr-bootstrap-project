@@ -9,12 +9,18 @@ function renderApp(req: Object, res: Object) {
     console.log('>> Render app');
 
     const isHttp2 = req.httpVersion.startsWith('2.');
+    const headers = { 'content-type': 'text/html; charset=utf-8' };
+    const preLoadingResources = ['<default.css>; rel="preload"; as="style";'];
 
-    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+    // preload should not be used with push
+    if (isHttp2 === false) {
+        headers['Link'] = preLoadingResources.join(',');
+    }
+
+    res.writeHead(200, headers);
 
     // it's unnecessary to push default.css - css applies at runtime in App.js
     // it's only for demonstration of push technology
-    // preload should not be used with push
 
     res.write(`
         <!DOCTYPE html>
@@ -27,7 +33,6 @@ function renderApp(req: Object, res: Object) {
             <meta name="Description" content="Simple SSR React project.">
             <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
             <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-            ${isHttp2 ? '' : '<link rel="preload" type="text/css" href="/default.css" as="style" />'}
             <link rel="stylesheet" type="text/css" href="/default.css" />
         </head>
         <body>
