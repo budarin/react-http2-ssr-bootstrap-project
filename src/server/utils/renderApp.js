@@ -20,12 +20,12 @@ function renderApp(stream: Object) {
             <html lang="en">
             <head>
                 <meta charset="UTF-8">
-                <title>React SSR project</title>
                 <meta name="theme-color" content="#E6492F">
-                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-                <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
-                <meta name="Description" content="Simple SSR React project.">
                 <link rel="manifest" href="/manifest.json">
+                <title>React SSR project</title>
+                <meta name="Description" content="Simple SSR React project.">
+                <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
                 <link rel="stylesheet" type="text/css" href="/app.css"
             </head>
             <body>

@@ -10,6 +10,7 @@ const app = async (stream: Object, headers: Object) => {
 
     if (isLegalRoute(headers)) {
         await pushAssets(stream);
+
         renderApp(stream);
     } else {
         // handle static file for non pushed assets
