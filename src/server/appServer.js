@@ -10,7 +10,7 @@ const app = async (req, res) => {
 
     logServerRequest(req);
 
-    if (isLegalRoute(req.url)) {
+    if (isLegalRoute(req)) {
         await pushAssets(res, isHttp2);
 
         renderApp(req, res, isHttp2);

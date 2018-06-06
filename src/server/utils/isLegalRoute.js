@@ -1,8 +1,8 @@
 // @flow
 const legalRoutes = ['/'];
 
-function isLegalRoute(url) {
-    return legalRoutes.indexOf(url) > -1;
+function isLegalRoute(req) {
+    return legalRoutes.indexOf(req.url) > -1;
 }
 
 export default isLegalRoute;
