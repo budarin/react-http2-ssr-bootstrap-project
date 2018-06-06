@@ -62,6 +62,13 @@
         "command": "npx flow-typed install --skip --overwrite"
     },
     {
+        "name": "start-all",
+        "command": "concurrently --kill-others  \"prun start-client\" \"prun start-server\"",
+        "env": {
+            "NODE_ENV": "development"
+        }
+    },
+    {
         "name": "test",
         "command": "jest --detectOpenHandles --no-cache  --forceExit",
         "env": {
