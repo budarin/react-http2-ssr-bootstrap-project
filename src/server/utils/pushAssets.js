@@ -2,7 +2,7 @@
 import pushAsset from './pushAsset';
 import getFileDescription from './getFileDescription';
 
-async function pushAssets(req: Object, res: Object): void {
+async function pushAssets(req: Object, res: Object): Promise<void> {
     const isHttp2 = req.httpVersion.startsWith('2.');
 
     if (!isHttp2) {
