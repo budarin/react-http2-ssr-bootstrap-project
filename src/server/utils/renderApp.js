@@ -10,7 +10,7 @@ import addPreLoadsToHeaders from './addPreLoadsToHeaders';
 const headers = { 'content-type': 'text/html; charset=utf-8' };
 const preventClosingStream = { end: false };
 
-function renderApp(req: Object, res: Object) {
+function renderApp(req: Object, res: Object): void {
     const isHttp2 = req.httpVersion.startsWith('2.');
 
     console.log('>> Render app');

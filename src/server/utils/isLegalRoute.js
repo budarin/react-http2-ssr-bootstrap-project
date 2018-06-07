@@ -1,7 +1,7 @@
 // @flow
-const legalRoutes = ['/'];
+const legalRoutes: Array<string> = ['/'];
 
-function isLegalRoute(req) {
+function isLegalRoute(req: Object): boolean {
     return legalRoutes.indexOf(req.url) > -1;
 }
 

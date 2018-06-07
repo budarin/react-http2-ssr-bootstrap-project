@@ -3,15 +3,10 @@ import path from 'path';
 import http2 from 'http2';
 import respondToStreamError from './respondToStreamError';
 
-let serverRoot = './dist';
-
-if (__PROD__) {
-    serverRoot = '';
-}
-
+const serverRoot = __PROD__ ? '' : './dist';
 const { HTTP2_HEADER_PATH } = http2.constants;
 
-const pushAsset = (stream: Object, file: Object) => {
+const pushAsset = (stream: Object, file: Object): void => {
     stream.pushStream({ [HTTP2_HEADER_PATH]: file.path }, { parent: stream.id }, (err, pushStream) => {
         if (err) {
             console.log('>> Pushing error:', err);

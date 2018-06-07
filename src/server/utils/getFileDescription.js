@@ -1,7 +1,13 @@
 // @flow
 import mime from 'mime-types';
 
-function getFileDescription(file: string) {
+export type FileDescription = {
+    path: string,
+    filePath: string,
+    headers: Object,
+};
+
+function getFileDescription(file: string): FileDescription {
     return {
         path: `/${file}`,
         filePath: `./${file}`,

@@ -6,7 +6,7 @@ import isLegalAsset from './isLegalAsset';
 
 const serverRootPath = './dist';
 
-function sendStaticFile(req, res) {
+function sendStaticFile(req: Object, res: Object): void {
     const { url } = req;
     const filePath = path.resolve(path.join(serverRootPath, url));
 

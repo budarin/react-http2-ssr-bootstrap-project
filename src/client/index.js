@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import App from '../common/App';
 
-function renderApp() {
+function renderApp(): void {
     const app = document.getElementById('app');
 
     app && ReactDOM.hydrate(<App />, app);

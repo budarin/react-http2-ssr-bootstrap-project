@@ -9,7 +9,7 @@ import appServer from './appServer';
 const log = debug('app:server');
 const logError = debug('app:server:error');
 
-const { SERVER_PORT = 443, SERVER_HOST = 'localhost', SERVER_URL = 'https://localhost' } = env;
+const { SERVER_PORT, SERVER_HOST, SERVER_URL } = env;
 
 const options = {
     key: fs.readFileSync('certs/server.key'),

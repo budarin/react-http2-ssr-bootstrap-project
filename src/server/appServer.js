@@ -5,7 +5,7 @@ import sendStaticFile from './utils/sendStaticFile';
 import logServerRequest from './utils/logServerRequest';
 import isLegalRoute from './utils/isLegalRoute';
 
-const app = async (req, res) => {
+const app = async (req: Object, res: Object): Promise<*> => {
     logServerRequest(req);
 
     if (isLegalRoute(req)) {
