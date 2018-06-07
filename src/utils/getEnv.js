@@ -35,7 +35,16 @@ function getEnv(): ENV {
         return getParsedEnv(defaultEnvPath);
     }
 
-    return {};
+    return {
+        SERVER_PROTOCOL: 'https',
+        SERVER_PORT: 443,
+        SERVER_HOST: 'localhost',
+        SERVER_URL: 'https://localhost',
+        STATIC_PROTOCOL: 'https',
+        STATIC_PORT: 444,
+        STATIC_HOST: 'localhost',
+        STATIC_URL: 'https://localhost:444',
+    };
 }
 
 export default getEnv();
