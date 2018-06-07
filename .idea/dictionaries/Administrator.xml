@@ -28,6 +28,7 @@
       <w>serviceworker</w>
       <w>teardown</w>
       <w>unmount</w>
+      <w>unuse</w>
       <w>useable</w>
       <w>zindex</w>
     </words>
