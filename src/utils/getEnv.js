@@ -11,7 +11,7 @@ function getParsedEnv(envPath: string): Object {
     return parseJSON(fs.readFileSync(path.resolve(envPath), { encoding: 'utf-8' }));
 }
 
-function getEenv(): Object {
+function getEnv(): Object {
     if (process.env.NODE_ENV === 'production' && fs.existsSync(prodEnvPath)) {
         return getParsedEnv(prodEnvPath);
     }
@@ -27,4 +27,4 @@ function getEenv(): Object {
     return {};
 }
 
-export default getEenv();
+export default getEnv();
