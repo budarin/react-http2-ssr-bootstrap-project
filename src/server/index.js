@@ -3,7 +3,7 @@ import fs from 'fs';
 import debug from 'debug';
 import http2 from 'http2';
 
-import env from '../utils/env';
+import env from '../utils/getEnv';
 import appServer from './appServer';
 
 const log = debug('app:server');

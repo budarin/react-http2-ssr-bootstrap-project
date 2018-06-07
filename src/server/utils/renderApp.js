@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { renderToNodeStream } from 'react-dom/server';
 
-import env from '../../utils/env';
+import env from '../../utils/getEenv';
 import App from '../../common/App';
 
 const headers = { 'content-type': 'text/html; charset=utf-8' };

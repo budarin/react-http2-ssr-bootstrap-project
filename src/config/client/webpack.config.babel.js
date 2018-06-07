@@ -4,7 +4,7 @@ import webpack from 'webpack';
 import babelConfig from './babelLoaderConfig.json';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-import env from '../../utils/env';
+import env from '../../utils/getEnv';
 
 const { STATIC_HOST, STATIC_PORT, STATIC_URL } = env;
 const config = {
