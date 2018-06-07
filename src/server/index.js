@@ -19,8 +19,9 @@ const options = {
 
 const server = http2.createSecureServer(options, appServer);
 
-const shutdown = code => {
+const shutdown = (code: number) => {
     log('Останавливаем сервер ...');
+
     server.close();
     process.exit(code || 0);
 };
@@ -28,11 +29,11 @@ const shutdown = code => {
 process.on('SIGINT', shutdown);
 process.on('SIGTERM', shutdown);
 
-process.on('unhandledRejection', reason => {
-    logError(`unhandledRejection: Reason: ${reason}\n ${reason.stack}`);
+process.on('unhandledRejection', (err: Error) => {
+    logError(`unhandledRejection: Reason: ${err.message}\n ${err.stack}`);
 });
 
-process.on('uncaughtException', err => {
+process.on('uncaughtException', (err: Error) => {
     logError('Необработанная ошибка приложения', err.stack);
     shutdown(1);
 });
