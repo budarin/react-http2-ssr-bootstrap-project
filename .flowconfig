@@ -1,16 +1,22 @@
 [ignore]
-<PROJECT_ROOT>/dist/.*
-<PROJECT_ROOT>/.idea/.*
-<PROJECT_ROOT>/.git/.*
-<PROJECT_ROOT>/.tmp/.*
+./dist/.*
+./.idea/.*
+./.git/.*
+./.tmp/.*
 
 [include]
-/src/types/.*
 
 [libs]
 
 [options]
-include_warnings=true
+temp_dir=./.tmp/flow
 suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+
+module.name_mapper.extension='svg' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
+module.name_mapper.extension='png' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
+module.name_mapper.extension='jpg' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
+module.name_mapper.extension='gif' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
+
+module.name_mapper.extension='css' -> '<PROJECT_ROOT>/src/config/flow/stubs/css-modules.js.flow'
 
 [lints]
