@@ -1,5 +1,5 @@
 // @flow
 
-module.exports = async (): Promise<*> => {
+module.exports = async () => {
     await global.browser.close();
 };

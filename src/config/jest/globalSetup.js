@@ -17,7 +17,7 @@ const launchProps =
           }
         : {};
 
-module.exports = async function(): void {
+module.exports = async function() {
     const browser = await puppeteer.launch(launchProps);
 
     global.browser = browser;
