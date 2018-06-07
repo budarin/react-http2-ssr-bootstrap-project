@@ -5,7 +5,7 @@ import appStyles from './app.css';
 const css = __BROWSER__ ? appStyles.locals : appStyles;
 
 function App() {
-    if (!__SERVER__) {
+    if (__BROWSER__) {
         appStyles.use();
     }
 
