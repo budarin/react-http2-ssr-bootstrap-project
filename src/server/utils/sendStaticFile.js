@@ -4,7 +4,7 @@ import path from 'path';
 import mime from 'mime-types';
 import isLegalAsset from './isLegalAsset';
 
-const serverRootPath = './dist';
+const serverRootPath = __DEV__ ? './dist' : '/';
 
 function sendStaticFile(req: Object, res: Object): void {
     const { url } = req;

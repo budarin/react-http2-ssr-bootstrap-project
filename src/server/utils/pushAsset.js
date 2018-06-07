@@ -3,7 +3,7 @@ import path from 'path';
 import http2 from 'http2';
 import respondToStreamError from './respondToStreamError';
 
-const serverRoot = __PROD__ ? '' : './dist';
+const serverRoot = __DEV__ ? './dist' : '';
 const { HTTP2_HEADER_PATH } = http2.constants;
 
 const pushAsset = (stream: Object, file: Object): void => {
