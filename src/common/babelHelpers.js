@@ -4,10 +4,7 @@
 
     babelHelpers.jsx = (function() {
         const REACT_ELEMENT_TYPE =
-            (typeof Symbol === 'function' &&
-                Symbol.for &&
-                Symbol.for('react.element')) ||
-            0xeac7;
+            (typeof Symbol === 'function' && Symbol.for && Symbol.for('react.element')) || 0xeac7;
 
         return function createRawReactElement(type, props, key, children) {
             const defaultProps = type && type.defaultProps;
@@ -78,8 +75,7 @@
 
             if (obj != null) {
                 for (const key in obj) {
-                    if (Object.prototype.hasOwnProperty.call(obj, key))
-                        newObj[key] = obj[key];
+                    if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
                 }
             }
 
