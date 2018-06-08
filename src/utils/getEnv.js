@@ -8,9 +8,6 @@ export type ENV = {
     SERVER_PORT: number,
     SERVER_HOST: string,
     SERVER_URL: string,
-    STATIC_PROTOCOL: string,
-    STATIC_PORT: number,
-    STATIC_HOST: string,
     STATIC_URL: string,
 };
 
@@ -40,9 +37,6 @@ function getEnv(): ENV {
         SERVER_PORT: 443,
         SERVER_HOST: 'localhost',
         SERVER_URL: 'https://localhost',
-        STATIC_PROTOCOL: 'https',
-        STATIC_PORT: 444,
-        STATIC_HOST: 'localhost',
         STATIC_URL: 'https://localhost:444',
     };
 }
