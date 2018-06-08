@@ -1,8 +1,8 @@
 [ignore]
-./dist/.*
-./.idea/.*
-./.git/.*
-./.tmp/.*
+<PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/.idea/.*
+<PROJECT_ROOT>/.git/.*
+<PROJECT_ROOT>/.tmp/.*
 
 [include]
 
