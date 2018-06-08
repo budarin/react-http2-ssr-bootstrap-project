@@ -41,7 +41,7 @@ function getEnv(): ENV {
         SERVER_HOST: 'localhost',
         SERVER_URL: 'https://localhost',
         STATIC_PROTOCOL: 'https',
-        STATIC_PORT: 443,
+        STATIC_PORT: 444,
         STATIC_HOST: 'localhost',
         STATIC_URL: 'https://localhost:444',
     };
