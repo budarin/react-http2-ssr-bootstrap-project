@@ -1,8 +1,9 @@
 [ignore]
-<PROJECT_ROOT>/dist/.*
-<PROJECT_ROOT>/.idea/.*
-<PROJECT_ROOT>/.git/.*
-<PROJECT_ROOT>/.tmp/.*
+.*/dist/.*
+.*/.idea/.*
+.*/.git/.*
+.*/.tmp/.*
+.*/node_modules/.*
 
 [include]
 
