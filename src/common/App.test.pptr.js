@@ -21,6 +21,5 @@ describe(
             expect(text).toContain('Hello World');
         });
     },
-
     timeout,
 );
