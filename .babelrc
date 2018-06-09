@@ -1,5 +1,17 @@
 {
-    "presets": [["env", { "loose": true }]],
+    "presets": [
+        [
+            "env",
+            {
+                "loose": true,
+                "useBuiltIns": true,
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ],
+        "flow"
+    ],
     "plugins": [
         "syntax-trailing-function-commas",
         "syntax-dynamic-import",
