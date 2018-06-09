@@ -26,10 +26,12 @@
     ],
     "env": {
         "production": {
-            "plugins": ["external-helpers", "transform-react-inline-elements", "transform-react-constant-elements"]
+            "plugins": ["external-helpers", "transform-react-inline-elements", "transform-react-constant-elements"],
+            "ignore": ["__snapshots__", "__tests__", "node_modules"]
         },
         "development": {
-            "plugins": ["transform-react-jsx-self", "transform-react-jsx-source"]
+            "plugins": ["transform-react-jsx-self", "transform-react-jsx-source"],
+            "ignore": ["__snapshots__", "__tests__", "node_modules"]
         },
         "test": {
             "plugins": ["transform-react-jsx-self", "transform-react-jsx-source"]
