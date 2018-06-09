@@ -24,6 +24,7 @@
       <w>nginx</w>
       <w>nodemon</w>
       <w>postcss</w>
+      <w>pptr</w>
       <w>prun</w>
       <w>rimraf</w>
       <w>serviceworker</w>
