@@ -80,7 +80,8 @@
         "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles",
         "env": {
             "BROWSER": true,
-            "SHOW_BROWSER": false
+            "SHOW_BROWSER": false,
+            "RUN_PUPPETEER_TESTS": true
         }
     }
 ]
