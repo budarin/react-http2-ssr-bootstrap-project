@@ -28,9 +28,9 @@ const config = {
     notifyMode: 'failure',
 };
 
+// TODO: to force it work
 if (Boolean(RUN_PUPPETEER_TESTS)) {
     config.testMatch.push('**/?(*.)+test.pptr.js?(x)');
-    config.testMatch = config.testMatch.reverse();
 }
 
 module.exports = config;
