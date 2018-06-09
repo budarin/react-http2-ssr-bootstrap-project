@@ -1,5 +1,3 @@
-// @flow
-
 /* eslint-disable import/no-commonjs */
 /* eslint-disable import/unambiguous */
 const fs = require('fs');
