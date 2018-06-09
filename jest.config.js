@@ -25,6 +25,7 @@ const config = {
         __BROWSER__: true,
         __SERVER__: false,
     },
+    notify: false,
     notifyMode: 'failure',
 };
 

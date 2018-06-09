@@ -70,14 +70,14 @@
     },
     {
         "name": "test",
-        "command": "jest --detectOpenHandles --no-cache  --forceExit",
+        "command": "jest --detectOpenHandles --no-cache  --forceExit ",
         "env": {
             "BROWSER": true
         }
     },
     {
         "name": "test-watch",
-        "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles",
+        "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify",
         "env": {
             "BROWSER": true,
             "SHOW_BROWSER": false,
