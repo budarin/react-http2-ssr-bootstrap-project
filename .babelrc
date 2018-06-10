@@ -21,5 +21,10 @@
                 "useBuiltIns": true
             }
         ]
-    ]
+    ],
+    "env": {
+        "test": {
+            "plugins": ["transform-react-jsx-self", "transform-react-jsx-source"]
+        }
+    }
 }
