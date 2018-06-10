@@ -1,8 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import webpack from 'webpack';
-import babelConfig from './babelLoaderConfig.json';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
+
+import babelConfig from './babelLoaderConfig.json';
 
 import env from '../../utils/getEnv';
 
