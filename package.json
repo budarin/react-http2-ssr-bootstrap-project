@@ -10,7 +10,7 @@
         "build": "prun build",
         "test": "prun test",
         "test-puppeteer": "prun test-puppeteer",
-        "postinstall": "npm run flow-typed",
+        "postinstall": "prun flow-typed",
         "precommit": "lint-staged"
     },
     "lint-staged": {
@@ -38,7 +38,7 @@
         "babel-loader": "^7.1.4",
         "babel-minify-webpack-plugin": "^0.3.1",
         "babel-plugin-external-helpers": "^6.22.0",
-        "babel-plugin-lodash": "^3.3.3",
+        "babel-plugin-lodash": "^3.3.4",
         "babel-plugin-syntax-dynamic-import": "^6.18.0",
         "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
         "babel-plugin-transform-class-properties": "^6.24.1",
