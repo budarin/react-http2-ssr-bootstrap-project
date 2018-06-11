@@ -2,7 +2,8 @@ import path from 'path';
 import webpack from 'webpack';
 import OptimizeJsPlugin from 'optimize-js-plugin';
 import MinifyPlugin from 'babel-minify-webpack-plugin';
-import babelConfig from './babelLoaderConfig.json';
+
+import babelConfig from './babelLoaderConfig.js';
 
 const config = {
     cache: false,

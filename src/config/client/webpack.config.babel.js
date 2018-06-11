@@ -3,7 +3,7 @@ import path from 'path';
 import webpack from 'webpack';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-import babelConfig from './babelLoaderConfig.json';
+import babelConfig from './babelLoaderConfig';
 
 import env from '../../utils/getEnv';
 

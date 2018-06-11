@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
 const width = 1024;
 const height = 768;
 const launchProps =
-    process.env.SHOW_BROWSER === 'true'
+    process.env.SHOW_BROWSER && process.env.SHOW_BROWSER.trim() === 'true'
         ? {
               headless: false,
               slowMo: 200,
