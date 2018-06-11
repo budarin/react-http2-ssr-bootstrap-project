@@ -11,7 +11,7 @@
         "test": "prun test",
         "test-puppeteer": "prun test-puppeteer",
         "precommit": "lint-staged",
-        "postinstall": "npm audit fix && prun flow-typed"
+        "postinstall": "prun flow-typed && npm audit fix"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [
