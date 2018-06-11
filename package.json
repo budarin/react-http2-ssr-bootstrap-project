@@ -5,13 +5,13 @@
     "scripts": {
         "client": "prun start-client",
         "server": "prun start-server",
-        "build": "prun build",
+        "test-watch": "prun test-watch",
         "upgrade": "prun upgrade",
-        "flow-typed": "prun flow-typed",
-        "postinstall": "npm run flow-typed",
-        "precommit": "lint-staged",
+        "build": "prun build",
         "test": "prun test",
-        "test-watch": "prun test-watch"
+        "test-puppeteer": "prun test-puppeteer",
+        "postinstall": "npm run flow-typed",
+        "precommit": "lint-staged"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [

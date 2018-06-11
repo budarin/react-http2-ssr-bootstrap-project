@@ -6,14 +6,13 @@ const puppeteer = require('puppeteer');
 
 const width = 1024;
 const height = 768;
-const launchProps =
-    process.env.SHOW_BROWSER === 'true'
-        ? {
-              headless: false,
-              slowMo: 80,
-              args: [`--window-size=${width},${height}`],
-          }
-        : {};
+const launchProps = process.env.SHOW_BROWSER
+    ? {
+          headless: false,
+          slowMo: 200,
+          args: [`--window-size=${width},${height}`],
+      }
+    : {};
 
 module.exports = async function() {
     const browser = await puppeteer.launch(launchProps);

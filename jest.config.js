@@ -1,4 +1,5 @@
 const RUN_PUPPETEER_TESTS = process.env.RUN_PUPPETEER_TESTS;
+const RUN_ONLY_PUPPETEER_TESTS = process.env.RUN_ONLY_PUPPETEER_TESTS;
 
 const config = {
     rootDir: 'src',
@@ -29,9 +30,14 @@ const config = {
     notifyMode: 'failure',
 };
 
-// TODO: to force it work
+// run also puppeteer tests
 if (Boolean(RUN_PUPPETEER_TESTS)) {
-    config.testMatch.push('**/?(*.)+test.pptr.js?(x)');
+    config.testMatch.push('**/?(*.)+(test).pptr.js?(x)');
+}
+
+// run only puppeteer tests
+if (Boolean(RUN_ONLY_PUPPETEER_TESTS)) {
+    config.testMatch = ['**/?(*.)+(test).pptr.js?(x)'];
 }
 
 module.exports = config;

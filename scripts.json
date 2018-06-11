@@ -70,18 +70,22 @@
     },
     {
         "name": "test",
-        "command": "jest --detectOpenHandles --no-cache  --forceExit ",
-        "env": {
-            "BROWSER": true
-        }
+        "command": "jest --detectOpenHandles --no-cache  --forceExit "
     },
     {
         "name": "test-watch",
         "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify",
         "env": {
-            "BROWSER": true,
-            "SHOW_BROWSER": false,
+            "SHOW_BROWSER": true,
             "RUN_PUPPETEER_TESTS": true
+        }
+    },
+    {
+        "name": "test-puppeteer",
+        "command": "jest --detectOpenHandles --no-cache  --forceExit ",
+        "env": {
+            "SHOW_BROWSER": false,
+            "RUN_ONLY_PUPPETEER_TESTS": true
         }
     }
 ]

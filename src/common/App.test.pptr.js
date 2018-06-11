@@ -1,25 +1,21 @@
-const timeout = 10000;
+jest.setTimeout(10000);
 
-describe(
-    'Home Page',
-    () => {
-        let page;
+describe('Home Page', () => {
+    let page;
 
-        beforeAll(async () => {
-            page = await global.browser.newPage();
+    beforeAll(async () => {
+        page = await global.browser.newPage();
 
-            await page.goto('https://localhost');
-        }, timeout);
+        await page.goto('https://localhost');
+    });
 
-        afterAll(async () => {
-            await page.close();
-        });
+    afterAll(async () => {
+        await page.close();
+    });
 
-        it('should load without error', async () => {
-            const text = await page.evaluate(() => document.body.textContent);
+    it('should load without error', async () => {
+        const text = await page.evaluate(() => document.body.textContent);
 
-            expect(text).toContain('Hello World');
-        });
-    },
-    timeout,
-);
+        expect(text).toContain('Hello World');
+    });
+});
