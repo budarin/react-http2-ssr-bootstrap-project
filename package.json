@@ -10,8 +10,8 @@
         "build": "prun build",
         "test": "prun test",
         "test-puppeteer": "prun test-puppeteer",
-        "postinstall": "prun flow-typed",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged",
+        "postinstall": "prun flow-typed"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [
