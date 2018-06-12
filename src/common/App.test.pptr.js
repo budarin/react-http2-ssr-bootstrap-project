@@ -1,5 +1,3 @@
-jest.setTimeout(10000);
-
 describe('Home Page', () => {
     let page;
 

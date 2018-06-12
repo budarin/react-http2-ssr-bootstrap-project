@@ -19,5 +19,6 @@ module.exports = async function() {
     const browser = await puppeteer.launch(launchProps);
 
     global.browser = browser;
+    jest.setTimeout(10000);
     fs.writeFileSync(path.resolve('.tmp/jest/wsEndpoint'), browser.wsEndpoint());
 };
