@@ -23,8 +23,18 @@ module.exports = {
         'syntax-dynamic-import',
         'transform-class-properties',
         'syntax-trailing-function-commas',
-        ['transform-object-rest-spread', { useBuiltIns: true }],
-        ['lodash', { id: ['lodash', 'recompose'] }],
+        [
+            'lodash',
+            {
+                id: ['lodash', 'recompose'],
+            },
+        ],
+        [
+            'transform-object-rest-spread',
+            {
+                useBuiltIns: true,
+            },
+        ],
     ],
     env: {
         production: {

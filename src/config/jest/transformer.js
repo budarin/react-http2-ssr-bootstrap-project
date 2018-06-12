@@ -4,13 +4,12 @@ const browserList = require('../browserList');
 
 const config = {
     babelrc: false,
-    cacheDirectory: '.tmp/client',
     presets: [
         [
             'env',
             {
                 loose: true,
-                debug: true,
+                debug: false,
                 modules: 'commonjs',
                 useBuiltIns: true,
                 targets: {
@@ -23,12 +22,22 @@ const config = {
     ],
     plugins: [
         'syntax-dynamic-import',
-        'transform-class-properties',
-        'syntax-trailing-function-commas',
-        ['transform-object-rest-spread', { useBuiltIns: true }],
-        ['lodash', { id: ['lodash', 'recompose'] }],
         'transform-react-jsx-self',
         'transform-react-jsx-source',
+        'transform-class-properties',
+        'syntax-trailing-function-commas',
+        [
+            'lodash',
+            {
+                id: ['lodash', 'recompose'],
+            },
+        ],
+        [
+            'transform-object-rest-spread',
+            {
+                useBuiltIns: true,
+            },
+        ],
     ],
 };
 

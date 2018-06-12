@@ -55,7 +55,7 @@
     },
     {
         "name": "upgrade",
-        "command": "npx flow stop && ncu --upgradeAll && npm install && npx flow"
+        "command": "npx flow stop && ncu --upgradeAll && npm install && npx flow status"
     },
     {
         "name": "flow-typed",
