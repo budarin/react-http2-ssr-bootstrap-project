@@ -11,9 +11,10 @@ const app = async (req: Object, res: Object): Promise<void> => {
     if (isLegalRoute(req)) {
         await pushAssets(req, res);
 
-        renderApp(req, res);
-    } else {
-        // only for development mode
+        return renderApp(req, res);
+    }
+
+    if (__DEV__) {
         // handle static files for non pushed assets
         // nginx will do it in production
         sendStaticFile(req, res);
