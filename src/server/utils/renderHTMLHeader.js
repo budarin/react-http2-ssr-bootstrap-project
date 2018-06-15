@@ -1,4 +1,5 @@
 // @flow
+import env from '../../utils/getEnv';
 
 function renderHTMLHeader(): string {
     return `
@@ -11,7 +12,9 @@ function renderHTMLHeader(): string {
             <title>React SSR project</title>
             <meta name="Description" content="Simple SSR React project.">
             <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
-            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes,shrink-to-fit=no">
+            
+            <script src="${env.STATIC_URL}client.js" defer></script>
             <link rel="stylesheet" type="text/css" href="/default.css" />
         </head>
         <body>
