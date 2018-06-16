@@ -1,29 +1,36 @@
+import puppeteer from 'puppeteer';
 import env from '../utils/getEnv';
 
+const width = 1024;
+const height = 768;
 const { PUPPETEER_URL } = env;
+
+const launchProps = {
+    headless: false,
+    slowMo: 80,
+    args: [`--window-size=${width},${height}`],
+};
+
+jest.setTimeout(10000);
 
 describe('Home Page', () => {
     let page;
-    let client;
+    let browser;
 
     beforeAll(async () => {
-        page = await global.browser.newPage();
-        client = await page.target().createCDPSession();
+        browser = await puppeteer.launch(launchProps);
+        page = await browser.newPage();
 
-        // set DisableCache in Network pane in CDT
-        await client.send('Network.setCacheDisabled', { cacheDisabled: true });
-        await page.goto(`${PUPPETEER_URL}`, { waitUntil: 'networkidle0' });
+        await page.goto(`${PUPPETEER_URL}`);
     });
 
     afterAll(async () => {
-        // Clears browser cache.
-        await client.send('Network.clearBrowserCache');
-        await page.close();
+        await browser.close();
     });
 
     it('should load without error', async () => {
         const text = await page.evaluate(() => document.body.textContent);
 
-        expect(text).toContain('Hello World');
+        expect(text).toContain('Hello World!');
     });
 });
