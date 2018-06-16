@@ -6,9 +6,6 @@ const config = {
     preset: 'jest-puppeteer',
     cacheDirectory: '../.tmp/jest',
     coverageDirectory: '../.tmp/coverage',
-    globalSetup: '<rootDir>/config/jest/globalSetup.js',
-    globalTeardown: '<rootDir>/config/jest/globalTearDown.js',
-    testEnvironment: '<rootDir>/config/jest/puppeteer_environment.js',
     transform: {
         '^.+\\.js$': '<rootDir>/config/jest/transformer.js',
     },
