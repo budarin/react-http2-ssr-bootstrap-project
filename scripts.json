@@ -1,14 +1,14 @@
 [
     {
         "name": "start-client",
-        "command": "webpack-dev-server --mode development --config ./src/config/client/webpack.config.babel.js",
+        "command": "webpack-dev-server --mode development --config ./src/config/webpack/client/webpack.config.babel.js",
         "env": {
             "NODE_ENV": "development"
         }
     },
     {
         "name": "server-compile",
-        "command": "webpack --config ./src/config/server/webpack.config.babel.js",
+        "command": "webpack --config ./src/config/webpack/server/webpack.config.babel.js",
         "env": {
             "NODE_ENV": "development"
         }
@@ -34,21 +34,22 @@
     },
     {
         "name": "server-build",
-        "command": "webpack --config ./src/config/server/webpack.config.prod.babel.js",
+        "command": "webpack --config ./src/config/webpack/server/webpack.config.prod.babel.js",
         "env": {
             "NODE_ENV": "production"
         }
     },
     {
         "name": "client-build",
-        "command": "webpack --config ./src/config/client/webpack.config.prod.babel.js",
+        "command": "webpack --config ./src/config/webpack/client/webpack.config.prod.babel.js",
         "env": {
             "NODE_ENV": "production"
         }
     },
     {
         "name": "build",
-        "command": "rimraf ./.tmp && rimraf ./dist && webpack --config ./src/config/webpack.config.prod.babel.js",
+        "command":
+            "rimraf ./.tmp && rimraf ./dist && webpack --config ./src/config/webpack/webpack.config.prod.babel.js",
         "env": {
             "NODE_ENV": "production"
         }

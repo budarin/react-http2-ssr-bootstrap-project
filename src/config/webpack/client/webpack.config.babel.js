@@ -1,25 +1,32 @@
+import fs from 'fs';
 import path from 'path';
 import webpack from 'webpack';
-import babelConfig from './babelLoaderConfig.json';
-import nodeExternals from 'webpack-node-externals';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
+// import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-import env from '../../utils/getEnv';
+import env from '../../../utils/getEnv';
+import babelConfig from './babelLoaderConfig';
 
-const { STATIC_URL } = env;
+const { STATIC_HOST, STATIC_PORT, STATIC_URL } = env;
 const config = {
-    watch: true,
     cache: true,
-    target: 'node',
+    target: 'web',
     profile: false,
     mode: 'development',
-    devtool: 'cheap-module-eval-source-map',
-    entry: ['webpack/hot/poll?1000', './src/server/index.js'],
+    devtool: 'inline-cheap-module-source-map',
+    entry: {
+        client: [
+            'react-hot-loader/patch',
+            `webpack-dev-server/client?${STATIC_URL}`,
+            'webpack/hot/only-dev-server',
+            './src/client/index.js',
+        ],
+    },
     output: {
-        publicPath: '/',
-        filename: 'server.js',
-        libraryTarget: 'commonjs2',
+        filename: '[name].js',
+        publicPath: STATIC_URL,
+        chunkFilename: '[name].js',
         path: path.resolve('./dist'),
+        hotUpdateChunkFilename: '[id].[hash].hot-update.js',
     },
     module: {
         rules: [
@@ -38,9 +45,6 @@ const config = {
                 use: {
                     loader: 'image-size-loader',
                     options: {
-                        digest: 'hex',
-                        hash: 'sha512',
-                        publicPath: STATIC_URL,
                         name: 'img/[name].[hash:8].[ext]',
                         context: path.resolve(__dirname, 'src'),
                     },
@@ -50,13 +54,16 @@ const config = {
                 test: /\.css$/,
                 use: [
                     {
-                        loader: 'fake-style-loader',
+                        loader: 'style-loader/useable',
+                        options: {
+                            hmr: true,
+                        },
                     },
                     {
                         loader: 'css-loader',
                         options: {
                             modules: true,
-                            minimize: false,
+                            sourceMap: false,
                             localIdentName: '[name].[local]_[hash:7]',
                         },
                     },
@@ -73,21 +80,29 @@ const config = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new CopyWebpackPlugin([
-            { from: './src/common/default.css' },
-            { from: './src/common/manifest.json' },
-            { from: './src/common/favicon.ico' },
-            { from: './src/common/android-chrome-192x192.png' },
-            { from: './src/common/android-chrome-512x512.png' },
-        ]),
         new webpack.DefinePlugin({
             __DEV__: true,
             __PROD__: false,
-            __SERVER__: true,
-            __BROWSER__: false,
+            __BROWSER__: true,
+            __SERVER__: false,
         }),
     ],
-    externals: [nodeExternals({ whitelist: ['webpack/hot/poll?1000'] })],
+    devServer: {
+        hot: true,
+        overlay: true,
+        port: STATIC_PORT,
+        host: STATIC_HOST,
+        historyApiFallback: true,
+        headers: { 'Access-Control-Allow-Origin': '*' },
+        watchOptions: {
+            ignored: /node_modules/,
+        },
+        https: {
+            ca: fs.readFileSync('certs/cacert.crt'),
+            key: fs.readFileSync('certs/server.key'),
+            cert: fs.readFileSync('certs/server.crt'),
+        },
+    },
 };
 
 export default config;

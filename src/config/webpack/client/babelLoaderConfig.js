@@ -1,4 +1,4 @@
-const browserList = require('../browserList');
+const browserList = require('../../browserList');
 
 module.exports = {
     babelrc: false,
