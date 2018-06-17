@@ -1,5 +1,8 @@
 import env from '../utils/getEnv';
 
+// its imported only for testing purpose when App.js changed
+import App from './App'; // eslint-disable-line
+
 const { PUPPETEER_URL } = env;
 
 jest.setTimeout(10000);
