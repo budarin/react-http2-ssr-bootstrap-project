@@ -7,7 +7,10 @@ import App from '../common/App';
 function renderApp(): void {
     const app = document.getElementById('app');
 
-    app && ReactDOM.hydrate(<App />, app);
+    app &&
+        ReactDOM.hydrate(<App />, app, () => {
+            document.querySelector('body').classList.add('interactive');
+        });
 }
 
 renderApp();
