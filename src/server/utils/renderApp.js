@@ -24,11 +24,11 @@ function renderApp(req: Object, res: Object): void {
 
     const appStream = renderToNodeStream(<App />);
 
-    appStream.on('end', () => res.end(renderHTMLBottom()));
     appStream.pipe(
         res,
         preventClosingStream,
     );
+    appStream.on('end', () => res.end(renderHTMLBottom()));
 }
 
 export default renderApp;
