@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4069be2f-e567-4c23-8d25-6d5dcf735815" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="App.test.pptr.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#9#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/common/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#9#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSSModules.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="renderHTMLBottom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLBottom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renderApp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/utils/renderApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#9#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renderHTMLHeader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dotenv</find>
+      <find>/.env</find>
+      <find>'utf-8'</find>
+      <find>app is rendering .</find>
+      <find>'</find>
+      <find>.env.json</find>
+      <find>certs/server</find>
+      <find>staticPath</find>
+      <find>prettier</find>
+      <find>localhost</find>
+      <find>.babelHelpers</find>
+      <find>babelHelpers</find>
+      <find>=</find>
+      <find>req.httpVersion.startsWith('2.')</find>
+      <find>env</find>
+      <find>utils/env</find>
+      <find>utils/getEnv</find>
+      <find>utils/getEenv</find>
+      <find>Request</find>
+      <find>createServer</find>
+      <find>Promise&lt;</find>
+      <find>unhandledRejection</find>
+      <find>Error</find>
+      <find>serverRoot</find>
+      <find>'./dist'</find>
+      <find>`</find>
+      <find>jest</find>
+      <find>BROWSER</find>
+      <find>['Chrome &gt;= 63',</find>
+      <find>webpack.config.babel.js</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;</replace>
+      <replace>192.168.10.103</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Projects\react-ssr-bootstrap-project</dir>
+      <dir>D:\Projects\react-ssr-bootstrap-project\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/types/globals.js.flow" />
+        <option value="$PROJECT_DIR$/src/config/flow/stubs/url-loader.js.flow" />
+        <option value="$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js.flow" />
+        <option value="$PROJECT_DIR$/flow-typed/http2.js" />
+        <option value="$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js" />
+        <option value="$PROJECT_DIR$/src/server/utils/pushAssets.js" />
+        <option value="$PROJECT_DIR$/src/server/index.js" />
+        <option value="$PROJECT_DIR$/src/common/app.css.js" />
+        <option value="$PROJECT_DIR$/src/common/app.css.js.flow" />
+        <option value="$PROJECT_DIR$/src/.flowconfig" />
+        <option value="$PROJECT_DIR$/src/server/utils/serverRoot.js" />
+        <option value="$PROJECT_DIR$/src/server/utils/pushAsset.js" />
+        <option value="$PROJECT_DIR$/src/server/utils/sendStaticFile.js" />
+        <option value="$PROJECT_DIR$/src/common/babelHelpers.js" />
+        <option value="$PROJECT_DIR$/src/utils/getEnv.js" />
+        <option value="$PROJECT_DIR$/src/common/App.puppeteer.test.js" />
+        <option value="$PROJECT_DIR$/jest.config.json" />
+        <option value="$PROJECT_DIR$/src/common/App.test.puppeteer.js" />
+        <option value="$PROJECT_DIR$/src/config/jest/globalTearDown.js" />
+        <option value="$PROJECT_DIR$/.babelrc.js" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/.prettierignore" />
+        <option value="$PROJECT_DIR$/src/config/server/webpack.config.prod.babel.js" />
+        <option value="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" />
+        <option value="$PROJECT_DIR$/src/config/client/babelLoaderConfig.json" />
+        <option value="$PROJECT_DIR$/postcss.config.js" />
+        <option value="$PROJECT_DIR$/.stylelintrc.js" />
+        <option value="$PROJECT_DIR$/src/config/client/webpack.config.prod.babel.js" />
+        <option value="$PROJECT_DIR$/src/config/client/webpack.config.babel.js" />
+        <option value="$PROJECT_DIR$/src/config/env.preset.config.js" />
+        <option value="$PROJECT_DIR$/src/config/browserList.js" />
+        <option value="$PROJECT_DIR$/src/config/jest/transformer.js" />
+        <option value="$PROJECT_DIR$/src/config/client/babelLoaderConfig.js" />
+        <option value="$PROJECT_DIR$/src/config/server/babelLoaderConfig.json" />
+        <option value="$PROJECT_DIR$/src/server/appServer.js" />
+        <option value="$PROJECT_DIR$/src/common/simple.test.js" />
+        <option value="$PROJECT_DIR$/.env.json" />
+        <option value="$PROJECT_DIR$/src/config/jest/globalSetup.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/server/utils/renderHTMLBottom.js" />
+        <option value="$PROJECT_DIR$/src/server/utils/renderHTMLHeader.js" />
+        <option value="$PROJECT_DIR$/src/common/App.test.js" />
+        <option value="$PROJECT_DIR$/src/config/wepbpack/client/babelLoaderConfig.js" />
+        <option value="$PROJECT_DIR$/src/server/utils/renderApp.js" />
+        <option value="$PROJECT_DIR$/jest.config.js" />
+        <option value="$PROJECT_DIR$/scripts.json" />
+        <option value="$PROJECT_DIR$/src/client/index.js" />
+        <option value="$PROJECT_DIR$/.flowconfig" />
+        <option value="$PROJECT_DIR$/src/config/flow/stubs/url-loader.js" />
+        <option value="$PROJECT_DIR$/src/common/App.js" />
+        <option value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path>$PROJECT_DIR$/node_modules/flow-bin</exe-path>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2552" />
+    <option name="y" value="-834" />
+    <option name="width" value="1456" />
+    <option name="height" value="2576" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="react-ssr-bootstrap-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-ssr-bootstrap-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-ssr-bootstrap-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-ssr-bootstrap-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env.json&#10;D:/Projects/react-ssr-bootstrap-project/dist/client.js&#10;true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.4.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../responsive-components" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\Projects\react-ssr-bootstrap-project\node_modules\prettier" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\react-ssr-bootstrap-project\src\config\wepbpack" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project\src" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project\src\common" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project\flow-typed" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\react-ssr-bootstrap-project\dist" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project\src\common" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project\src\config\jest" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project\src\config\jest\mocks" />
+      <recent name="D:\Projects\react-ssr-bootstrap-project\src\config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.Home Page.should load without error">
+    <configuration name="Home Page" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
+      <test-names>
+        <test-name value="Home Page" />
+      </test-names>
+    </configuration>
+    <configuration name="Home Page.should load without error" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
+      <test-names>
+        <test-name value="Home Page" />
+        <test-name value="should load without error" />
+      </test-names>
+    </configuration>
+    <configuration name="client" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <configuration name="server" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <configuration name="test-watch" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test-watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <list>
+      <item itemvalue="npm.test-watch" />
+      <item itemvalue="npm.client" />
+      <item itemvalue="npm.server" />
+      <item itemvalue="Jest.Home Page" />
+      <item itemvalue="Jest.Home Page.should load without error" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test-watch" />
+        <item itemvalue="Jest.Home Page.should load without error" />
+        <item itemvalue="Jest.Home Page" />
+        <item itemvalue="npm.server" />
+        <item itemvalue="npm.client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4069be2f-e567-4c23-8d25-6d5dcf735815" name="Default" comment="" />
+      <changelist id="" name="Revert: change puppeteer config with jest" comment="" />
+      <created>1527513970419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527513970419</updated>
+      <workItem from="1527513972025" duration="1250000" />
+      <workItem from="1527515921462" duration="9486000" />
+      <workItem from="1527525789565" duration="5253000" />
+      <workItem from="1527615183854" duration="3984000" />
+      <workItem from="1527619345798" duration="39162000" />
+      <workItem from="1527946442171" duration="1193000" />
+      <workItem from="1527948026743" duration="310000" />
+      <workItem from="1528020134597" duration="6894000" />
+      <workItem from="1528031624392" duration="11518000" />
+      <workItem from="1528047138062" duration="7749000" />
+      <workItem from="1528056286243" duration="3056000" />
+      <workItem from="1528116017012" duration="903000" />
+      <workItem from="1528139186850" duration="2060000" />
+      <workItem from="1528142279471" duration="1205000" />
+      <workItem from="1528143628922" duration="622000" />
+      <workItem from="1528144564081" duration="62000" />
+      <workItem from="1528201552688" duration="3027000" />
+      <workItem from="1528225870219" duration="2725000" />
+      <workItem from="1528280313861" duration="1105000" />
+      <workItem from="1528282087217" duration="152000" />
+      <workItem from="1528283863713" duration="16740000" />
+      <workItem from="1528302102648" duration="6306000" />
+      <workItem from="1528380931996" duration="7475000" />
+      <workItem from="1528388495545" duration="620000" />
+      <workItem from="1528389124278" duration="69000" />
+      <workItem from="1528389199047" duration="67000" />
+      <workItem from="1528389272623" duration="84000" />
+      <workItem from="1528389647212" duration="3458000" />
+      <workItem from="1528393149295" duration="119000" />
+      <workItem from="1528393283079" duration="83000" />
+      <workItem from="1528393382326" duration="538000" />
+      <workItem from="1528393939411" duration="540000" />
+      <workItem from="1528394498040" duration="99000" />
+      <workItem from="1528394619670" duration="462000" />
+      <workItem from="1528395100475" duration="254000" />
+      <workItem from="1528395389963" duration="711000" />
+      <workItem from="1528396124741" duration="315000" />
+      <workItem from="1528396456810" duration="760000" />
+      <workItem from="1528397336560" duration="1252000" />
+      <workItem from="1528398607355" duration="3433000" />
+      <workItem from="1528402072492" duration="83000" />
+      <workItem from="1528402172888" duration="38000" />
+      <workItem from="1528402226748" duration="1111000" />
+      <workItem from="1528403357662" duration="2558000" />
+      <workItem from="1528485436185" duration="1161000" />
+      <workItem from="1528486642300" duration="787000" />
+      <workItem from="1528487567682" duration="6697000" />
+      <workItem from="1528501560482" duration="434000" />
+      <workItem from="1528502082624" duration="960000" />
+      <workItem from="1528519266131" duration="8512000" />
+      <workItem from="1528549580443" duration="4190000" />
+      <workItem from="1528643658845" duration="2283000" />
+      <workItem from="1528645981520" duration="1510000" />
+      <workItem from="1528728448382" duration="3878000" />
+      <workItem from="1528738161975" duration="603000" />
+      <workItem from="1528738988288" duration="687000" />
+      <workItem from="1528741708976" duration="67000" />
+      <workItem from="1528754785095" duration="2665000" />
+      <workItem from="1528802956414" duration="2508000" />
+      <workItem from="1528888350689" duration="736000" />
+      <workItem from="1528889109802" duration="1399000" />
+      <workItem from="1528890551249" duration="6466000" />
+      <workItem from="1528899380167" duration="3428000" />
+      <workItem from="1529040716525" duration="2242000" />
+      <workItem from="1529045904762" duration="267000" />
+      <workItem from="1529154870719" duration="1906000" />
+      <workItem from="1529157474634" duration="22000" />
+      <workItem from="1529157697284" duration="234000" />
+      <workItem from="1529237053869" duration="1298000" />
+      <workItem from="1529239725623" duration="5595000" />
+    </task>
+    <task id="LOCAL-00076" summary="set 4 spaces for JSON formatting">
+      <created>1528522266004</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1528522266004</updated>
+    </task>
+    <task id="LOCAL-00077" summary="ignore tests &amp; node folders">
+      <created>1528522296582</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1528522296582</updated>
+    </task>
+    <task id="LOCAL-00078" summary="move from JSON to js format">
+      <created>1528522314999</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1528522314999</updated>
+    </task>
+    <task id="LOCAL-00079" summary="took out jest config into self config file">
+      <created>1528522398093</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1528522398093</updated>
+    </task>
+    <task id="LOCAL-00080" summary="rename">
+      <created>1528522409852</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1528522409852</updated>
+    </task>
+    <task id="LOCAL-00081" summary="add env to test-watch to run puppeteer tests">
+      <created>1528522456666</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1528522456666</updated>
+    </task>
+    <task id="LOCAL-00082" summary="changed font">
+      <created>1528523222944</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1528523222944</updated>
+    </task>
+    <task id="LOCAL-00083" summary="tried to add puppeteer tests">
+      <created>1528523544457</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1528523544457</updated>
+    </task>
+    <task id="LOCAL-00084" summary="remove flow preset for webpack &amp; tools compiling">
+      <created>1528523813683</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1528523813683</updated>
+    </task>
+    <task id="LOCAL-00085" summary="remove typing">
+      <created>1528523847696</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1528523847696</updated>
+    </task>
+    <task id="LOCAL-00086" summary="upgrade">
+      <created>1528550889074</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1528550889074</updated>
+    </task>
+    <task id="LOCAL-00087" summary="configure babel for node tools">
+      <created>1528550921000</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1528550921000</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add notify in failure case">
+      <created>1528550939808</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1528550939808</updated>
+    </task>
+    <task id="LOCAL-00089" summary="clients babel config is not used by jest">
+      <created>1528644965146</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1528644965147</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add config for jest">
+      <created>1528644987352</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1528644987352</updated>
+    </task>
+    <task id="LOCAL-00091" summary="upgrade">
+      <created>1528645002006</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1528645002006</updated>
+    </task>
+    <task id="LOCAL-00092" summary="fix">
+      <created>1528647647727</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1528647647728</updated>
+    </task>
+    <task id="LOCAL-00093" summary="configure jest with puppeteer">
+      <created>1528731284395</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1528731284396</updated>
+    </task>
+    <task id="LOCAL-00094" summary="upgrade">
+      <created>1528732266459</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1528732266459</updated>
+    </task>
+    <task id="LOCAL-00095" summary="upgrade">
+      <created>1528732368011</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1528732368011</updated>
+    </task>
+    <task id="LOCAL-00096" summary="add audit fix">
+      <created>1528739665036</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1528739665036</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add audit fix">
+      <created>1528741735452</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1528741735452</updated>
+    </task>
+    <task id="LOCAL-00098" summary="configure jest">
+      <created>1528755549535</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1528755549535</updated>
+    </task>
+    <task id="LOCAL-00099" summary="add browserList">
+      <created>1528756988843</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1528756988843</updated>
+    </task>
+    <task id="LOCAL-00100" summary="add browserList">
+      <created>1528757003704</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1528757003704</updated>
+    </task>
+    <task id="LOCAL-00101" summary="refactoring">
+      <created>1528757034953</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1528757034953</updated>
+    </task>
+    <task id="LOCAL-00102" summary="refactoring">
+      <created>1528757146728</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1528757146728</updated>
+    </task>
+    <task id="LOCAL-00103" summary="fixing configs">
+      <created>1528804385607</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1528804385607</updated>
+    </task>
+    <task id="LOCAL-00104" summary="fix jest config">
+      <created>1528804668620</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1528804668620</updated>
+    </task>
+    <task id="LOCAL-00105" summary="fix server logic">
+      <created>1528804882857</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1528804882857</updated>
+    </task>
+    <task id="LOCAL-00106" summary="change test config">
+      <created>1528915189332</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1528915189332</updated>
+    </task>
+    <task id="LOCAL-00107" summary="upgrade">
+      <created>1528915264549</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1528915264549</updated>
+    </task>
+    <task id="LOCAL-00108" summary="upgrade">
+      <created>1528915453822</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1528915453822</updated>
+    </task>
+    <task id="LOCAL-00109" summary="move scripts to header to early load">
+      <created>1529046132263</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1529046132263</updated>
+    </task>
+    <task id="LOCAL-00110" summary="add shrink-to-fit=no for safari">
+      <created>1529046146433</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1529046146433</updated>
+    </task>
+    <task id="LOCAL-00111" summary="upgrade">
+      <created>1529046161651</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1529046161651</updated>
+    </task>
+    <task id="LOCAL-00112" summary="upgrade">
+      <created>1529156147176</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1529156147176</updated>
+    </task>
+    <task id="LOCAL-00113" summary="change puppeteer config with jest">
+      <created>1529156206634</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1529156206635</updated>
+    </task>
+    <task id="LOCAL-00114" summary="change puppeteer config with jest">
+      <created>1529156660657</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1529156660657</updated>
+    </task>
+    <task id="LOCAL-00115" summary="move webpack's configs into webpack folder">
+      <created>1529157231687</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1529157231687</updated>
+    </task>
+    <task id="LOCAL-00116" summary="add incognito browser context for saving nothing on disk while testing">
+      <created>1529237790863</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1529237790863</updated>
+    </task>
+    <task id="LOCAL-00117" summary="upgrade">
+      <created>1529237807801</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1529237807801</updated>
+    </task>
+    <task id="LOCAL-00118" summary="code arrange">
+      <created>1529238329841</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1529238329841</updated>
+    </task>
+    <task id="LOCAL-00119" summary="turn out to reusing browser with puppeteer but with incognito mode">
+      <created>1529240654157</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1529240654158</updated>
+    </task>
+    <task id="LOCAL-00120" summary="add class &quot;interactive&quot; to body to state that js is working">
+      <created>1529241419092</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1529241419092</updated>
+    </task>
+    <task id="LOCAL-00121" summary="wait until js is parsed and working">
+      <created>1529241449468</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1529241449468</updated>
+    </task>
+    <task id="LOCAL-00122" summary="add check">
+      <created>1529242292138</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1529242292138</updated>
+    </task>
+    <task id="LOCAL-00123" summary="add options">
+      <created>1529244518221</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1529244518221</updated>
+    </task>
+    <task id="LOCAL-00124" summary="refactoring">
+      <created>1529244530454</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1529244530454</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="App_test_js - 2018.06.01 at 04h 21m 21s.xml">
+      <configuration name="App.test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Home_Page_test - 2018.06.09 at 08h 35m 51s.xml">
+      <configuration name="Home Page test" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Home_Page_test - 2018.06.09 at 08h 36m 03s.xml">
+      <configuration name="Home Page test" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Home_Page_should_load_without_error - 2018.06.13 at 17h 16m 32s.xml">
+      <configuration name="Home Page.should load without error" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Home_Page_should_load_without_error - 2018.06.13 at 17h 27m 17s.xml">
+      <configuration name="Home Page.should load without error" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Home_Page_should_load_without_error - 2018.06.13 at 17h 28m 41s.xml">
+      <configuration name="Home Page.should load without error" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Home_Page - 2018.06.17 at 16h 08m 11s.xml">
+      <configuration name="Home Page" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Home_Page_should_load_without_error - 2018.06.17 at 16h 08m 32s.xml">
+      <configuration name="Home Page.should load without error" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="209426000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2552" y="-834" width="1456" height="2576" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76573086" visible="true" weight="0.2496474" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.21882845" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50070524" side_tool="true" weight="0.25941423" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4992948" weight="0.25941423" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.23556486" />
+      <window_info id="npm" order="2" sideWeight="0.23426911" side_tool="true" visible="true" weight="0.2496474" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="top" id="Terminal" order="0" visible="true" weight="0.13556485" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Flow" order="10" weight="0.2" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32970712" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32970712" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.flow" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add notify in failure case" />
+    <MESSAGE value="clients babel config is not used by jest" />
+    <MESSAGE value="add config for jest" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="configure jest with puppeteer" />
+    <MESSAGE value="add audit fix" />
+    <MESSAGE value="configure jest" />
+    <MESSAGE value="add browserList" />
+    <MESSAGE value="fixing configs" />
+    <MESSAGE value="fix jest config" />
+    <MESSAGE value="fix server logic" />
+    <MESSAGE value="change test config" />
+    <MESSAGE value="move scripts to header to early load" />
+    <MESSAGE value="add shrink-to-fit=no for safari" />
+    <MESSAGE value="change puppeteer config with jest" />
+    <MESSAGE value="move webpack's configs into webpack folder" />
+    <MESSAGE value="add incognito browser context for saving nothing on disk while testing" />
+    <MESSAGE value="upgrade" />
+    <MESSAGE value="code arrange" />
+    <MESSAGE value="turn out to reusing browser with puppeteer but with incognito mode" />
+    <MESSAGE value="add class &quot;interactive&quot; to body to state that js is working" />
+    <MESSAGE value="wait until js is parsed and working" />
+    <MESSAGE value="add check" />
+    <MESSAGE value="add options" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/server/utils/pushAsset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/common/app.css.js.flow">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/babelHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/getEnv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/ensureServerIsCreated.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.prettierrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.prettierignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/Administrator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="288">
+            <caret line="16" column="74" lean-forward="true" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/webpack/client/webpack.config.prod.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.stylelintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="56" lean-forward="true" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/env.preset.config.js" />
+    <entry file="file://$PROJECT_DIR$/src/config/jest/mocks/styleMock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/jest/mocks/fileMock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/webpack/server/babelLoaderConfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/jest/transformer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/webpack/server/webpack.config.prod.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/webpack/server/webpack.config.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.tmp/flow/DzCzBProjectszBreact-ssr-bootstrap-project.monitor_log" />
+    <entry file="file://$PROJECT_DIR$/.tmp/flow/DzCzBProjectszBreact-ssr-bootstrap-project.log" />
+    <entry file="file://$PROJECT_DIR$/src/config/browserList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/utils/sendStaticFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/appServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/simple.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/config/jest/globalTearDown.js" />
+    <entry file="file://$PROJECT_DIR$/src/config/jest/puppeteer_environment.js" />
+    <entry file="file://$PROJECT_DIR$/.env.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/webpack/webpack.config.prod.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/webpack/client/babelLoaderConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/webpack/client/webpack.config.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLBottom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jest.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/jest/globalSetup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/utils/renderApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#9#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/url-loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.flowconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1109">
+          <caret line="79" column="32" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#9#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#9#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -78,7 +78,8 @@
         "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify",
         "env": {
             "SHOW_BROWSER": true,
-            "RUN_PUPPETEER_TESTS": true
+            "JEST_HIDE_USAGE": true,
+            "RUN_PUPPETEER_TESTS": false
         }
     },
     {

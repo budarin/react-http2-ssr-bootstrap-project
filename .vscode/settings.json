@@ -1,0 +1,28 @@
+{
+    // flow
+    "javascript.validate.enable": false,
+    "flow.pathToFlow": "D:\\Projects\\react-ssr-bootstrap-project\\node_modules\\flow-bin\\flow-win64-v0.74.0\\flow.exe",
+
+    // prettier
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "json.format.enable": true,
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+
+    //eslint
+    "eslint.workingDirectories": ["./src"],
+
+    // stylelint
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+
+    // npm sripts
+    "npm.enableScriptExplorer": true
+}
