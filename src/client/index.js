@@ -9,7 +9,9 @@ function renderApp(): void {
 
     app &&
         ReactDOM.hydrate(<App />, app, () => {
-            document.querySelector('body').classList.add('interactive');
+            const body = document.querySelector('body');
+
+            body && body.classList.add('interactive');
         });
 }
 
