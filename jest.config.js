@@ -17,6 +17,9 @@ const config = {
         '\\.(css)$': '<rootDir>/config/jest/mocks/styleMock.js',
     },
     testPathIgnorePatterns: ['/node_modules/'],
+    globalSetup: '<rootDir>/config/jest/globalSetup.js',
+    globalTeardown: '<rootDir>/config/jest/globalTearDown.js',
+    testEnvironment: '<rootDir>/config/jest/puppeteer_environment.js',
     globals: {
         __DEV__: true,
         __PROD__: false,
