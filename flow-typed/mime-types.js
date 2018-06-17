@@ -1,5 +1,3 @@
-// @flow
-
 /* eslint-disable */
 declare module "mime-types" {
     declare export function lookup(filenameOrExt: string): string | false;

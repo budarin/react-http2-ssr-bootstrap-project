@@ -1,7 +1,7 @@
 // @flow
 import fs from 'fs';
 import path from 'path';
-import mime from 'mime-types';
+import * as mime from 'mime-types';
 
 import serverRoot from './serverRoot';
 import isLegalAsset from './isLegalAsset';

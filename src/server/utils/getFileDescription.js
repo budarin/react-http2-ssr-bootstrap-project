@@ -1,5 +1,5 @@
 // @flow
-import mime from 'mime-types';
+import * as mime from 'mime-types';
 
 export type FileDescription = {
     path: string,
