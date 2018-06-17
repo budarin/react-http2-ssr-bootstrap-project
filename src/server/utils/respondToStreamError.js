@@ -1,10 +1,11 @@
 // @flow
-import http2 from 'http2';
+// $FlowIgnore
+import http2 from 'http2'; // eslint-disable-line
 
 const { HTTP_STATUS_NOT_FOUND, NGHTTP2_REFUSED_STREAM, HTTP_STATUS_INTERNAL_SERVER_ERROR } = http2.constants;
 
 export default function respondToStreamError(err: Object, stream: Object): void {
-    console.log('respondToStreamError', err);
+    console.log('respondToStreamError', err); // eslint-disable-line no-console
 
     const isRefusedStream = err.code === 'ERR_HTTP2_STREAM_ERROR' && stream.rstCode === NGHTTP2_REFUSED_STREAM;
 

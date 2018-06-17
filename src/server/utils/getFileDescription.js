@@ -1,4 +1,5 @@
 // @flow
+// $FlowIgnore
 import mime from 'mime-types';
 
 export type FileDescription = {

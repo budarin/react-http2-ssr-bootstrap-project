@@ -1,7 +1,8 @@
 // @flow
 import fs from 'fs';
 import debug from 'debug';
-import http2 from 'http2';
+// $FlowIgnore
+import http2 from 'http2'; // eslint-disable-line
 
 import env from '../utils/getEnv';
 import appServer from './appServer';

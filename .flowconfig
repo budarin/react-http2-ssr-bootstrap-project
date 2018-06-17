@@ -12,7 +12,6 @@
 [options]
 esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable
-module.ignore_non_literal_requires=true
 
 temp_dir=./.tmp/flow
 suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore

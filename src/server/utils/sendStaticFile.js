@@ -1,6 +1,7 @@
 // @flow
 import fs from 'fs';
 import path from 'path';
+// $FlowIgnore
 import mime from 'mime-types';
 
 import serverRoot from './serverRoot';
@@ -11,12 +12,12 @@ function sendStaticFile(req: Object, res: Object): void {
     const filePath = path.resolve(path.join(serverRoot, url));
 
     if (!isLegalAsset(url)) {
-        console.log('>> Illegal static file:', url);
+        console.log('>> Illegal static file:', url); // eslint-disable-line no-console
 
         return;
     }
 
-    console.log('>> Static file:', req.url);
+    console.log('>> Static file:', req.url); // eslint-disable-line no-console
 
     res.writeHead(200, { 'content-type': mime.lookup(url) });
     fs.createReadStream(filePath).pipe(res);

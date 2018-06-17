@@ -79,7 +79,7 @@
         "env": {
             "SHOW_BROWSER": true,
             "JEST_HIDE_USAGE": true,
-            "RUN_PUPPETEER_TESTS": false
+            "RUN_PUPPETEER_TESTS": true
         }
     },
     {
