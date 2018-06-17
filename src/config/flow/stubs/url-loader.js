@@ -1,3 +1,1 @@
-const s: string = '';
-
-export default s;
+export default '';
