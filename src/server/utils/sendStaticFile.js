@@ -1,7 +1,6 @@
 // @flow
 import fs from 'fs';
 import path from 'path';
-// $FlowIgnore
 import mime from 'mime-types';
 
 import serverRoot from './serverRoot';

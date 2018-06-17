@@ -1,6 +1,6 @@
 // @flow
 
-type CSSModule =
+export type CSSModule =
     | {
           use: Function,
           unuse: Function,
@@ -9,13 +9,3 @@ type CSSModule =
           },
       }
     | { [key: string]: string };
-
-const emptyCSSModule: CSSModule = __BROWSER__
-    ? {
-          use: () => {},
-          unuse: () => {},
-          locals: {},
-      }
-    : {};
-
-export default emptyCSSModule;
