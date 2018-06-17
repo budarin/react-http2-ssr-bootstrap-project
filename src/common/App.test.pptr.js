@@ -14,6 +14,7 @@ describe('Home Page', () => {
         page = await context.newPage();
 
         await page.goto(`${PUPPETEER_URL}`);
+        await page.waitForSelector('body.interactive');
     });
 
     afterAll(async () => {
