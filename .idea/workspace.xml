@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069be2f-e567-4c23-8d25-6d5dcf735815" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.json" beforeDir="false" afterPath="$PROJECT_DIR$/.env.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flowconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.flowconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/App.test.pptr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/App.test.pptr.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,25 +16,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.test.pptr.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.test.pptr.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="102">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -157,8 +144,8 @@
         <option value="$PROJECT_DIR$/src/config/flow/stubs/css-modules.js" />
         <option value="$PROJECT_DIR$/.flowconfig" />
         <option value="$PROJECT_DIR$/.env.json" />
-        <option value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
         <option value="$PROJECT_DIR$/src/common/App.js" />
+        <option value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
       </list>
     </option>
   </component>
@@ -209,7 +196,7 @@
             <path>
               <item name="react-ssr-bootstrap-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-ssr-bootstrap-project" type="462c0819:PsiDirectoryNode" />
-              <item name=".tmp" type="462c0819:PsiDirectoryNode" />
+              <item name="certs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -419,14 +406,8 @@
       <workItem from="1529239725623" duration="5595000" />
       <workItem from="1529342064329" duration="858000" />
       <workItem from="1529342950672" duration="222000" />
-      <workItem from="1529343188816" duration="997000" />
-    </task>
-    <task id="LOCAL-00078" summary="move from JSON to js format">
-      <created>1528522314999</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1528522314999</updated>
+      <workItem from="1529343188816" duration="1143000" />
+      <workItem from="1529344374105" duration="575000" />
     </task>
     <task id="LOCAL-00079" summary="took out jest config into self config file">
       <created>1528522398093</created>
@@ -764,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529343360309</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="refactoring">
+      <created>1529344259924</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1529344259924</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -794,7 +782,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211503000" />
+    <option name="totallyTimeSpent" value="212224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -809,20 +797,18 @@
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70715475" visible="true" weight="0.2490931" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.21882845" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32970712" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50070524" side_tool="true" weight="0.25941423" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.31573159" />
-      <window_info id="npm" order="2" sideWeight="0.29042387" side_tool="true" visible="true" weight="0.2490931" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4992948" weight="0.33883387" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.37623763" />
-      <window_info active="true" anchor="bottom" id="Flow" order="10" visible="true" weight="0.29922992" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70957613" visible="true" weight="0.2490931" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32893288" />
+      <window_info id="npm" order="2" sideWeight="0.29284525" side_tool="true" visible="true" weight="0.2490931" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" sideWeight="0.4992948" visible="true" weight="0.33883387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.37623763" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Flow" order="10" weight="0.29922992" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -830,6 +816,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32893288" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32970712" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1215,16 +1203,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="228">
           <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
         </state>
       </provider>
@@ -1236,6 +1217,13 @@
           <folding>
             <element signature="e#9#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
