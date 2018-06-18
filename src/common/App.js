@@ -2,11 +2,7 @@
 import React from 'react';
 import appStyles from './app.css';
 
-type CSS = {|
-    +hello: string,
-|};
-
-const css: CSS = __BROWSER__ ? appStyles.locals : appStyles;
+const css = __BROWSER__ ? appStyles.locals : appStyles;
 
 function App() {
     if (__BROWSER__) {
@@ -21,6 +17,6 @@ function a(b: string): number {
     return b.length;
 }
 
-a('Hello !');
+a('Hello!');
 
 export default App;
