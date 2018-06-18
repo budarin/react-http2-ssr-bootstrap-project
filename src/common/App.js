@@ -14,7 +14,7 @@ function App() {
 
 // Demo of working flow
 function a(b: string): number {
-    return b.length;
+    return b;
 }
 
 a('Hello!');
