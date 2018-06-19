@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4069be2f-e567-4c23-8d25-6d5dcf735815" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flow-typed/app.css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/app.css.flow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/flow/stubs/css-modules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flowconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.flowconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flow-typed/globals.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/globals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flow-typed/mime-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/mime-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/npm/debug_v3.x.x.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/npm/debug_v3.x.x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/npm/flow-bin_v0.x.x.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/npm/flow-bin_v0.x.x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/npm/jest_v23.x.x.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/npm/jest_v23.x.x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/npm/prettier_v1.x.x.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/npm/prettier_v1.x.x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/npm/puppeteer_v1.2.x.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/npm/puppeteer_v1.2.x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/npm/react-test-renderer_v16.x.x.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/npm/react-test-renderer_v16.x.x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/npm/rimraf_v2.x.x.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/npm/rimraf_v2.x.x.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/app.css.js.flow" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,20 +29,8 @@
       <file leaf-file-name="App.test.pptr.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-              <folding>
-                <element signature="e#9#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -51,8 +38,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="396">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#9#35#0" expanded="true" />
               </folding>
@@ -165,10 +152,10 @@
         <option value="$PROJECT_DIR$/src/client/index.js" />
         <option value="$PROJECT_DIR$/.flowconfig" />
         <option value="$PROJECT_DIR$/src/config/flow/stubs/url-loader.js" />
-        <option value="$PROJECT_DIR$/src/common/App.js" />
-        <option value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
         <option value="$PROJECT_DIR$/src/config/flow/stubs/css-modules.js" />
         <option value="$PROJECT_DIR$/.eslintignore" />
+        <option value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
+        <option value="$PROJECT_DIR$/src/common/App.js" />
       </list>
     </option>
   </component>
@@ -446,14 +433,7 @@
       <workItem from="1529237053869" duration="1298000" />
       <workItem from="1529239725623" duration="5595000" />
       <workItem from="1529305373276" duration="624000" />
-      <workItem from="1529407451837" duration="383000" />
-    </task>
-    <task id="LOCAL-00076" summary="set 4 spaces for JSON formatting">
-      <created>1528522266004</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1528522266004</updated>
+      <workItem from="1529407451837" duration="1298000" />
     </task>
     <task id="LOCAL-00077" summary="ignore tests &amp; node folders">
       <created>1528522296582</created>
@@ -791,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529244530454</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="refactoring">
+      <created>1529407845231</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1529407845232</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -821,7 +808,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210433000" />
+    <option name="totallyTimeSpent" value="211348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,12 +824,12 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" weight="0.21882845" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50070524" side_tool="true" weight="0.25941423" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.23556486" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.23556486" />
       <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4992948" weight="0.25941423" />
-      <window_info id="npm" order="2" sideWeight="0.23552895" side_tool="true" visible="true" weight="0.2496474" />
-      <window_info anchor="top" id="Terminal" order="0" visible="true" weight="0.13556485" />
+      <window_info id="npm" order="2" sideWeight="0.23523717" side_tool="true" visible="true" weight="0.2496474" />
+      <window_info active="true" anchor="top" id="Terminal" order="0" visible="true" weight="0.13556485" />
       <window_info anchor="bottom" id="Flow" order="10" weight="0.2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76447105" visible="true" weight="0.2496474" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7647628" visible="true" weight="0.2496474" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32970712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1108,13 +1095,6 @@
     <entry file="file://$PROJECT_DIR$/src/common/simple.test.js" />
     <entry file="file://$PROJECT_DIR$/src/config/jest/globalTearDown.js" />
     <entry file="file://$PROJECT_DIR$/src/config/jest/puppeteer_environment.js" />
-    <entry file="file://$PROJECT_DIR$/.env.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1231,10 +1211,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
+    <entry file="file://$PROJECT_DIR$/.env.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="54">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1248,10 +1228,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#9#35#0" expanded="true" />
           </folding>
