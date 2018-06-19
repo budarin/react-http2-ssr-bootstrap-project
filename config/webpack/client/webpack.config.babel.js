@@ -3,7 +3,7 @@ import path from 'path';
 import webpack from 'webpack';
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-import env from '../../../utils/getEnv';
+import env from '../../../src/utils/getEnv';
 import babelConfig from './babelLoaderConfig';
 
 const { STATIC_HOST, STATIC_PORT, STATIC_URL } = env;

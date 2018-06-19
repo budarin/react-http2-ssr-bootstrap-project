@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import App from '../common/App';
 
 function renderApp(): void {
@@ -10,7 +9,6 @@ function renderApp(): void {
     app &&
         ReactDOM.hydrate(<App />, app, () => {
             const body = document.querySelector('body');
-
             body && body.classList.add('interactive');
         });
 }

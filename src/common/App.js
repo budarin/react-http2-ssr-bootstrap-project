@@ -2,7 +2,11 @@
 import React from 'react';
 import appStyles from './app.css';
 
-const css = __BROWSER__ ? appStyles.locals : appStyles;
+type CSS = {
+    +hello: string,
+};
+
+const css: CSS = __BROWSER__ ? appStyles.locals : appStyles;
 
 function App() {
     if (__BROWSER__) {
@@ -14,7 +18,7 @@ function App() {
 
 // Demo of working flow
 function a(b: string): number {
-    return b.bold();
+    return b.length;
 }
 
 a('Hello!');

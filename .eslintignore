@@ -1,8 +1,8 @@
 .tmp/*
 .idea/*
 dist/*
-vscode/*
-flow-typed/*
 certs/*
-src/config/*
-src/types/*
+types/*
+vscode/*
+config/*
+flow-typed/*

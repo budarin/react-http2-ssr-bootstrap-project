@@ -1,6 +1,6 @@
 /* eslint-disable import/no-commonjs */
 /* eslint-disable import/unambiguous */
-const browserlist = require('./src/config/browserList');
+const browserlist = require('./config/browserList');
 
 const plugins = [
     require('postcss-cssnext')({

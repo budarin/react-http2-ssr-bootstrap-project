@@ -1,8 +1,6 @@
-const browserlist = require('./src/config/browserList');
+const browserlist = require('./config/browserList');
 
 module.exports = {
-    COMMENT:
-        "Убрать опцию 'severity': 'warning' у indentation, как поправят баг в stylelint и Less  https://github.com/stylelint/stylelint/issues/1149",
     extends: 'stylelint-config-recommended',
     plugins: ['stylelint-order', 'stylelint-no-unsupported-browser-features'],
     rules: {
