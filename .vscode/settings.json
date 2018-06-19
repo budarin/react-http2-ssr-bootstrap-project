@@ -1,6 +1,7 @@
 {
     // flow
     "javascript.validate.enable": false,
+    // provide absolute path to flow
 
     // prettier
     "editor.formatOnSave": false,
