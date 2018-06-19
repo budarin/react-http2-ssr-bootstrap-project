@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4069be2f-e567-4c23-8d25-6d5dcf735815" name="Default" comment="" />
+    <list default="true" id="4069be2f-e567-4c23-8d25-6d5dcf735815" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flow-typed/app.css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/app.css.flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/flow/stubs/css-modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flowconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.flowconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/globals.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/globals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flow-typed/mime-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/flow-typed/mime-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/app.css.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +30,8 @@
       <file leaf-file-name="App.test.pptr.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="360">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -26,8 +39,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="108">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding>
                 <element signature="e#9#35#0" expanded="true" />
               </folding>
@@ -38,46 +51,11 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="72">
+              <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
                 <element signature="e#9#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSSModules.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="renderHTMLBottom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLBottom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="renderApp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/utils/renderApp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#9#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="renderHTMLHeader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLHeader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -140,8 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/types/globals.js.flow" />
-        <option value="$PROJECT_DIR$/src/config/flow/stubs/url-loader.js.flow" />
         <option value="$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js.flow" />
         <option value="$PROJECT_DIR$/flow-typed/http2.js" />
         <option value="$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js" />
@@ -191,6 +167,8 @@
         <option value="$PROJECT_DIR$/src/config/flow/stubs/url-loader.js" />
         <option value="$PROJECT_DIR$/src/common/App.js" />
         <option value="$PROJECT_DIR$/src/common/App.test.pptr.js" />
+        <option value="$PROJECT_DIR$/src/config/flow/stubs/css-modules.js" />
+        <option value="$PROJECT_DIR$/.eslintignore" />
       </list>
     </option>
   </component>
@@ -242,6 +220,27 @@
               <item name="react-ssr-bootstrap-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-ssr-bootstrap-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-ssr-bootstrap-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-ssr-bootstrap-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-ssr-bootstrap-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-ssr-bootstrap-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-ssr-bootstrap-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-ssr-bootstrap-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="stubs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -362,17 +361,16 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.test-watch" />
-        <item itemvalue="Jest.Home Page.should load without error" />
-        <item itemvalue="Jest.Home Page" />
         <item itemvalue="npm.server" />
         <item itemvalue="npm.client" />
+        <item itemvalue="Jest.Home Page.should load without error" />
+        <item itemvalue="Jest.Home Page" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4069be2f-e567-4c23-8d25-6d5dcf735815" name="Default" comment="" />
-      <changelist id="" name="Revert: change puppeteer config with jest" comment="" />
       <created>1527513970419</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -447,6 +445,8 @@
       <workItem from="1529157697284" duration="234000" />
       <workItem from="1529237053869" duration="1298000" />
       <workItem from="1529239725623" duration="5595000" />
+      <workItem from="1529305373276" duration="624000" />
+      <workItem from="1529407451837" duration="383000" />
     </task>
     <task id="LOCAL-00076" summary="set 4 spaces for JSON formatting">
       <created>1528522266004</created>
@@ -821,7 +821,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209426000" />
+    <option name="totallyTimeSpent" value="210433000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -834,29 +834,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-834" width="1456" height="2576" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76573086" visible="true" weight="0.2496474" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.21882845" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50070524" side_tool="true" weight="0.25941423" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.23556486" />
       <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4992948" weight="0.25941423" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.23556486" />
-      <window_info id="npm" order="2" sideWeight="0.23426911" side_tool="true" visible="true" weight="0.2496474" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.23552895" side_tool="true" visible="true" weight="0.2496474" />
       <window_info anchor="top" id="Terminal" order="0" visible="true" weight="0.13556485" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Flow" order="10" weight="0.2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76447105" visible="true" weight="0.2496474" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32970712" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32970712" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32970712" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -938,21 +937,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/server/utils/pushAsset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/common/app.css.js.flow">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/app.css.js.flow" />
     <entry file="file://$PROJECT_DIR$/src/common/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1172,20 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLBottom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jest.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1200,19 +1171,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/utils/renderApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#9#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/CSSModules.js" />
     <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/url-loader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1234,17 +1193,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/flow/stubs/css-modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/utils/renderApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#9#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/utils/renderHTMLBottom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/App.test.pptr.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="360">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="108">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding>
             <element signature="e#9#35#0" expanded="true" />
           </folding>
@@ -1253,8 +1250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="72">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
             <element signature="e#9#35#0" expanded="true" />
           </folding>

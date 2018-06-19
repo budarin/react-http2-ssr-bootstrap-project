@@ -6,6 +6,7 @@
 .*/node_modules/.*
 
 [include]
+ ./src/types/**/*.js
 
 [libs]
 
@@ -16,11 +17,11 @@ esproposal.class_instance_fields=enable
 temp_dir=./.tmp/flow
 suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
 
-module.name_mapper.extension='svg' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
-module.name_mapper.extension='png' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
-module.name_mapper.extension='jpg' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
-module.name_mapper.extension='gif' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js.flow'
+module.name_mapper.extension='svg' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js'
+module.name_mapper.extension='png' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js'
+module.name_mapper.extension='jpg' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js'
+module.name_mapper.extension='gif' -> '<PROJECT_ROOT>/src/config/flow/stubs/url-loader.js'
 
-module.name_mapper.extension='css' -> '<PROJECT_ROOT>/src/config/flow/stubs/css-modules.js.flow'
+module.name_mapper.extension='css' -> '<PROJECT_ROOT>/src/config/flow/stub/css-modules.js'
 
 [lints]

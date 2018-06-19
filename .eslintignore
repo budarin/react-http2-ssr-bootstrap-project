@@ -1,0 +1,8 @@
+.tmp/*
+.idea/*
+dist/*
+vscode/*
+flow-typed/*
+certs/*
+src/config/*
+src/types/*

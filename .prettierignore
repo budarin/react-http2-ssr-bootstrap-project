@@ -1,6 +1,6 @@
 /dist/
 /.tmp/
+/.vscode/
 /node-modules/
-/flow-typed/
 /package-lock.json
 /.babelrc
