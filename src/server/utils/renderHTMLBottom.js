@@ -1,6 +1,4 @@
-// @flow
-
-function renderHTMLBottom(): string {
+function renderHTMLBottom() {
     return `</div>
         </body>
         <html>`;

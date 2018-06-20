@@ -18,7 +18,6 @@ const config = {
             },
         ],
         'react',
-        'flow',
     ],
     plugins: [
         'syntax-dynamic-import',

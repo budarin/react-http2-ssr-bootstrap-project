@@ -1,7 +1,6 @@
-// @flow
 import env from '../../utils/getEnv';
 
-function renderHTMLHeader(): string {
+function renderHTMLHeader() {
     return `
         <!DOCTYPE html>
         <html lang="en">

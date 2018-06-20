@@ -1,9 +1,7 @@
-// @flow
-
 /*
 * Safe parsing JSON
 * */
-function parseJSON(JSONString: string): Object {
+function parseJSON(JSONString) {
     try {
         return JSON.parse(decodeURIComponent(JSONString));
     } catch (ex) {

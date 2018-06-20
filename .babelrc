@@ -10,7 +10,6 @@
                 }
             }
         ],
-        "flow"
     ],
     "plugins": [
         "syntax-trailing-function-commas",

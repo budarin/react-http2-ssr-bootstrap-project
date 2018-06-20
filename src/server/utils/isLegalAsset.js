@@ -1,5 +1,4 @@
-// @flow
-const legalAssets: Array<string> = [
+const legalAssets = [
     '/default.css',
     '/bundle.js',
     '/favicon.ico',
@@ -8,7 +7,7 @@ const legalAssets: Array<string> = [
     '/android-chrome-512x512.png',
 ];
 
-function isLegalAsset(asset: string): boolean {
+function isLegalAsset(asset) {
     return legalAssets.indexOf(asset) > -1;
 }
 

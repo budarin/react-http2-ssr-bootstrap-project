@@ -1,5 +1,3 @@
-// @flow
-
 /*
 * Ensure that server.js is always exists in /dist folder for first running server start command
 * */

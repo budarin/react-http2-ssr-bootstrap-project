@@ -14,8 +14,7 @@
                 }
             }
         ],
-        "react",
-        "flow"
+        "react"
     ],
     "plugins": [
         "syntax-dynamic-import",

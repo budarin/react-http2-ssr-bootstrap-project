@@ -1,6 +1,4 @@
-// @flow
 import path from 'path';
-// $FlowIgnore
 import http2 from 'http2'; // eslint-disable-line
 
 import serverRoot from './serverRoot';
@@ -8,7 +6,7 @@ import respondToStreamError from './respondToStreamError';
 
 const { HTTP2_HEADER_PATH } = http2.constants;
 
-const pushAsset = (stream: Object, file: Object): void => {
+const pushAsset = (stream, file) => {
     stream.pushStream({ [HTTP2_HEADER_PATH]: file.path }, { parent: stream.id }, (err, pushStream) => {
         if (err) {
             console.log('>> Pushing error:', err); // eslint-disable-line no-console

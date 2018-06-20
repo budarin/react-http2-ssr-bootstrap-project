@@ -1,8 +1,7 @@
-// @flow
 import pushAsset from './pushAsset';
 import getFileDescription from './getFileDescription';
 
-async function pushAssets(req: Object, res: Object): Promise<void> {
+async function pushAssets(req, res) {
     const isHttp2 = req.httpVersion.startsWith('2.');
 
     if (!isHttp2) {

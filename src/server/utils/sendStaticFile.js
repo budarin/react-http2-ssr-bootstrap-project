@@ -1,4 +1,3 @@
-// @flow
 import fs from 'fs';
 import path from 'path';
 import * as mime from 'mime-types';
@@ -6,7 +5,7 @@ import * as mime from 'mime-types';
 import serverRoot from './serverRoot';
 import isLegalAsset from './isLegalAsset';
 
-function sendStaticFile(req: Object, res: Object): void {
+function sendStaticFile(req, res) {
     const { url } = req;
     const filePath = path.resolve(path.join(serverRoot, url));
 

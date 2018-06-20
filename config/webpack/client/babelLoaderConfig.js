@@ -17,7 +17,6 @@ module.exports = {
             },
         ],
         'react',
-        'flow',
     ],
     plugins: [
         'syntax-dynamic-import',

@@ -1,11 +1,9 @@
-// @flow
-
 const resourceTypes = {
     css: 'style',
     js: 'script',
 };
 
-function getPreLoadingLink(resource: string): string {
+function getPreLoadingLink(resource) {
     const ext = resource.split('.').pop();
     const resourceType = resourceTypes[ext];
 

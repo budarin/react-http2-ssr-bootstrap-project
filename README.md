@@ -6,7 +6,7 @@ Simple React project with SSR
 - babel
 - webpack
 - HMR
-- flow
+- flow (removed)
 - prettier
 - eslint
 - stylelint (css-next, postcss-preset-env, cssnano)

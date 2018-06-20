@@ -1,5 +1,4 @@
-// @flow
-function logServerRequest(req: Object): void {
+function logServerRequest(req) {
     const { url, method } = req;
 
     console.log('>> Path:', url, '>> Method:', method);

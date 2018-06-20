@@ -1,7 +1,5 @@
-// @flow
 import fs from 'fs';
 import debug from 'debug';
-// $FlowIgnore
 import http2 from 'http2'; // eslint-disable-line
 
 import env from '../utils/getEnv';
@@ -20,7 +18,7 @@ const options = {
 
 const server = http2.createSecureServer(options, appServer);
 
-const shutdown = (code: number) => {
+const shutdown = code => {
     log('Останавливаем сервер ...');
 
     server.close();
@@ -30,11 +28,11 @@ const shutdown = (code: number) => {
 process.on('SIGINT', shutdown);
 process.on('SIGTERM', shutdown);
 
-process.on('unhandledRejection', (err: Error) => {
+process.on('unhandledRejection', err => {
     logError(`unhandledRejection: Reason: ${err.message}\n ${err.stack}`);
 });
 
-process.on('uncaughtException', (err: Error) => {
+process.on('uncaughtException', err => {
     logError('Необработанная ошибка приложения', err.stack);
     shutdown(1);
 });

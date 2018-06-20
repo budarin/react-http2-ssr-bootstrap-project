@@ -1,4 +1,3 @@
-// @flow
 import * as React from 'react';
 import { renderToNodeStream } from 'react-dom/server';
 
@@ -10,7 +9,7 @@ import addPreLoadsToHeaders from './addPreLoadsToHeaders';
 const headers = { 'content-type': 'text/html; charset=utf-8' };
 const preventClosingStream = { end: false };
 
-function renderApp(req: Object, res: Object): void {
+function renderApp(req, res) {
     const isHttp2 = req.httpVersion.startsWith('2.');
 
     console.log('>> Render app');
