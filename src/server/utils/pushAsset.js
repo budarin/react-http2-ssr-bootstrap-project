@@ -10,12 +10,11 @@ const pushAsset = (stream, file) => {
     stream.pushStream({ [HTTP2_HEADER_PATH]: file.path }, { parent: stream.id }, (err, pushStream) => {
         if (err) {
             console.log('>> Pushing error:', err);
-            no - console;
+
             return;
         }
 
         console.log('>> Pushing:', file.path);
-        no - console;
 
         pushStream.on('error', err => respondToStreamError(err, pushStream));
 
@@ -25,7 +24,6 @@ const pushAsset = (stream, file) => {
             pushStream.respondWithFile(absFilePath, file.headers);
         } catch (err) {
             console.log('pushing error', err);
-            no - console;
         }
     });
 };

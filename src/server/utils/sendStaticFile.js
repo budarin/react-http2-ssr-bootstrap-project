@@ -11,13 +11,11 @@ function sendStaticFile(req, res) {
 
     if (!isLegalAsset(url)) {
         console.log('>> Illegal static file:', url);
-        no - console;
 
         return;
     }
 
     console.log('>> Static file:', req.url);
-    no - console;
 
     res.writeHead(200, { 'content-type': mime.lookup(url) });
     fs.createReadStream(filePath).pipe(res);
