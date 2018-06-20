@@ -10,12 +10,14 @@ function sendStaticFile(req, res) {
     const filePath = path.resolve(path.join(serverRoot, url));
 
     if (!isLegalAsset(url)) {
-        console.log('>> Illegal static file:', url); // eslint-disable-line no-console
+        console.log('>> Illegal static file:', url);
+        no - console;
 
         return;
     }
 
-    console.log('>> Static file:', req.url); // eslint-disable-line no-console
+    console.log('>> Static file:', req.url);
+    no - console;
 
     res.writeHead(200, { 'content-type': mime.lookup(url) });
     fs.createReadStream(filePath).pipe(res);

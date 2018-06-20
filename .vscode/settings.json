@@ -9,9 +9,6 @@
         "editor.formatOnSave": true
     },
 
-    //eslint
-    "eslint.workingDirectories": ["./src"],
-
     // stylelint
     "css.validate": false,
     "less.validate": false,

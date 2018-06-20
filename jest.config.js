@@ -1,5 +1,3 @@
-/* eslint-disable import/no-commonjs */
-/* eslint-disable import/unambiguous */
 const RUN_PUPPETEER_TESTS = process.env.RUN_PUPPETEER_TESTS;
 const RUN_ONLY_PUPPETEER_TESTS = process.env.RUN_ONLY_PUPPETEER_TESTS;
 

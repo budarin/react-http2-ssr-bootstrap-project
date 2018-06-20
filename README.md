@@ -8,7 +8,7 @@ Simple React project with SSR
 - HMR
 - flow (removed)
 - prettier
-- eslint
+- eslint (tslint)
 - stylelint (css-next, postcss-preset-env, cssnano)
 - jest
 - puppeteer

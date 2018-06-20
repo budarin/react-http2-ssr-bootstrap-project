@@ -1,7 +1,7 @@
 import env from '../utils/getEnv';
 
 // its imported only for testing purpose when App.js changed
-import App from './App'; // eslint-disable-line
+import App from './App';
 
 const { PUPPETEER_URL } = env;
 

@@ -1,5 +1,3 @@
-/* eslint-disable import/no-commonjs */
-/* eslint-disable import/unambiguous */
 const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer');

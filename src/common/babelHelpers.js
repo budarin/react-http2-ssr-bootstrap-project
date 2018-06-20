@@ -1,4 +1,3 @@
-/* eslint-disable */
 (function(global) {
     const babelHelpers = (global.babelHelpers = {});
 
