@@ -4,7 +4,6 @@ const { HTTP_STATUS_NOT_FOUND, NGHTTP2_REFUSED_STREAM, HTTP_STATUS_INTERNAL_SERV
 
 export default function respondToStreamError(err, stream) {
     console.log('respondToStreamError', err);
-    no - console;
 
     const isRefusedStream = err.code === 'ERR_HTTP2_STREAM_ERROR' && stream.rstCode === NGHTTP2_REFUSED_STREAM;
 
