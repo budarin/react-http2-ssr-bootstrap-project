@@ -1,5 +1,4 @@
 {
-   
     // prettier
     "editor.formatOnSave": false,
     "[javascript]": {
