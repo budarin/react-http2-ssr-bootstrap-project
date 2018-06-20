@@ -10,7 +10,6 @@ jest.setTimeout(10000);
 describe('Home Page', () => {
     let page;
     let context;
-
     const browser = global.browser;
 
     beforeAll(async () => {
