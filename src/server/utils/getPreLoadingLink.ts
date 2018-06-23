@@ -1,10 +1,4 @@
-interface IResourceTypes {
-    css: string;
-    js: string;
-    [key: string]: string;
-}
-
-const resourceTypes: IResourceTypes = {
+const resourceTypes: IStringHash = {
     css: 'style',
     js: 'script',
 };
