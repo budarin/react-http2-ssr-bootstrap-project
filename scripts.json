@@ -3,7 +3,8 @@
         "name": "start-client",
         "command": "webpack-dev-server --mode development --config ./config/webpack/client/webpack.config.babel.js",
         "env": {
-            "NODE_ENV": "development"
+            "NODE_ENV": "development",
+            "DEBUG": "app:*"
         }
     },
     {
