@@ -6,7 +6,10 @@ import webpack from 'webpack';
 import env from '../../../src/utils/getEnv';
 import babelConfig from './babelLoaderConfig';
 
+console.log('__dirname', __dirname);
+
 const { STATIC_HOST, STATIC_PORT, STATIC_URL } = env;
+
 const config = {
     cache: true,
     target: 'web',
@@ -18,7 +21,7 @@ const config = {
             'react-hot-loader/patch',
             `webpack-dev-server/client?${STATIC_URL}`,
             'webpack/hot/only-dev-server',
-            './src/client/index.js',
+            './src/client/index.tsx',
         ],
     },
     output: {
@@ -31,12 +34,13 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(ts|tsx|js|jsx)$/,
+                include: path.resolve('./src'),
+                exclude: path.resolve('node_modules'),
                 use: {
                     loader: 'babel-loader',
                     options: babelConfig,
                 },
-                exclude: path.resolve('node_modules'),
             },
             {
                 test: /\.(svg|png|jpg|gif)$/,
@@ -75,7 +79,7 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
@@ -86,6 +90,7 @@ const config = {
             __BROWSER__: true,
             __SERVER__: false,
         }),
+        new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
     ],
     devServer: {
         hot: true,

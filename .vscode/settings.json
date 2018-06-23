@@ -1,9 +1,6 @@
 {
     // prettier
-    "editor.formatOnSave": false,
-    "[javascript]": {
-        "editor.formatOnSave": true
-    },
+    "editor.formatOnSave": true,
     "json.format.enable": true,
     "[json]": {
         "editor.formatOnSave": true
@@ -13,9 +10,11 @@
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false,
-    "window.zoomLevel": 0,
-    "git.autofetch": true,
+    "prettier.stylelintIntegration": true,
 
     // npm sripts
-    "npm.enableScriptExplorer": true
+    "npm.enableScriptExplorer": true,
+
+    // git
+    "git.autofetch": true
 }

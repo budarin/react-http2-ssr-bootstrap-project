@@ -7,8 +7,8 @@ const legalAssets = [
     '/android-chrome-512x512.png',
 ];
 
-function isLegalAsset(asset) {
-    return legalAssets.indexOf(asset) > -1;
+function isLegalAsset(assetName: string): boolean {
+    return legalAssets.indexOf(assetName) > -1;
 }
 
 export default isLegalAsset;

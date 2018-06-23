@@ -1,8 +1,8 @@
 /*
 * Ensure that server.js is always exists in /dist folder for first running server start command
 * */
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 const dir = path.resolve('./dist');
 const filePath = path.resolve('./dist/server.js');

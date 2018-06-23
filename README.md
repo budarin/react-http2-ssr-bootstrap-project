@@ -3,13 +3,13 @@
 Simple React project with SSR
 - React
 - SSR
-- babel
+- babel 7
 - webpack
 - HMR
-- flow (removed)
+- typescript
 - prettier
-- eslint (tslint)
-- stylelint (css-next, postcss-preset-env, cssnano)
+- tslint
+- stylelint (postcss-preset-env, cssnano)
 - jest
 - puppeteer
 

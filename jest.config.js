@@ -7,10 +7,15 @@ const config = {
     cacheDirectory: '../.tmp/jest',
     coverageDirectory: '../.tmp/coverage',
     transform: {
-        '^.+\\.js$': '../config/jest/transformer.js',
+        '^.+\\.(js|ts|jsx|tsx)$': '../config/jest/transformer.js',
     },
-    testMatch: ['**/__tests__/**/*.js?(x)', '**/?(*.)+(spec|test).js?(x)'],
-    moduleFileExtensions: ['js', 'jsx'],
+    testMatch: [
+        '**/__tests__/**/*.js?(x)',
+        '**/__tests__/**/*.ts?(x)',
+        '**/?(*.)+(spec|test).js?(x)',
+        '**/?(*.)+(spec|test).ts?(x)',
+    ],
+    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
     moduleNameMapper: {
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
             '../../config/jest/mocks/fileMock.js',

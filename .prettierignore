@@ -1,6 +1,5 @@
-/.tmp/
-/.vscode/
 /dist/
+/.tmp/
 /node-modules/
-/package-lock.json
-/.babelrc
+package-lock.json
+tsconfig.json

@@ -6,6 +6,17 @@ const prodEnvPath = '.env.production.json';
 const devEnvPath = '.env.development.json';
 const defaultEnvPath = '.env.json';
 
+// interface IEnv {
+//     SERVER_PROTOCOL: string;
+//     SERVER_PORT: number;
+//     SERVER_HOST: string;
+//     SERVER_URL: string;
+//     STATIC_PROTOCOL: string;
+//     STATIC_PORT: number;
+//     STATIC_HOST: string;
+//     STATIC_URL: string;
+// }
+
 function getParsedEnv(envPath) {
     return parseJSON(fs.readFileSync(path.resolve(envPath), { encoding: 'utf-8' }));
 }
@@ -23,7 +34,8 @@ function getEnv() {
         return getParsedEnv(defaultEnvPath);
     }
 
-    return {
+    /* tslint:disable object-literal-sort-keys */
+    const Env = {
         SERVER_PROTOCOL: 'https',
         SERVER_PORT: 443,
         SERVER_HOST: 'localhost',
@@ -33,6 +45,9 @@ function getEnv() {
         STATIC_HOST: 'localhost',
         STATIC_URL: 'https://localhost:444',
     };
+    /* tslint:enable object-literal-sort-keys */
+
+    return Env;
 }
 
 export default getEnv();

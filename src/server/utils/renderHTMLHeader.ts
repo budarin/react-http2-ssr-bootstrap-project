@@ -1,6 +1,6 @@
 import env from '../../utils/getEnv';
 
-function renderHTMLHeader() {
+function renderHTMLHeader(): string {
     return `
         <!DOCTYPE html>
         <html lang="en">

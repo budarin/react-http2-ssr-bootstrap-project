@@ -12,7 +12,7 @@ const config = {
     target: 'node',
     mode: 'production',
     // devtool: 'cheap-module-eval-source-map',
-    entry: ['./src/common/babelHelpers.js', './src/server/index.js'],
+    entry: ['./src/common/babelHelpers.js', './src/server/index.ts'],
     output: {
         publicPath: '/',
         filename: 'server.js',
@@ -25,12 +25,13 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(ts|tsx|js|jsx)$/,
+                include: path.resolve('./src'),
+                exclude: path.resolve('node_modules'),
                 use: {
                     loader: 'babel-loader',
                     options: babelConfig,
                 },
-                exclude: path.resolve('node_modules'),
             },
             {
                 test: /\.(svg|png|jpg|gif)$/,
@@ -75,7 +76,7 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [

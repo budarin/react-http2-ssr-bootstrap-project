@@ -1,4 +1,4 @@
-function renderHTMLBottom() {
+function renderHTMLBottom(): string {
     return `</div>
         </body>
         <html>`;

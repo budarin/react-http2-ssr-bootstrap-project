@@ -11,8 +11,8 @@ function App() {
     return <p className={css.hello}>Hello World!</p>;
 }
 
-function a(b) {
-    return b.indexOf('b');
+function a(b: string): string {
+    return b;
 }
 
 a('Hello!');

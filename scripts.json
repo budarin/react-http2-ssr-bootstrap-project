@@ -22,7 +22,7 @@
     },
     {
         "name": "ensureServerIsCreated",
-        "command": "npx babel-node ./tools/ensureServerIsCreated.js"
+        "command": "node ./tools/ensureServerIsCreated.js"
     },
     {
         "name": "start-server",
@@ -47,8 +47,12 @@
         }
     },
     {
+        "name": "clean",
+        "command": "rimraf ./.tmp && rimraf ./dist"
+    },
+    {
         "name": "build",
-        "command": "rimraf ./.tmp && rimraf ./dist && webpack --config ./config/webpack/webpack.config.prod.babel.js",
+        "command": "prun clean && webpack --config ./config/webpack/webpack.config.prod.babel.js",
         "env": {
             "NODE_ENV": "production"
         }
@@ -66,12 +70,19 @@
     },
     {
         "name": "test",
-        "command": "jest --detectOpenHandles --no-cache  --forceExit "
+        "command": "jest --detectOpenHandles --no-cache  --forceExit ",
+        "env": {
+            "NODE_ENV": "test",
+            "__DEV__": true
+        }
     },
     {
         "name": "test-watch",
-        "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify",
+        "command":
+            "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure",
         "env": {
+            "NODE_ENV": "test",
+            "__DEV__": true,
             "SHOW_BROWSER": true,
             "JEST_HIDE_USAGE": true,
             "RUN_PUPPETEER_TESTS": true

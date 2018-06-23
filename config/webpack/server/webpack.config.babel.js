@@ -3,7 +3,6 @@ import webpack from 'webpack';
 import babelConfig from './babelLoaderConfig.json';
 import nodeExternals from 'webpack-node-externals';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-
 import env from '../../../src/utils/getEnv';
 
 const { STATIC_URL } = env;
@@ -14,7 +13,7 @@ const config = {
     profile: false,
     mode: 'development',
     devtool: 'cheap-module-eval-source-map',
-    entry: ['webpack/hot/poll?1000', './src/server/index.js'],
+    entry: ['webpack/hot/poll?1000', './src/server/index.ts'],
     output: {
         publicPath: '/',
         filename: 'server.js',
@@ -24,12 +23,13 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(ts|tsx|js|jsx)$/,
+                include: path.resolve('./src'),
+                exclude: path.resolve('node_modules'),
                 use: {
                     loader: 'babel-loader',
                     options: babelConfig,
                 },
-                exclude: path.resolve('node_modules'),
             },
             {
                 test: /\.(svg|png|jpg|gif)$/,
@@ -68,7 +68,7 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
@@ -86,6 +86,7 @@ const config = {
             __SERVER__: true,
             __BROWSER__: false,
         }),
+        new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
     ],
     externals: [nodeExternals({ whitelist: ['webpack/hot/poll?1000'] })],
 };

@@ -1,0 +1,8 @@
+-   Debugger for Chrome
+-   Marckdown Preview Github Styling
+-   Plastic (theme)
+-   Numo Darck Icon Theme
+-   Prettier
+-   stylint
+-   TODO Highlight
+-   TSLint

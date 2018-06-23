@@ -1,7 +1,8 @@
 import pushAsset from './pushAsset';
 import getFileDescription from './getFileDescription';
+import { Http2ServerRequest, Http2ServerResponse } from 'http2'; // tslint:disable-line
 
-async function pushAssets(req, res) {
+async function pushAssets(req: Http2ServerRequest, res: Http2ServerResponse) {
     const isHttp2 = req.httpVersion.startsWith('2.');
 
     if (!isHttp2) {

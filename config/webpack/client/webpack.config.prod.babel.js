@@ -12,7 +12,7 @@ const config = {
     devtool: 'none',
     mode: 'production',
     entry: {
-        client: ['./src/common/babelHelpers.js', './src/client/index.js'],
+        client: ['./src/common/babelHelpers.js', './src/client/index.tsx'],
     },
     output: {
         publicPath: '/',
@@ -27,12 +27,13 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(ts|tsx|js|jsx)$/,
+                include: path.resolve('./src'),
+                exclude: path.resolve('node_modules'),
                 use: {
                     loader: 'babel-loader',
                     options: babelConfig,
                 },
-                exclude: path.resolve('node_modules'),
             },
             {
                 test: /\.(svg|png|jpg|gif)$/,
@@ -79,7 +80,7 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [

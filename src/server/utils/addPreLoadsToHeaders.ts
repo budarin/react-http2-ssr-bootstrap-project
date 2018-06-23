@@ -1,3 +1,4 @@
+import { IncomingHttpHeaders } from 'http2'; // tslint:disable-line
 import getPreLoadingLink from './getPreLoadingLink';
 
 /*
@@ -5,8 +6,8 @@ import getPreLoadingLink from './getPreLoadingLink';
 * */
 const preLoadingResources = ['/default.css', '/client.js'].map(getPreLoadingLink);
 
-function addPreLoadsToHeaders(headers) {
-    headers['Link'] = preLoadingResources.join(',');
+function addPreLoadsToHeaders(headers: IncomingHttpHeaders): void {
+    headers['Link'] = preLoadingResources.join(','); // tslint:disable-line no-string-literal
 }
 
 export default addPreLoadsToHeaders;
