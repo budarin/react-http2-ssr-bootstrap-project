@@ -12,7 +12,7 @@ function App() {
 }
 
 function a(b) {
-    return b;
+    return b.indexOf('b');
 }
 
 a('Hello!');

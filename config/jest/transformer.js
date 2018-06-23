@@ -7,7 +7,7 @@ const config = {
             'env',
             {
                 loose: true,
-                debug: false,
+                debug: true,
                 modules: 'commonjs',
                 useBuiltIns: true,
                 targets: {
