@@ -2,7 +2,7 @@ import path from 'path';
 import debug from 'debug';
 import http2, { ServerHttp2Stream } from 'http2'; // tslint:disable-line
 
-import serverRoot from './serverRoot';
+import serverRootPath from './serverRootPath';
 import respondToStreamError from './respondToStreamError';
 import { IFile } from './getFileDescription';
 
@@ -25,7 +25,7 @@ const pushAsset = (stream: ServerHttp2Stream, file: IFile): void => {
 
             pushStream.on('error', (err1: Error) => respondToStreamError(err1, pushStream));
 
-            const absFilePath = path.resolve(path.join(serverRoot, file.filePath));
+            const absFilePath = path.resolve(path.join(serverRootPath, file.filePath));
 
             try {
                 pushStream.respondWithFile(absFilePath, file.headers);
