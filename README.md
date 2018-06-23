@@ -10,7 +10,7 @@ Simple React project with SSR
 -   typescript
 -   prettier
 -   tslint
--   stylelint (postcss-preset-env, cssnano)
+-   stylelint
 -   jest
 -   puppeteer
 
