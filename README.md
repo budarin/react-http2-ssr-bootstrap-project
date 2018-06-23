@@ -5,7 +5,7 @@ Simple React project with SSR
 -   React
 -   SSR
 -   babel 7
--   webpack
+-   webpack 4
 -   HMR
 -   typescript
 -   prettier
