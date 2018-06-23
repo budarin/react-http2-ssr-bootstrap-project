@@ -6,5 +6,6 @@
         "ordered-imports": false,
         "object-literal-sort-keys": false
     },
-    "rulesDirectory": []
+    "rulesDirectory": [],
+    "no-implicit-dependencies": false
 }

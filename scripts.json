@@ -1,7 +1,11 @@
 [
     {
+        "name": "type-check",
+        "command": "npx tsc"
+    },
+    {
         "name": "start-client",
-        "command": "webpack-dev-server --mode development --config ./config/webpack/client/webpack.config.babel.js",
+        "command": "webpack-dev-server --mode development --config ./config/webpack/client/webpack.config.babel.ts",
         "env": {
             "NODE_ENV": "development",
             "DEBUG": "app:*"

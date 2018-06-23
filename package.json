@@ -9,6 +9,7 @@
         "upgrade": "prun upgrade",
         "build": "prun build",
         "test": "prun test",
+        "type-check": "prun type-check",
         "test-puppeteer": "prun test-puppeteer",
         "precommit": "lint-staged"
     },
@@ -48,6 +49,7 @@
         "@types/node": "^10.3.4",
         "@types/react": "^16.4.1",
         "@types/react-dom": "^16.0.6",
+        "@types/webpack": "^4.4.2",
         "@types/webpack-env": "^1.13.6",
         "babel-core": "^7.0.0-bridge.0",
         "babel-jest": "^23.0.1",
@@ -55,6 +57,7 @@
         "babel-minify-webpack-plugin": "^0.3.1",
         "babel-plugin-external-helpers": "^6.22.0",
         "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-module-resolver": "^3.1.1",
         "concurrently": "^3.6.0",
         "copy-webpack-plugin": "^4.5.1",
         "css-loader": "^0.28.11",

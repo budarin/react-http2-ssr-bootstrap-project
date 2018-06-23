@@ -6,22 +6,22 @@ const prodEnvPath = '.env.production.json';
 const devEnvPath = '.env.development.json';
 const defaultEnvPath = '.env.json';
 
-// interface IEnv {
-//     SERVER_PROTOCOL: string;
-//     SERVER_PORT: number;
-//     SERVER_HOST: string;
-//     SERVER_URL: string;
-//     STATIC_PROTOCOL: string;
-//     STATIC_PORT: number;
-//     STATIC_HOST: string;
-//     STATIC_URL: string;
-// }
+interface IEnv {
+    SERVER_PROTOCOL: string;
+    SERVER_PORT: number;
+    SERVER_HOST: string;
+    SERVER_URL: string;
+    STATIC_PROTOCOL: string;
+    STATIC_PORT: number;
+    STATIC_HOST: string;
+    STATIC_URL: string;
+}
 
-function getParsedEnv(envPath) {
+function getParsedEnv(envPath: string): IEnv {
     return parseJSON(fs.readFileSync(path.resolve(envPath), { encoding: 'utf-8' }));
 }
 
-function getEnv() {
+function getEnv(): IEnv {
     if (process.env.NODE_ENV === 'production' && fs.existsSync(prodEnvPath)) {
         return getParsedEnv(prodEnvPath);
     }
@@ -37,13 +37,13 @@ function getEnv() {
     /* tslint:disable object-literal-sort-keys */
     const Env = {
         SERVER_PROTOCOL: 'https',
-        SERVER_PORT: 443,
+        SERVER_PORT: 4430,
         SERVER_HOST: 'localhost',
-        SERVER_URL: 'https://localhost',
+        SERVER_URL: 'https://localhost:4430',
         STATIC_PROTOCOL: 'https',
-        STATIC_PORT: 444,
+        STATIC_PORT: 4440,
         STATIC_HOST: 'localhost',
-        STATIC_URL: 'https://localhost:444',
+        STATIC_URL: 'https://localhost:4440',
     };
     /* tslint:enable object-literal-sort-keys */
 
