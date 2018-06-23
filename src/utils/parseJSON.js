@@ -1,3 +1,6 @@
+import debug from 'debug';
+
+const log = debug('app:parse:JSON');
 /*
 * Safe parsing JSON
 * */
@@ -5,8 +8,7 @@ function parseJSON(JSONString) {
     try {
         return JSON.parse(decodeURIComponent(JSONString));
     } catch (ex) {
-        // tslint:disable-next-line
-        console.log('Ошибка разбора JSON строки:', JSONString, '->', ex.message);
+        log('Ошибка разбора JSON строки:', JSONString, '->', ex.message);
 
         return {};
     }

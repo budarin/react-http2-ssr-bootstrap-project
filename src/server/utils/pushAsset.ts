@@ -1,4 +1,5 @@
 import path from 'path';
+import debug from 'debug';
 import http2, { ServerHttp2Stream } from 'http2'; // tslint:disable-line
 
 import serverRoot from './serverRoot';
@@ -6,6 +7,7 @@ import respondToStreamError from './respondToStreamError';
 import { IFile } from './getFileDescription';
 
 const { HTTP2_HEADER_PATH } = http2.constants;
+const log = debug('app:server');
 
 const pushAsset = (stream: ServerHttp2Stream, file: IFile): void => {
     stream.pushStream(
@@ -14,12 +16,12 @@ const pushAsset = (stream: ServerHttp2Stream, file: IFile): void => {
         { parent: stream.id },
         (err: Error | null, pushStream: ServerHttp2Stream) => {
             if (err) {
-                console.log('>> Pushing error:', err); // tslint:disable-line
+                log('>> Pushing error:', err);
 
                 return;
             }
 
-            console.log('>> Pushing:', file.path); // tslint:disable-line
+            log('>> Pushing:', file.path);
 
             pushStream.on('error', (err1: Error) => respondToStreamError(err1, pushStream));
 
@@ -28,7 +30,7 @@ const pushAsset = (stream: ServerHttp2Stream, file: IFile): void => {
             try {
                 pushStream.respondWithFile(absFilePath, file.headers);
             } catch (err) {
-                console.log('pushing error', err); // tslint:disable-line
+                log('pushing error', err);
             }
         },
     );
