@@ -17,4 +17,4 @@ Simple React project with SSR
 .babelrc используется webpack и node-babel для транспиляции конфигов и утилит
 для react-loader все настройки находятся в ./config/babelLoaderConfig.json
 
-// TODO: after all tools migrate to babel 7 - remove babel-core@7.0.0-bridge.0
+// TODO: after all tools are migrated to babel 7 - remove babel-core@7.0.0-bridge.0
