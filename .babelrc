@@ -1,29 +1,18 @@
 {
     "presets": [
         [
-            "env",
+            "@babel/preset-env",
             {
                 "loose": true,
-                "useBuiltIns": true,
-                "targets": {
-                    "node": "current"
-                }
+                "debug": true,
+                "targets": { "node": "current" }
             }
-        ]
+        ],
+        "@babel/preset-typescript"
     ],
     "plugins": [
-        "syntax-trailing-function-commas",
-        "syntax-dynamic-import",
-        [
-            "transform-object-rest-spread",
-            {
-                "useBuiltIns": true
-            }
-        ]
-    ],
-    "env": {
-        "test": {
-            "plugins": ["transform-react-jsx-self", "transform-react-jsx-source"]
-        }
-    }
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-object-rest-spread"
+    ]
 }
