@@ -29,7 +29,8 @@
         "command":
             "prun ensureServerIsCreated && concurrently --kill-others \"prun server-compile\" \"prun server-monitoring\"",
         "env": {
-            "NODE_ENV": "development"
+            "NODE_ENV": "development",
+            "DEBUG": "app:*"
         }
     },
     {
