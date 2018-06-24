@@ -77,7 +77,6 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
             __DEV__: true,
             __PROD__: false,
@@ -88,13 +87,20 @@ const config = {
     ],
     serve: {
         hot: true,
-        overlay: true,
         http2: true,
         port: STATIC_PORT,
         host: STATIC_HOST,
         https: {
             key: fs.readFileSync('certs/server.key'),
             cert: fs.readFileSync('certs/server.crt'),
+        },
+        add: (app, middleware) => {
+            app.use((ctx, next) => {
+                ctx.set('Access-Control-Allow-Origin', '*');
+                next();
+            });
+            middleware.webpack();
+            middleware.content();
         },
     },
 };
