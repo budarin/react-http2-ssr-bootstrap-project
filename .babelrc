@@ -1,4 +1,5 @@
 {
+    "cacheDirectory": ".tmp/tools",
     "presets": [
         [
             "@babel/preset-env",
@@ -11,13 +12,6 @@
         "@babel/preset-typescript"
     ],
     "plugins": [
-        [
-            "module-resolver",
-            {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"],
-                "root": ["./"]
-            }
-        ],
         "@babel/plugin-syntax-dynamic-import",
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-object-rest-spread"

@@ -5,7 +5,8 @@
     },
     {
         "name": "start-client",
-        "command": "webpack-dev-server --mode development --config ./config/webpack/client/webpack.config.babel.ts",
+        "command":
+            "webpack-dev-server --mode development -r ../../../tools/registerTS.js --config ./config/webpack/client/webpack.config.babel.ts",
         "env": {
             "NODE_ENV": "development",
             "DEBUG": "app:*"
@@ -13,7 +14,7 @@
     },
     {
         "name": "server-compile",
-        "command": "webpack --config ./config/webpack/server/webpack.config.babel.js",
+        "command": "webpack --config ./config/webpack/server/webpack.config.babel.js --r ./tools/registerTS.js",
         "env": {
             "NODE_ENV": "development"
         }
@@ -40,14 +41,14 @@
     },
     {
         "name": "server-build",
-        "command": "webpack --config ./config/webpack/server/webpack.config.prod.babel.js",
+        "command": "webpack --config ./config/webpack/server/webpack.config.prod.babel.js --r ./tools/registerTS.js",
         "env": {
             "NODE_ENV": "production"
         }
     },
     {
         "name": "client-build",
-        "command": "webpack --config ./config/webpack/client/webpack.config.prod.babel.js",
+        "command": "webpack --config ./config/webpack/client/webpack.config.prod.babel.js --r ./tools/registerTS.js",
         "env": {
             "NODE_ENV": "production"
         }
@@ -58,7 +59,8 @@
     },
     {
         "name": "build",
-        "command": "prun clean && webpack --config ./config/webpack/webpack.config.prod.babel.js",
+        "command":
+            "prun clean && webpack --config ./config/webpack/webpack.config.prod.babel.js --r ./tools/registerTS.js",
         "env": {
             "NODE_ENV": "production"
         }
