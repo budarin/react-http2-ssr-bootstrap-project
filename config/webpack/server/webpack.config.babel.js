@@ -13,7 +13,7 @@ const config = {
     profile: false,
     mode: 'development',
     devtool: 'cheap-module-eval-source-map',
-    entry: ['webpack/hot/poll?1000', './src/server/index.ts'],
+    entry: ['./src/server/index.ts'],
     output: {
         publicPath: '/',
         filename: 'server.js',

@@ -16,12 +16,7 @@ const config = {
     mode: 'development',
     devtool: 'inline-cheap-module-source-map',
     entry: {
-        client: [
-            'react-hot-loader/patch',
-            `webpack-dev-server/client?${STATIC_URL}`,
-            'webpack/hot/only-dev-server',
-            './src/client/index.tsx',
-        ],
+        client: ['./src/client/index.tsx'],
     },
     output: {
         filename: '[name].js',
@@ -91,7 +86,7 @@ const config = {
         }),
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
     ],
-    devServer: {
+    serve: {
         hot: true,
         overlay: true,
         port: STATIC_PORT,
