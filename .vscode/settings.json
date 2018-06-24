@@ -16,5 +16,7 @@
     "npm.enableScriptExplorer": true,
 
     // git
-    "git.autofetch": true
+    "git.autofetch": true,
+
+    "files.autoSave": "onFocusChange"
 }
