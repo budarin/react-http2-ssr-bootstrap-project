@@ -11,8 +11,7 @@
         "test": "prun test",
         "type-check": "prun type-check",
         "test-puppeteer": "prun test-puppeteer",
-        "precommit": "lint-staged",
-        "build-temp": "webpack-dev-server -r ../../../config/webpack/client/register-ts.js --config config/webpack/client/webpack.config.babel.ts"
+        "precommit": "lint-staged"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [

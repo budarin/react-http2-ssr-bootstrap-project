@@ -18,7 +18,7 @@ const config = {
     entry: {
         client: [
             'react-hot-loader/patch',
-            `webpack-serve/client?${STATIC_URL}`,
+            `webpack-dev-server/client?${STATIC_URL}`,
             'webpack/hot/only-dev-server',
             './src/client/index.tsx',
         ],

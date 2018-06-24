@@ -6,7 +6,7 @@
     {
         "name": "start-client",
         "command":
-            "webpack-dev-server -r ../../../config/webpack/client/register-ts.js --config ./config/webpack/client/webpack.config.babel.ts --mode development",
+            "webpack-dev-server --mode development -r ../../../config/webpack/client/register-ts.js --config ./config/webpack/client/webpack.config.babel.js",
         "env": {
             "NODE_ENV": "development",
             "DEBUG": "app:*"
@@ -63,7 +63,7 @@
     {
         "name": "build",
         "command":
-            "prun clean && webpack --config ./config/webpack/webpack.config.prod.babel.js -r ../../../config/webpack/client/register-ts.jss",
+            "prun clean && webpack --config ./config/webpack/webpack.config.prod.babel.js -r ../../../config/webpack/client/register-ts.js",
         "env": {
             "NODE_ENV": "production"
         }
