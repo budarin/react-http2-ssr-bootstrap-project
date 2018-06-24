@@ -94,7 +94,7 @@
         "env": {
             "NODE_ENV": "test",
             "__DEV__": true,
-            "SHOW_BROWSER": true,
+            "SHOW_BROWSER": false,
             "JEST_HIDE_USAGE": true,
             "RUN_PUPPETEER_TESTS": true
         }

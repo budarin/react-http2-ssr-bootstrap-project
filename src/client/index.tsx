@@ -3,25 +3,21 @@ import ReactDOM from 'react-dom';
 import App from '../common/App';
 
 function renderApp() {
-    const app = document.getElementById('app');
+    const APP_ROOT_ID = 'app-root';
+    let appRoot = document.getElementById(APP_ROOT_ID);
 
-    if (app) {
-        ReactDOM.hydrate(<App />, app, () => {
-            const body = document.querySelector('body');
-
-            if (body) {
-                body.classList.add('interactive');
-            }
-        });
+    if (!appRoot) {
+        appRoot = document.body.appendChild(document.createElement('div'));
+        appRoot.id = APP_ROOT_ID;
     }
+
+    ReactDOM.hydrate(<App />, appRoot, () => {
+        const body = document.querySelector('body');
+
+        if (body) {
+            body.classList.add('interactive');
+        }
+    });
 }
 
 renderApp();
-
-if (process.env.NODE_ENV === 'development') {
-    if (module.hot) {
-        module.hot.accept('../common/App', () => {
-            renderApp();
-        });
-    }
-}

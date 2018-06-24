@@ -1,4 +1,5 @@
 import React from 'react';
+import { hot } from 'react-hot-loader';
 import appStyles from './app.css';
 
 const css = __BROWSER__ ? appStyles.locals : appStyles;
@@ -17,4 +18,4 @@ function a(b: string): string {
 
 a('Hello!');
 
-export default App;
+export default hot(module)(App);
