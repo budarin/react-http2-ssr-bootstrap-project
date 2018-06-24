@@ -89,15 +89,10 @@ const config = {
     serve: {
         hot: true,
         overlay: true,
+        http2: true,
         port: STATIC_PORT,
         host: STATIC_HOST,
-        historyApiFallback: true,
-        headers: { 'Access-Control-Allow-Origin': '*' },
-        watchOptions: {
-            ignored: /node_modules/,
-        },
         https: {
-            ca: fs.readFileSync('certs/cacert.crt'),
             key: fs.readFileSync('certs/server.key'),
             cert: fs.readFileSync('certs/server.crt'),
         },
