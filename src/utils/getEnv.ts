@@ -17,11 +17,11 @@ interface IEnv {
     STATIC_URL: string;
 }
 
-function getParsedEnv(envPath: string): IEnv {
+function getParsedEnv(envPath: string):IEnv {
     return parseJSON(fs.readFileSync(path.resolve(envPath), { encoding: 'utf-8' }));
 }
 
-function getEnv(): IEnv {
+function getEnv():IEnv {
     if (process.env.NODE_ENV === 'production' && fs.existsSync(prodEnvPath)) {
         return getParsedEnv(prodEnvPath);
     }

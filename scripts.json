@@ -6,7 +6,7 @@
     {
         "name": "start-client",
         "command":
-            "webpack-dev-server --mode development -r ../../../tools/registerTS.js --config ./config/webpack/client/webpack.config.babel.ts",
+            "webpack-dev-server --require ./tools/registerTS.js --config ./config/webpack/client/webpack.config.babel.js --mode development",
         "env": {
             "NODE_ENV": "development",
             "DEBUG": "app:*"
