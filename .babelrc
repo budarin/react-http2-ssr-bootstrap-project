@@ -1,5 +1,4 @@
 {
-    "cacheDirectory": ".tmp/tools",
     "presets": [
         [
             "@babel/preset-env",
