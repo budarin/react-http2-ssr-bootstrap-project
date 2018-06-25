@@ -19,5 +19,4 @@
     "git.autofetch": true,
 
     "files.autoSave": "onFocusChange",
-    "eslint.enable": false,
 }
