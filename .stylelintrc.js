@@ -1,7 +1,7 @@
 const browserlist = require('./config/browserList');
 
 module.exports = {
-    extends: 'stylelint-config-recommended',
+    extends: ['stylelint-config-recommended', './node_modules/prettier-stylelint/config.js'],
     plugins: ['stylelint-order', 'stylelint-no-unsupported-browser-features'],
     rules: {
         'plugin/no-unsupported-browser-features': [
