@@ -5,12 +5,15 @@
     "[json]": {
         "editor.formatOnSave": true
     },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
 
     // stylelint
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false,
-    "prettier.stylelintIntegration": true,
+    "prettier.stylelintIntegration": false,
 
     // npm sripts
     "npm.enableScriptExplorer": true,
