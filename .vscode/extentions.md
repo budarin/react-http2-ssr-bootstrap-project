@@ -6,3 +6,4 @@
 -   stylint
 -   TODO Highlight
 -   TSLint
+-   NPM scripts
