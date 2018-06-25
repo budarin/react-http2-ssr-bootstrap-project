@@ -4,7 +4,7 @@ const log = debug('app:parse:JSON');
 /*
 * Safe parsing JSON
 * */
-function parseJSON(JSONString) {
+function parseJSON(JSONString: string) {
     try {
         return JSON.parse(decodeURIComponent(JSONString));
     } catch (ex) {
