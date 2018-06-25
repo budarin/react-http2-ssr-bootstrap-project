@@ -1,9 +1,10 @@
+import { Http2ServerRequest, Http2ServerResponse } from 'http2'; // tslint:disable-line
+
 import renderApp from './utils/renderApp';
 import pushAssets from './utils/pushAssets';
+import isLegalRoute from './utils/isLegalRoute';
 import sendStaticFile from './utils/sendStaticFile';
 import logServerRequest from './utils/logServerRequest';
-import isLegalRoute from './utils/isLegalRoute';
-import { Http2ServerRequest, Http2ServerResponse } from 'http2'; // tslint:disable-line
 
 const app = async (req: Http2ServerRequest, res: Http2ServerResponse) => {
     logServerRequest(req);

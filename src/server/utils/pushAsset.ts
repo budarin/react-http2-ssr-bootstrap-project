@@ -2,12 +2,12 @@ import path from 'path';
 import debug from 'debug';
 import http2, { ServerHttp2Stream } from 'http2'; // tslint:disable-line
 
+import { IFile } from './getFileDescription';
 import serverRootPath from './serverRootPath';
 import respondToStreamError from './respondToStreamError';
-import { IFile } from './getFileDescription';
 
-const { HTTP2_HEADER_PATH } = http2.constants;
 const log = debug('app:server');
+const { HTTP2_HEADER_PATH } = http2.constants;
 
 const pushAsset = (stream: ServerHttp2Stream, file: IFile): void => {
     stream.pushStream(

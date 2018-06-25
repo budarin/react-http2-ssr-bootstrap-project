@@ -1,8 +1,8 @@
 import debug from 'debug';
 import http2, { ServerHttp2Stream } from 'http2'; // tslint:disable-line
 
-const { HTTP_STATUS_NOT_FOUND, NGHTTP2_REFUSED_STREAM, HTTP_STATUS_INTERNAL_SERVER_ERROR } = http2.constants;
 const log = debug('app:server');
+const { HTTP_STATUS_NOT_FOUND, NGHTTP2_REFUSED_STREAM, HTTP_STATUS_INTERNAL_SERVER_ERROR } = http2.constants;
 
 export default function respondToStreamError(err: any, stream: ServerHttp2Stream): void {
     log('respondToStreamError', err);

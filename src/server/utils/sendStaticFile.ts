@@ -2,10 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import debug from 'debug';
 import * as mime from 'mime-types';
-
-import serverRootPath from './serverRootPath';
-import isLegalAsset from './isLegalAsset';
 import { Http2ServerResponse, Http2ServerRequest } from 'http2'; // tslint:disable-line
+
+import isLegalAsset from './isLegalAsset';
+import serverRootPath from './serverRootPath';
 
 const log = debug('app:server');
 
