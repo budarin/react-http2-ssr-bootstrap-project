@@ -2,9 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import parseJSON from './parseJSON';
 
-const prodEnvPath = '.env.production.json';
-const devEnvPath = '.env.development.json';
 const defaultEnvPath = '.env.json';
+const devEnvPath = '.env.development.json';
+const prodEnvPath = '.env.production.json';
 
 interface IEnv {
     SERVER_PROTOCOL: string;

@@ -3,7 +3,7 @@
 Simple React project with SSR
 
 -   React
--   SSR
+-   SSR (Http2 | Http1 fallback)
 -   babel 7
 -   webpack 4
 -   HMR
