@@ -13,3 +13,4 @@
 -   Git Patch
 -   Markdownlint
 -   Typograf
+-   Auto Close Tag
