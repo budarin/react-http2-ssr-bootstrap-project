@@ -14,3 +14,4 @@
 -   Markdownlint
 -   Typograf
 -   Auto Close Tag
+-   ES7 React/Redux/GraphQL/React-Native snippets
