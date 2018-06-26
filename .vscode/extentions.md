@@ -1,3 +1,5 @@
+# Список расширений
+
 -   Debugger for Chrome
 -   Marckdown Preview Github Styling
 -   Plastic (theme)
@@ -9,3 +11,5 @@
 -   NPM scripts
 -   Git History
 -   Git Patch
+-   Markdownlint
+-   Typograf
