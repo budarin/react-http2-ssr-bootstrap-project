@@ -1,3 +1,1 @@
--   setup stylint
--   setup postcss
 -   setup markdownlint
