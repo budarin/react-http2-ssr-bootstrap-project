@@ -13,4 +13,4 @@ function App() {
     return <p className={css.hello}>Hello World!</p>;
 }
 
-export default hot(module)(App);
+export default (__DEV__ ? hot(module)(App) : App);
