@@ -13,10 +13,4 @@ function App() {
     return <p className={css.hello}>Hello World!</p>;
 }
 
-function a(b: string): string {
-    return b;
-}
-
-a('Hello!');
-
 export default hot(module)(App);

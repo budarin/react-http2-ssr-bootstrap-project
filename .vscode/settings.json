@@ -21,5 +21,6 @@
     // git
     "git.autofetch": true,
 
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "eslint.enable": false
 }

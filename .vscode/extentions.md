@@ -1,3 +1,5 @@
+# Список расширений
+
 -   Debugger for Chrome
 -   Marckdown Preview Github Styling
 -   Plastic (theme)
@@ -7,3 +9,9 @@
 -   TODO Highlight
 -   TSLint
 -   NPM scripts
+-   Git History
+-   Git Patch
+-   Markdownlint
+-   Typograf
+-   Auto Close Tag
+-   ES7 React/Redux/GraphQL/React-Native snippets

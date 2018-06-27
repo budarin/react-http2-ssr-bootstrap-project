@@ -7,7 +7,7 @@ Simple React project with SSR
 -   babel 7
 -   webpack 4
 -   HMR
--   typescript
+-   typescript (as typecheccker not transpiller)
 -   prettier
 -   tslint
 -   stylelint
