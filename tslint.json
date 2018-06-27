@@ -5,7 +5,7 @@
     "rules": {
         "ordered-imports": false,
         "object-literal-sort-keys": false,
-        "no-implicit-dependencies": false
+        "no-implicit-dependencies": [true, "dev"]
     },
     "rulesDirectory": []
 }
