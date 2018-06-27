@@ -1,6 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
-import babelConfig from './babelLoaderConfig.json';
+import babelConfig from './babelLoaderConfig';
 import nodeExternals from 'webpack-node-externals';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import env from '../../../src/utils/getEnv';

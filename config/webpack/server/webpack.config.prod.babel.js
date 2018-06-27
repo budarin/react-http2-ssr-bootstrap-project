@@ -3,7 +3,7 @@ import webpack from 'webpack';
 import MinifyPlugin from 'babel-minify-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
-import babelConfig from './babelLoaderConfig.json';
+import babelConfig from './babelLoaderConfig';
 
 const config = {
     watch: false,
