@@ -1,13 +1,18 @@
 import env from '../../utils/getEnv';
 
 function renderHTMLHeader(): string {
+    // TODO: fixme <link rel="preload" href="/manifest.json" as="fetch">
+
     return `
         <!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta name="theme-color" content="#E6492F">
+
+            <link rel="preload" href="/manifest.json" as="fetch">
             <link rel="manifest" href="/manifest.json">
+            
             <title>React SSR project</title>
             <meta name="Description" content="Simple SSR React project.">
             <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
