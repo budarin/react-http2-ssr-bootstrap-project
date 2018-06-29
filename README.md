@@ -1,5 +1,7 @@
 # react-ssr-bootstrap-project
 
+[![dependencies](https://david-dm.org/budarin/react-ssr-bootstrap-project.svg)]()
+
 Simple React project with SSR
 
 -   React
