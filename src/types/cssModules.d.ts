@@ -2,26 +2,26 @@
 * декларируем .css модуль
 */
 
-interface ClassHash {
+export interface IClassHash {
     [name: string]: string;
 }
 
-interface CssModule {
+export interface ICssModule {
     use: Function;
     unuse: Function;
     ref: Function;
     unref: Function;
-    locals: ClassHash;
+    locals: IClassHash;
 }
 
-interface Stringifyable {
+export interface IStringifyable {
     toString(): string;
 }
-interface SelectorNode {
+export interface ISelectorNode {
     [key: string]: string;
 }
 
 declare module '*.css' {
-    const styles: SelectorNode & Stringifyable & CssModule;
+    const styles: ISelectorNode & IStringifyable & ICssModule;
     export default styles;
 }
