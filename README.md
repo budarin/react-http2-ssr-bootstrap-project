@@ -2,7 +2,7 @@
 
 [![dependencies](https://david-dm.org/budarin/react-ssr-bootstrap-project.svg)](https://david-dm.org/budarin/react-ssr-bootstrap-project)
 
-[![dependencies](https://david-dm.org/budarin/react-ssr-bootstrap-project/dev-status.svg)](https://david-dm.org/budarin/react-ssr-bootstrap-project?type=dev)
+[![devDependencies](https://david-dm.org/budarin/react-ssr-bootstrap-project/dev-status.svg)](https://david-dm.org/budarin/react-ssr-bootstrap-project?type=dev)
 
 Simple React project with SSR
 
