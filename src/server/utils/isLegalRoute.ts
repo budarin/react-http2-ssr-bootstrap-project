@@ -3,7 +3,9 @@ import { Http2ServerRequest } from 'http2'; // tslint:disable-line
 import { legalRoutes } from './legalRoutes';
 
 function isLegalRoute(req: Http2ServerRequest): boolean {
-    return legalRoutes.indexOf(req.url) > -1;
+    const route = req.url.split('?')[0];
+
+    return legalRoutes.indexOf(route) > -1;
 }
 
 export default isLegalRoute;
