@@ -11,7 +11,11 @@ class App extends React.Component {
             appStyles.use();
         }
 
-        return <p className={css.hello}>Hello World!</p>;
+        return (
+            <>
+                <p className={css.hello}>Hello World!</p>
+            </>
+        );
     }
 }
 
