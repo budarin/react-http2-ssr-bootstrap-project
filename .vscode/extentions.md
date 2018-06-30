@@ -8,7 +8,6 @@
 -   stylint
 -   TODO Highlight
 -   TSLint
--   NPM scripts
 -   Git History
 -   Git Patch
 -   Markdownlint
