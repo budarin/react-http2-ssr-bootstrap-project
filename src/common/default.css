@@ -2,3 +2,7 @@ body {
     color: brown;
     font-size: 20px;
 }
+
+:global #root {
+    min-height: 100vh;
+}
