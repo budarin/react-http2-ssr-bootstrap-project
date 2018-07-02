@@ -1,22 +1,25 @@
 import * as React from 'react';
-import { hot } from 'react-hot-loader';
+import withHMR from './components/withHMR';
 
 import appStyles from './app.css';
+import MouseCoordinates from './components/MouseCoordinates';
+import renderCoordinates from './components/renderCoordinates';
 
 const css = __BROWSER__ ? appStyles.locals : appStyles;
 
 class App extends React.Component {
-    public render() {
+    render() {
         if (__BROWSER__) {
             appStyles.use();
         }
 
         return (
             <>
-                <p className={css.hello}>Hello World!</p>
+                <span className={css.hello}>Hello World!</span>
+                <MouseCoordinates>{renderCoordinates}</MouseCoordinates>
             </>
         );
     }
 }
 
-export default (__DEV__ ? hot(module)(App) : App);
+export default withHMR(App);
