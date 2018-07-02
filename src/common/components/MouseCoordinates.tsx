@@ -27,10 +27,12 @@ class MouseCoordinates extends React.Component<TProps, TState> {
     handleMouseMove = (event: MouseEvent<HTMLElement>): void => {
         const { screenX = 0, screenY = 0 } = event;
 
-        this.setState(() => ({
-            x: screenX,
-            y: screenY,
-        }));
+        window.requestAnimationFrame(() => {
+            this.setState(() => ({
+                x: screenX,
+                y: screenY,
+            }));
+        });
     };
 
     render() {
