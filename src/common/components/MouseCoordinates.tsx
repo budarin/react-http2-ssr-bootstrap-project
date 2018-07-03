@@ -9,12 +9,8 @@ const defaultProps = {
 };
 
 type TDefaultProps = typeof defaultProps;
+type TProps = Readonly<{ children?: TRenderCallback } & TDefaultProps>;
 type TState = Readonly<ICoordinates>;
-type TProps = Readonly<
-    {
-        children?: TRenderCallback;
-    } & TDefaultProps
->;
 
 class MouseCoordinates extends React.Component<TProps, TState> {
     static readonly defaultProps: TDefaultProps = defaultProps;
