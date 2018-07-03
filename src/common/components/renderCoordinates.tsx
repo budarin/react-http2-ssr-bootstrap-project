@@ -1,6 +1,7 @@
 import React from 'react';
+import { TMouseEventRenderer } from './MouseCoordinates';
 
-const renderCoordinates = ({ x, y }: ICoordinates): JSX.Element => {
+const renderCoordinates: TMouseEventRenderer = ({ x, y }) => {
     return (
         <div>
             <span>Mouse coordinates:</span>

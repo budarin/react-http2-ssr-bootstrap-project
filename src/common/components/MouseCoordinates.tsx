@@ -1,15 +1,15 @@
 import React from 'react';
 import withHMR from './withHMR';
 
-type TRenderCallback = (coordinates: ICoordinates) => JSX.Element | null;
+export type TMouseEventRenderer = (coordinates: ICoordinates) => JSX.Element | null;
 
 const initialState = { x: 0, y: 0 };
 const defaultProps = {
-    children: (() => null) as TRenderCallback,
+    children: (() => null) as TMouseEventRenderer,
 };
 
 type TDefaultProps = typeof defaultProps;
-type TProps = Readonly<{ children?: TRenderCallback } & TDefaultProps>;
+type TProps = Readonly<{ children?: TMouseEventRenderer } & TDefaultProps>;
 type TState = Readonly<ICoordinates>;
 
 class MouseCoordinates extends React.Component<TProps, TState> {
