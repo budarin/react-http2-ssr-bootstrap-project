@@ -1,4 +1,4 @@
-import React, { MouseEvent } from 'react';
+import React from 'react';
 import withHMR from './withHMR';
 
 type TRenderCallback = (coordinates: ICoordinates) => JSX.Element | null;
