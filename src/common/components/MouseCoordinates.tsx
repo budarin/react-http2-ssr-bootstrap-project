@@ -24,7 +24,7 @@ class MouseCoordinates extends React.Component<TProps, TState> {
         document.removeEventListener('mousemove', this.handleMouseMove);
     }
 
-    handleMouseMove = (event: MouseEvent<HTMLElement>): void => {
+    handleMouseMove = (event: MouseEvent): void => {
         const { screenX = 0, screenY = 0 } = event;
 
         window.requestAnimationFrame(() => {
