@@ -2,10 +2,13 @@ import React from 'react';
 import withHMR from './withHMR';
 
 type TRenderCallback = (coordinates: ICoordinates) => JSX.Element | null;
+type TDefaultProps = typeof defaultProps;
 type TState = Readonly<ICoordinates>;
-type TProps = {
-    children?: TRenderCallback;
-} & typeof defaultProps;
+type TProps = Readonly<
+    {
+        children?: TRenderCallback;
+    } & TDefaultProps
+>;
 
 const initialState = { x: 0, y: 0 };
 const defaultProps = {
@@ -13,7 +16,7 @@ const defaultProps = {
 };
 
 class MouseCoordinates extends React.Component<TProps, TState> {
-    static readonly defaultProps: TProps = defaultProps;
+    static readonly defaultProps: TDefaultProps = defaultProps;
     readonly state: TState = initialState;
 
     componentDidMount() {
