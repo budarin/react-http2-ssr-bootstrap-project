@@ -86,7 +86,6 @@ const config = {
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
     ],
     serve: {
-        hot: true,
         http2: true,
         port: STATIC_PORT,
         host: STATIC_HOST,
