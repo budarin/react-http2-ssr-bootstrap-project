@@ -94,11 +94,12 @@ const config = {
             key: fs.readFileSync('certs/server.key'),
             cert: fs.readFileSync('certs/server.crt'),
         },
-        add: (app, middleware) => {
+        add: (app, middleware, options) => {
             app.use((ctx, next) => {
                 ctx.set('Access-Control-Allow-Origin', '*');
                 next();
             });
+
             middleware.webpack();
             middleware.content();
         },

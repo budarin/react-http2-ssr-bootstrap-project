@@ -1,5 +1,4 @@
 import * as React from 'react';
-import withHMR from './components/withHMR';
 
 import appStyles from './app.css';
 import MouseCoordinates from './components/MouseCoordinates';
@@ -22,4 +21,4 @@ class App extends React.Component {
     }
 }
 
-export default withHMR(App);
+export default App;

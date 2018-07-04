@@ -1,5 +1,4 @@
 import React from 'react';
-import withHMR from './withHMR';
 
 export type TMouseEventRenderer = (coordinates: ICoordinates) => JSX.Element | null;
 
@@ -43,4 +42,4 @@ class MouseCoordinates extends React.Component<TProps, TState> {
     }
 }
 
-export default withHMR(MouseCoordinates);
+export default MouseCoordinates;
