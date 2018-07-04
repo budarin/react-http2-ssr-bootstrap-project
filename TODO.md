@@ -1,4 +1,3 @@
--   HMR не работает дальше чем App
 -   css modules generating .d.ts
 -   добавить G-Rath/webpack-serve-overlay - оверлей для отображения ошибок в браузере
 -   setup markdownlint
