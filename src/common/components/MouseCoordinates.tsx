@@ -3,16 +3,10 @@ import React from 'react';
 export type TMouseEventRenderer = (coordinates: ICoordinates) => JSX.Element | null;
 
 const initialState = { x: 0, y: 0 };
-const defaultProps = {
-    children: (() => null) as TMouseEventRenderer,
-};
-
-type TDefaultProps = typeof defaultProps;
-type TProps = Readonly<{ children?: TMouseEventRenderer } & TDefaultProps>;
+type TProps = Readonly<{ children: TMouseEventRenderer }>;
 type TState = Readonly<ICoordinates>;
 
 class MouseCoordinates extends React.Component<TProps, TState> {
-    static readonly defaultProps: TDefaultProps = defaultProps;
     readonly state: TState = initialState;
 
     componentDidMount() {
