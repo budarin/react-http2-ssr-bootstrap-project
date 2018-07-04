@@ -1,13 +1,11 @@
 import React from 'react';
 
 export type TMouseEventRenderer = (coordinates: ICoordinates) => JSX.Element | null;
-
-const initialState = { x: 0, y: 0 };
 type TProps = Readonly<{ children: TMouseEventRenderer }>;
 type TState = Readonly<ICoordinates>;
 
 class MouseCoordinates extends React.Component<TProps, TState> {
-    readonly state: TState = initialState;
+    readonly state: TState = { x: 0, y: 0 };
 
     componentDidMount() {
         document.addEventListener('mousemove', this.handleMouseMove);
