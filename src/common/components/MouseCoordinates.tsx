@@ -1,19 +1,19 @@
-import React, { MouseEvent } from 'react';
+import React from 'react';
 import withHMR from './withHMR';
 
-type TRenderCallback = (coordinates: ICoordinates) => JSX.Element | null;
-type TState = Readonly<ICoordinates>;
-type TProps = {
-    children?: TRenderCallback;
-} & typeof defaultProps;
+export type TMouseEventRenderer = (coordinates: ICoordinates) => JSX.Element | null;
 
 const initialState = { x: 0, y: 0 };
 const defaultProps = {
-    children: (() => null) as TRenderCallback,
+    children: (() => null) as TMouseEventRenderer,
 };
 
+type TDefaultProps = typeof defaultProps;
+type TProps = Readonly<{ children?: TMouseEventRenderer } & TDefaultProps>;
+type TState = Readonly<ICoordinates>;
+
 class MouseCoordinates extends React.Component<TProps, TState> {
-    static readonly defaultProps: TProps = defaultProps;
+    static readonly defaultProps: TDefaultProps = defaultProps;
     readonly state: TState = initialState;
 
     componentDidMount() {
@@ -24,7 +24,7 @@ class MouseCoordinates extends React.Component<TProps, TState> {
         document.removeEventListener('mousemove', this.handleMouseMove);
     }
 
-    handleMouseMove = (event: MouseEvent<HTMLElement>): void => {
+    handleMouseMove = (event: MouseEvent): void => {
         const { screenX = 0, screenY = 0 } = event;
 
         window.requestAnimationFrame(() => {
