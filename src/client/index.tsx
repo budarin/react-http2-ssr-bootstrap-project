@@ -24,7 +24,6 @@ renderApp();
 
 if (__DEV__) {
     if (module.hot) {
-        // $FlowIgnore
         module.hot.accept('../common/App', () => {
             renderApp();
         });
