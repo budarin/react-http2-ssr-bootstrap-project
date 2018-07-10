@@ -29,4 +29,11 @@ describe('Home Page', () => {
 
         expect(text).toContain('Hello World!');
     });
+
+    it('should display mouse position', async () => {
+        await page.mouse.move(100, 100);
+        const text = await page.evaluate(() => document.body.textContent);
+
+        expect(text).toContain('Hello World!Mouse coordinates:x = 100   y = 100');
+    });
 });
