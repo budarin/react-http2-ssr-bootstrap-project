@@ -8,5 +8,6 @@ if (!config.presets[0][1]) {
 
 // modify env preset modules type to commonjs for jest
 config.presets[0][1].modules = 'commonjs';
+config.presets[0][1].debug = false;
 
 module.exports = require('babel-jest').createTransformer(config);

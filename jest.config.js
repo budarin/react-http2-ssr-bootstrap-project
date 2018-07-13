@@ -33,6 +33,9 @@ const config = {
     },
     notify: false,
     notifyMode: 'failure',
+
+    // TODO: setup projects for jsDom test & puppeteer tests for testEnvironment
+    projects: [],
 };
 
 // run also puppeteer tests
