@@ -1,3 +1,5 @@
+-   check new version of webpack-serve to work properly
+-   setup projects for jsDom test & puppeteer tests for testEnvironment (for not insert into every jsdom test doccomment block)
 -   css modules generating .d.ts
 -   добавить G-Rath/webpack-serve-overlay - оверлей для отображения ошибок в браузере
 -   setup markdownlint
