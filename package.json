@@ -91,7 +91,8 @@
         "webpack": "^4.16.5",
         "webpack-cli": "^3.1.0",
         "webpack-node-externals": "^1.7.2",
-        "webpack-serve": "^1.0.4"
+        "webpack-serve": "^1.0.4",
+        "webpack-serve-overlay": "^0.3.0"
     },
     "dependencies": {
         "debug": "^3.1.0",
