@@ -17,6 +17,7 @@ async function pushAssets(req: Http2ServerRequest, res: Http2ServerResponse) {
     pushAsset(stream, getFileDescription('default.css'));
     // pushAsset(stream, getFileDescription('manifest.json'));
 
+    // get client.js from dev-server in dev mode and from file in production
     if (process.env.NODE_ENV === 'production') {
         pushAsset(stream, getFileDescription('client.js'));
     }
