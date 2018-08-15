@@ -47,13 +47,11 @@ describe('Home Page', () => {
             const clock = lolex.install();
 
             setTimeout(() => {
-                console.log('Hello, world!');
                 bool = true;
             }, 500);
 
             clock.tick(500);
-            // clock.next();
-            clock.uninstall();
+            // clock.uninstall();
 
             return bool;
         });
