@@ -38,11 +38,9 @@ describe('Home Page', () => {
     });
 
     it('should use fake timers', async () => {
-        // TODO: fix CORS & CSP policies or module problems
         await page.addScriptTag({
-            url: 'https://cdn.jsdelivr.net/npm/lolex@2.7.1/src/lolex-src.min.js',
-            // path: './node_modules/lolex/src/lolex-src.js',
-            type: 'module',
+            url: 'https://cdn.jsdelivr.net/npm/lolex@2.7.1/lolex.min.js',
+            crossorigin: true,
         });
 
         await page.evaluate(() => {
