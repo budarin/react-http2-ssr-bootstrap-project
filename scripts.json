@@ -26,12 +26,12 @@
         }
     },
     {
-        "name": "ensureServerIsCreated",
-        "command": "node ./tools/ensureServerIsCreated.js"
+        "name": "ensureServerJsIsCreated",
+        "command": "node ./tools/ensureServerJsIsCreated.js"
     },
     {
         "name": "start-server",
-        "command": "prun ensureServerIsCreated && concurrently --kill-others \"prun server-compile\" \"prun server-monitoring\"",
+        "command": "prun ensureServerJsIsCreated && concurrently --kill-others \"prun server-compile\" \"prun server-monitoring\"",
         "env": {
             "NODE_ENV": "development",
             "DEBUG": "app:*"
