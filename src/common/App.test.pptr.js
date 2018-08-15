@@ -36,4 +36,21 @@ describe('Home Page', () => {
 
         expect(text).toContain('Hello World!Mouse coordinates:x = 100   y = 100');
     });
+
+    it('should use fake timers', async () => {
+        await page.addScriptTag({
+            url: 'https://cdn.jsdelivr.net/npm/lolex@2.7.1/src/lolex-src.min.js',
+        });
+
+        await page.evaluate(() => {
+            const clock = lolex.install();
+
+            setTimeout(() => {
+                console.log('Hello, world!');
+            }, 500);
+
+            clock.tick(500);
+            clock.uninstall();
+        });
+    });
 });

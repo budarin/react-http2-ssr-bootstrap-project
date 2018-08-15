@@ -4,3 +4,4 @@
 -   css modules generating .d.ts
 -   добавить G-Rath/webpack-serve-overlay - оверлей для отображения ошибок в браузере
 -   setup markdownlint
+-   разобраться с CORS в puppeteer и добиться работы lolex
