@@ -40,18 +40,24 @@ describe('Home Page', () => {
     it('should use fake timers', async () => {
         await page.addScriptTag({
             url: 'https://cdn.jsdelivr.net/npm/lolex@2.7.1/lolex.min.js',
-            crossorigin: true,
         });
 
-        await page.evaluate(() => {
+        const result = await page.evaluate(() => {
+            var bool = false;
             const clock = lolex.install();
 
             setTimeout(() => {
                 console.log('Hello, world!');
+                bool = true;
             }, 500);
 
             clock.tick(500);
+            // clock.next();
             clock.uninstall();
+
+            return bool;
         });
+
+        expect(result).toBe(true);
     });
 });

@@ -5,8 +5,7 @@
     },
     {
         "name": "start-client",
-        "command":
-            "webpack-serve -r ./config/webpack/client/register-ts.js --config ./config/webpack/client/webpack.config.babel.js",
+        "command": "webpack-serve -r ./config/webpack/client/register-ts.js --config ./config/webpack/client/webpack.config.babel.js",
         "env": {
             "NODE_ENV": "development",
             "DEBUG": "app:*"
@@ -14,8 +13,7 @@
     },
     {
         "name": "server-compile",
-        "command":
-            "webpack --config ./config/webpack/server/webpack.config.babel.js -r ../../../config/webpack/client/register-ts.js",
+        "command": "webpack --config ./config/webpack/server/webpack.config.babel.js -r ../../../config/webpack/client/register-ts.js",
         "env": {
             "NODE_ENV": "development"
         }
@@ -33,8 +31,7 @@
     },
     {
         "name": "start-server",
-        "command":
-            "prun ensureServerIsCreated && concurrently --kill-others \"prun server-compile\" \"prun server-monitoring\"",
+        "command": "prun ensureServerIsCreated && concurrently --kill-others \"prun server-compile\" \"prun server-monitoring\"",
         "env": {
             "NODE_ENV": "development",
             "DEBUG": "app:*"
@@ -86,8 +83,7 @@
     },
     {
         "name": "test-watch",
-        "command":
-            "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure",
+        "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure",
         "env": {
             "NODE_ENV": "test",
             "__DEV__": true,
