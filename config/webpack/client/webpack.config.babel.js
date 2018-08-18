@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import webpack from 'webpack';
+import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
@@ -84,6 +85,7 @@ const config = {
             __SERVER__: false,
         }),
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
+        new HardSourceWebpackPlugin(),
     ],
     serve: {
         http2: true,

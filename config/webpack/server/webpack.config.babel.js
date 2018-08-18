@@ -3,6 +3,7 @@ import webpack from 'webpack';
 import babelConfig from './babelLoaderConfig';
 import nodeExternals from 'webpack-node-externals';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 import env from '../../../src/utils/getEnv';
 
 const { STATIC_URL } = env;
@@ -87,6 +88,7 @@ const config = {
             __BROWSER__: false,
         }),
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
+        new HardSourceWebpackPlugin(),
     ],
     externals: [nodeExternals({ whitelist: ['webpack/hot/poll?1000'] })],
 };
