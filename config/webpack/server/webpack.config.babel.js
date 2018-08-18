@@ -73,6 +73,7 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
+        new HardSourceWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
             { from: './src/common/default.css' },
@@ -88,7 +89,6 @@ const config = {
             __BROWSER__: false,
         }),
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
-        new HardSourceWebpackPlugin(),
     ],
     externals: [nodeExternals({ whitelist: ['webpack/hot/poll?1000'] })],
 };

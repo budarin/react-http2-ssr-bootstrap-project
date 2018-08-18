@@ -78,6 +78,7 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
+        new HardSourceWebpackPlugin(),
         new webpack.DefinePlugin({
             __DEV__: true,
             __PROD__: false,
@@ -85,7 +86,6 @@ const config = {
             __SERVER__: false,
         }),
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
-        new HardSourceWebpackPlugin(),
     ],
     serve: {
         http2: true,
