@@ -73,7 +73,11 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
-        new HardSourceWebpackPlugin(), // should be first for hmr
+        new HardSourceWebpackPlugin({
+            cacheDirectory: path.resolve('./node_modules/.cache/server/[confighash]'),
+            recordsPath: path.resolve('./node_modules/.cache/server/[confighash]/records.json'),
+            configHash: require('node-object-hash')().hash,
+        }), // should be first for hmr
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
             { from: './src/common/default.css' },

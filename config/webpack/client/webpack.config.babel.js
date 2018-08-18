@@ -78,7 +78,11 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
-        new HardSourceWebpackPlugin(), // should be first for hmr
+        new HardSourceWebpackPlugin({
+            cacheDirectory: path.resolve('./node_modules/.cache/client/[confighash]'),
+            recordsPath: path.resolve('./node_modules/.cache/client/[confighash]/records.json'),
+            configHash: require('node-object-hash')().hash,
+        }), // should be first for hmr
         new webpack.DefinePlugin({
             __DEV__: true,
             __PROD__: false,
