@@ -78,7 +78,7 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
-        new HardSourceWebpackPlugin(),
+        new HardSourceWebpackPlugin(), // should be first for hmr
         new webpack.DefinePlugin({
             __DEV__: true,
             __PROD__: false,

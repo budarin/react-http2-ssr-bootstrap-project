@@ -73,7 +73,7 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
-        new HardSourceWebpackPlugin(),
+        new HardSourceWebpackPlugin(), // should be first for hmr
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
             { from: './src/common/default.css' },
