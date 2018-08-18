@@ -2,6 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import MinifyPlugin from 'babel-minify-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 
 import babelConfig from './babelLoaderConfig';
 
@@ -12,7 +13,7 @@ const config = {
     target: 'node',
     mode: 'production',
     // devtool: 'cheap-module-eval-source-map',
-    entry: ['./src/common/babelHelpers.js', './src/server/index.ts'],
+    entry: ['./src/server/index.ts'],
     output: {
         publicPath: '/',
         filename: 'server.js',
@@ -93,6 +94,7 @@ const config = {
             __SERVER__: true,
             __BROWSER__: false,
         }),
+        new HardSourceWebpackPlugin(),
     ],
 };
 

@@ -2,6 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import OptimizeJsPlugin from 'optimize-js-plugin';
 import MinifyPlugin from 'babel-minify-webpack-plugin';
+import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 
 import babelConfig from './babelLoaderConfig.js';
 
@@ -12,7 +13,7 @@ const config = {
     devtool: 'none',
     mode: 'production',
     entry: {
-        client: ['./src/common/babelHelpers.js', './src/client/index.tsx'],
+        client: ['./src/client/index.tsx'],
     },
     output: {
         publicPath: '/',
@@ -90,6 +91,7 @@ const config = {
             __BROWSER__: true,
             __SERVER__: false,
         }),
+        new HardSourceWebpackPlugin(),
     ],
 };
 
