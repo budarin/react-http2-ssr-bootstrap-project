@@ -5,7 +5,6 @@ import MouseCoordinates from './components/MouseCoordinates';
 import renderCoordinates from './components/renderCoordinates';
 
 const css = __BROWSER__ ? appStyles.locals : appStyles;
-
 class App extends React.Component {
     render() {
         if (__BROWSER__) {
