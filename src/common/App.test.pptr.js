@@ -5,9 +5,7 @@ import App from './App';
 
 const { PUPPETEER_URL } = env;
 
-console.log('PUPPETEER_URL', PUPPETEER_URL);
-
-// jest.setTimeout(10000);
+jest.setTimeout(10000);
 
 describe('Home Page', () => {
     let page;
