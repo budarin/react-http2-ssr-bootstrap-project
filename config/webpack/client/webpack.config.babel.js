@@ -81,7 +81,9 @@ const config = {
         new HardSourceWebpackPlugin({
             cacheDirectory: path.resolve('./node_modules/.cache/client/[confighash]'),
             recordsPath: path.resolve('./node_modules/.cache/client/[confighash]/records.json'),
-            configHash: require('node-object-hash')().hash,
+            configHash: function(webpackConfig) {
+                return require('node-object-hash')({ sort: false }).hash(webpackConfig);
+            },
         }), // should be first for hmr
         new webpack.DefinePlugin({
             __DEV__: true,
