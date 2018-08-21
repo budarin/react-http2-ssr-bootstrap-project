@@ -98,6 +98,7 @@ const config = {
         port: STATIC_PORT,
         host: STATIC_HOST,
         https: {
+            ca: fs.readFileSync('certs/cacert.crt'),
             key: fs.readFileSync('certs/server.key'),
             cert: fs.readFileSync('certs/server.crt'),
         },
