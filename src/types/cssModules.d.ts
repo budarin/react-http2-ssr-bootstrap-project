@@ -17,11 +17,7 @@ export interface ICssModule {
 export interface IStringifyable {
     toString(): string;
 }
-export interface ISelectorNode {
-    [key: string]: string;
-}
-
 declare module '*.css' {
-    const styles: ISelectorNode & IStringifyable & ICssModule;
+    const styles: IClassHash & IStringifyable & ICssModule;
     export default styles;
 }
