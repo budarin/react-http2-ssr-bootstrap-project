@@ -12,6 +12,7 @@ const { SERVER_PORT, SERVER_HOST, SERVER_URL } = env;
 const server = http2.createSecureServer(
     {
         allowHTTP1: true,
+        ca: fs.readFileSync('certs/cacert.crt'),
         cert: fs.readFileSync('certs/server.crt'),
         key: fs.readFileSync('certs/server.key'),
     },
