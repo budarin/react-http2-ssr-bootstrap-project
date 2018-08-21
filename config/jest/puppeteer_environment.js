@@ -6,7 +6,7 @@ const path = require('path');
 class PuppeteerEnvironment extends NodeEnvironment {
     async setup() {
         await super.setup();
-        const wsEndpoint = fs.readFileSync(path.resolve('.tmp/jest/wsEndpoint'), 'utf8');
+        const wsEndpoint = fs.readFileSync(path.resolve('.tmp/jest/puppeteer-tests/wsEndpoint'), 'utf8');
 
         if (!wsEndpoint) {
             throw new Error('wsEndpoint not found');

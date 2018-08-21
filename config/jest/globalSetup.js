@@ -23,5 +23,5 @@ module.exports = async function() {
     const browser = await puppeteer.launch(launchProps);
 
     global.browser = browser;
-    fs.writeFileSync(path.resolve('.tmp/jest/wsEndpoint'), browser.wsEndpoint());
+    fs.writeFileSync(path.resolve('.tmp/jest/puppeteer-tests/wsEndpoint'), browser.wsEndpoint());
 };
