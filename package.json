@@ -92,7 +92,7 @@
         "webpack": "^4.17.0",
         "webpack-cli": "^3.1.0",
         "webpack-node-externals": "^1.7.2",
-        "webpack-serve": "^2.0.2",
+        "webpack-serve": "^1.0.4",
         "webpack-serve-overlay": "^0.3.0"
     },
     "dependencies": {

@@ -73,13 +73,13 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
-        // new HardSourceWebpackPlugin({
-        //     cacheDirectory: path.resolve('./node_modules/.cache/server/[confighash]'),
-        //     recordsPath: path.resolve('./node_modules/.cache/server/[confighash]/records.json'),
-        //     configHash: function(webpackConfig) {
-        //         return require('node-object-hash')({ sort: false }).hash(webpackConfig);
-        //     },
-        // }),
+        new HardSourceWebpackPlugin({
+            cacheDirectory: path.resolve('./node_modules/.cache/server/[confighash]'),
+            recordsPath: path.resolve('./node_modules/.cache/server/[confighash]/records.json'),
+            configHash: function(webpackConfig) {
+                return require('node-object-hash')({ sort: false }).hash(webpackConfig);
+            },
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
             { from: './src/common/default.css' },
