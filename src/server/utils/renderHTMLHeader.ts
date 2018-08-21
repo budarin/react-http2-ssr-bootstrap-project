@@ -9,11 +9,11 @@ function renderHTMLHeader(): string {
 
     return `
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="ru">
         <head>
             <meta charset="UTF-8">
+            <meta name="version" content="${version}">
             <meta name="branch" content="${branchName}">
-            <meta name="app-version" content="${version}">
             <meta name="theme-color" content="#E6492F">
             <title>React SSR project</title>
             <meta name="Description" content="Simple SSR React project.">
