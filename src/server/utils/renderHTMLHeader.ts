@@ -1,8 +1,9 @@
 import branch from 'git-branch';
 import env from '../../utils/getEnv';
-import { version } from '../../../package.json';
+import * as packageJson from '../../../package.json';
 
 const branchName = branch.sync();
+const version = (packageJson as any).version;
 
 function renderHTMLHeader(): string {
     // TODO: fixme <link rel="preload" href="/manifest.json" as="fetch">
