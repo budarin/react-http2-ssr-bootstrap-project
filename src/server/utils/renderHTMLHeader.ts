@@ -1,4 +1,5 @@
 import env from '../../utils/getEnv';
+import { version } from '../../../package.json';
 
 function renderHTMLHeader(): string {
     // TODO: fixme <link rel="preload" href="/manifest.json" as="fetch">
@@ -8,6 +9,7 @@ function renderHTMLHeader(): string {
         <html lang="en">
         <head>
             <meta charset="UTF-8">
+            <meta name="app-version" content="${version}">
             <meta name="theme-color" content="#E6492F">
             <title>React SSR project</title>
             <meta name="Description" content="Simple SSR React project.">
