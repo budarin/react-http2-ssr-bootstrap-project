@@ -9,9 +9,14 @@ import logServerRequest from './utils/logServerRequest';
 const app = async (req: Http2ServerRequest, res: Http2ServerResponse) => {
     logServerRequest(req);
 
+    if (req.url === '/ping') {
+        res.writeHead(200, { 'content-type': 'text' });
+        res.end(Date.now().toString());
+        return;
+    }
+
     if (isLegalRoute(req)) {
         await pushAssets(req, res);
-
         return renderApp(req, res);
     }
 
