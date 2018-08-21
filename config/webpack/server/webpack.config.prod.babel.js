@@ -81,6 +81,13 @@ const config = {
         modules: ['node_modules', path.resolve('./src')],
     },
     plugins: [
+        new HardSourceWebpackPlugin({
+            cacheDirectory: path.resolve('./node_modules/.cache/server/[confighash]'),
+            recordsPath: path.resolve('./node_modules/.cache/server/[confighash]/records.json'),
+            configHash: function(webpackConfig) {
+                return require('node-object-hash')({ sort: false }).hash(webpackConfig);
+            },
+        }),
         new CopyWebpackPlugin([
             { from: './src/common/default.css' },
             { from: './src/common/manifest.json' },
@@ -94,7 +101,6 @@ const config = {
             __SERVER__: true,
             __BROWSER__: false,
         }),
-        new HardSourceWebpackPlugin(),
     ],
 };
 
