@@ -103,6 +103,7 @@ const config = {
             cert: fs.readFileSync('certs/server.crt'),
         },
         add: (app, middleware, options) => {
+            // to have an ability to load resources from diff server origin
             app.use((ctx, next) => {
                 ctx.set('Access-Control-Allow-Origin', '*');
                 next();
