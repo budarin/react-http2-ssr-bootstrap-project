@@ -5,12 +5,13 @@
     "scripts": {
         "client": "prun start-client",
         "server": "prun start-server",
+        "test": "prun test",
         "test-watch": "prun test-watch",
+        "test-puppeteer": "prun test-puppeteer",
+        "test-puppeteer-watch": "prun test-puppeteer-watch",
         "upgrade": "prun upgrade",
         "build": "prun build",
-        "test": "prun test",
         "type-check": "prun type-check",
-        "test-puppeteer": "prun test-puppeteer",
         "precommit": "lint-staged"
     },
     "lint-staged": {
