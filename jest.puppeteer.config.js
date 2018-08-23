@@ -24,6 +24,6 @@ module.exports = {
         __BROWSER__: true,
         __SERVER__: false,
     },
-    notify: false,
+    notify: true,
     notifyMode: 'failure',
 };

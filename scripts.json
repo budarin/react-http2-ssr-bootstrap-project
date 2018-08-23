@@ -87,17 +87,26 @@
         "env": {
             "NODE_ENV": "test",
             "__DEV__": true,
-            "SHOW_BROWSER": false,
-            "JEST_HIDE_USAGE": true,
-            "RUN_PUPPETEER_TESTS": true
+            "JEST_HIDE_USAGE": true
         }
     },
     {
         "name": "test-puppeteer",
-        "command": "jest --detectOpenHandles --no-cache  --forceExit ",
+        "command": "jest --detectOpenHandles --no-cache  --forceExit  --config ./jest.puppeteer.config.js",
         "env": {
+            "NODE_ENV": "test",
+            "__DEV__": true,
+            "SHOW_BROWSER": false
+        }
+    },
+    {
+        "name": "test-puppeteer-watch",
+        "command": "jest --watch --onlyChanged --watchman --forceExit --detectOpenHandles --notify --notifyMode=failure --config ./jest.puppeteer.config.js",
+        "env": {
+            "NODE_ENV": "test",
+            "__DEV__": true,
             "SHOW_BROWSER": false,
-            "RUN_ONLY_PUPPETEER_TESTS": true
+            "JEST_HIDE_USAGE": true
         }
     }
 ]
