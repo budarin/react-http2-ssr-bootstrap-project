@@ -70,7 +70,7 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json', '.css'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
         modules: ['node_modules'],
     },
     plugins: [
@@ -97,7 +97,6 @@ const config = {
         }),
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
     ],
-    externals: [nodeExternals({ whitelist: ['webpack/hot/poll?1000'] })],
 };
 
 export default config;
