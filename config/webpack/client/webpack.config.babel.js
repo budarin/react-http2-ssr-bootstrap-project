@@ -63,6 +63,7 @@ const config = {
                         options: {
                             modules: true,
                             sourceMap: false,
+                            importLoaders: 1,
                             localIdentName: '[name].[local]_[hash:7]',
                         },
                     },

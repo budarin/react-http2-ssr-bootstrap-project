@@ -58,6 +58,7 @@ const config = {
                         options: {
                             modules: true,
                             minimize: false,
+                            importLoaders: 1,
                             localIdentName: '[name].[local]_[hash:7]',
                         },
                     },
@@ -69,8 +70,8 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
-        modules: ['node_modules', path.resolve('./src')],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.json', '.css'],
+        modules: ['node_modules'],
     },
     plugins: [
         new HardSourceWebpackPlugin({
