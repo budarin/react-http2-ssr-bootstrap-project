@@ -1,5 +1,5 @@
 function renderHTMLBottom(): string {
-    return `</div>
+    return `</main>
         </body>
         <html>`;
 }

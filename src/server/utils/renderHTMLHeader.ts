@@ -26,7 +26,7 @@ function renderHTMLHeader(): string {
             <link rel="stylesheet" type="text/css" href="/default.css" />
         </head>
         <body>
-            <div id="root">`;
+            <main id="root">`;
 }
 
 export default renderHTMLHeader;
