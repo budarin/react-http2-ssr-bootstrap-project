@@ -22,9 +22,10 @@ function renderHTMLHeader(): string {
             <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes,shrink-to-fit=no">
             <link rel="manifest" href="/manifest.json">
             
+            <!-- for dev mode only -->
             <script src="/react.development.js" defer></script>
             <script src="/react-dom.development.js" defer></script>
-    
+            <!-- for dev mode only -->    
 
             <script src="${env.STATIC_URL}client.js" defer></script>
             <link rel="stylesheet" type="text/css" href="/default.css" />
