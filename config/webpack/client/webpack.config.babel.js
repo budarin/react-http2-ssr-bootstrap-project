@@ -94,6 +94,10 @@ const config = {
         }),
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
     ],
+    externals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+    },
     serve: {
         http2: true,
         port: STATIC_PORT,

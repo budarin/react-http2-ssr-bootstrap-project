@@ -13,6 +13,8 @@ function sendStaticFile(req: Http2ServerRequest, res: Http2ServerResponse): void
     const { url } = req;
     const filePath = path.resolve(path.join(serverRootPath, url));
 
+    // console.log(`\nsendStaticFile: ${filePath}\n`);
+
     if (!isLegalAsset(url)) {
         log('>> Illegal static file:', url);
 

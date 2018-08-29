@@ -83,6 +83,9 @@ const config = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
+            { from: './node_modules/react/umd/react.development.js' },
+            { from: './node_modules/react-dom/umd/react-dom.development.js' },
+
             { from: './src/common/default.css' },
             { from: './src/common/manifest.json' },
             { from: './src/common/favicon.ico' },
