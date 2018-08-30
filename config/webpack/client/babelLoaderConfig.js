@@ -10,6 +10,7 @@ module.exports = {
                 loose: true,
                 debug: true,
                 modules: false, // to properly work HMR https://github.com/webpack/webpack-dev-server/issues/100
+                useBuiltIns: 'usage',
                 targets: {
                     browsers: browserList,
                 },

@@ -8,6 +8,7 @@ module.exports = {
                 loose: true,
                 debug: true,
                 modules: false,
+                useBuiltIns: 'usage',
                 targets: {
                     node: 'current',
                 },

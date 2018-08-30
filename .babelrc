@@ -5,6 +5,7 @@
             {
                 "loose": true,
                 "debug": true,
+                "useBuiltIns": "usage",
                 "targets": { "node": "current" }
             }
         ],
