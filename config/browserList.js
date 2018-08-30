@@ -1,1 +1,1 @@
-module.exports = ['Chrome >= 63', 'Firefox >= 58', 'Safari >= 11', 'iOS >= 10.3', 'Edge >= 14'];
+module.exports = ['last 1 version'];
