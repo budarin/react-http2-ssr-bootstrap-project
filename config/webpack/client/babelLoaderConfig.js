@@ -5,7 +5,7 @@ module.exports = {
     cacheDirectory: '.tmp/babel/client',
     presets: [
         [
-            '@babel/env',
+            '@babel/preset-env',
             {
                 loose: true,
                 debug: true,
