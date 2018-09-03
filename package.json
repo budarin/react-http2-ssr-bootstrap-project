@@ -41,6 +41,7 @@
         "@babel/plugin-transform-react-inline-elements": "^7.0.0",
         "@babel/plugin-transform-react-jsx-self": "^7.0.0",
         "@babel/plugin-transform-react-jsx-source": "^7.0.0",
+        "@babel/plugin-transform-runtime": "^7.0.0",
         "@babel/preset-env": "^7.0.0",
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.0.0",
@@ -55,7 +56,6 @@
         "@types/webpack": "^4.4.11",
         "@types/webpack-env": "^1.13.6",
         "@types/webpack-serve": "^2.0.0",
-        "babel-core": "^7.0.0-bridge.0",
         "babel-jest": "^23.4.2",
         "babel-loader": "^8.0.2",
         "babel-minify-webpack-plugin": "^0.3.1",
@@ -99,6 +99,7 @@
         "webpack-serve-overlay": "^0.3.0"
     },
     "dependencies": {
+        "@babel/runtime": "^7.0.0",
         "debug": "^3.1.0",
         "mime-types": "^2.1.20",
         "react": "^16.4.2",
