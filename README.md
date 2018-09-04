@@ -16,7 +16,4 @@ Simple React project with SSR
 -   jest
 -   puppeteer
 
-.babelrc используется webpack и node-babel для транспиляции конфигов и утилит
-для react-loader все настройки находятся в ./config/babelLoaderConfig.json
-
 to start app - run client & server npm scripts
