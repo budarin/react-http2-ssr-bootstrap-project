@@ -17,7 +17,7 @@ class App extends React.Component {
                 <span className={css.hello}>Hello World!</span>
                 <MouseCoordinates>{renderCoordinates}</MouseCoordinates>
                 <br />
-                <SimpleButton text="Кнопка разбобка!" />
+                <SimpleButton text="Кнопка!" />
             </>
         );
     }
