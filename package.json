@@ -12,7 +12,8 @@
         "upgrade": "prun upgrade",
         "build": "prun build",
         "type-check": "prun type-check",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged",
+        "check:upgrade": "prun check:upgrade"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [
@@ -46,7 +47,7 @@
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.0.0",
         "@babel/register": "^7.0.0",
-        "@budarin/simple-button": "^1.0.26",
+        "@budarin/simple-button": "^1.0.29",
         "@types/debug": "0.0.30",
         "@types/git-branch": "^2.0.0",
         "@types/mime-types": "^2.1.0",
@@ -80,7 +81,7 @@
         "prun": "^1.0.1",
         "puppeteer": "^1.7.0",
         "react-hot-loader": "^4.3.6",
-        "react-test-renderer": "^16.4.2",
+        "react-test-renderer": "^16.5.0",
         "style-loader": "^0.23.0",
         "stylelint": "^9.5.0",
         "stylelint-a11y": "^1.1.7",
@@ -103,7 +104,7 @@
         "@babel/runtime": "^7.0.0",
         "debug": "^3.1.0",
         "mime-types": "^2.1.20",
-        "react": "^16.4.2",
-        "react-dom": "^16.4.2"
+        "react": "^16.5.0",
+        "react-dom": "^16.5.0"
     }
 }

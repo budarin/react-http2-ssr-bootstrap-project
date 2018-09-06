@@ -78,7 +78,8 @@
         "command": "jest --detectOpenHandles --no-cache  --forceExit ",
         "env": {
             "NODE_ENV": "test",
-            "__DEV__": true
+            "__DEV__": true,
+            "__BROWSER__": true
         }
     },
     {
@@ -87,6 +88,7 @@
         "env": {
             "NODE_ENV": "test",
             "__DEV__": true,
+            "__BROWSER__": true,
             "JEST_HIDE_USAGE": true
         }
     },
@@ -108,5 +110,9 @@
             "SHOW_BROWSER": false,
             "JEST_HIDE_USAGE": true
         }
+    },
+    {
+        "name": "check:upgrade",
+        "command": "ncu"
     }
 ]
