@@ -46,7 +46,7 @@
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.0.0",
         "@babel/register": "^7.0.0",
-        "@budarin/simple-button": "^1.0.17",
+        "@budarin/simple-button": "^1.0.26",
         "@types/debug": "0.0.30",
         "@types/git-branch": "^2.0.0",
         "@types/mime-types": "^2.1.0",
