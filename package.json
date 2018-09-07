@@ -13,7 +13,7 @@
         "build": "prun build",
         "type-check": "prun type-check",
         "precommit": "lint-staged",
-        "check:upgrade": "prun check:upgrade"
+        "check-upgrade": "prun check:upgrade"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [
@@ -47,8 +47,9 @@
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.0.0",
         "@babel/register": "^7.0.0",
-        "@budarin/simple-button": "^1.0.32",
-        "@budarin/simple-text": "^1.0.26",
+        "@babel/runtime": "^7.0.0",
+        "@budarin/simple-button": "^1.1.6",
+        "@budarin/simple-text": "^1.1.4",
         "@types/debug": "0.0.30",
         "@types/git-branch": "^2.0.0",
         "@types/mime-types": "^2.1.0",
@@ -101,7 +102,6 @@
         "webpack-serve-overlay": "^0.3.0"
     },
     "dependencies": {
-        "@babel/runtime": "^7.0.0",
         "debug": "^3.1.0",
         "mime-types": "^2.1.20",
         "react": "^16.5.0",

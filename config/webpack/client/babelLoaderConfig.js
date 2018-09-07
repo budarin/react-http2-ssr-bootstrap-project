@@ -12,7 +12,8 @@ module.exports = {
                 modules: false, // to properly work HMR https://github.com/webpack/webpack-dev-server/issues/100
                 useBuiltIns: 'usage',
                 targets: {
-                    browsers: browserList,
+                    // в разработке использовать только последние версии а в продакшене - нужные
+                    browsers: process.env.NODE_ENV === 'development' ? ['last 1 version'] : browserList,
                 },
             },
         ],
