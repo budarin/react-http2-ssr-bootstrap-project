@@ -3,7 +3,6 @@ module.exports = {
     name: 'unit-tests',
     displayName: 'unit-tests',
     cacheDirectory: '../.tmp/jest/unit-tests',
-    coverageDirectory: '../.tmp/coverage',
     transform: {
         '^.+\\.(js|ts|jsx|tsx)$': '../config/jest/transformer.js',
     },
@@ -29,4 +28,8 @@ module.exports = {
     },
     notify: true,
     notifyMode: 'failure',
+
+    collectCoverage: true,
+    coverageDirectory: '../.tmp/coverage',
+    collectCoverageFrom: ['**/*.{ts,tsx}', '!src/**/*.d.ts'],
 };
