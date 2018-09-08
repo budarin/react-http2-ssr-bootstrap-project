@@ -34,6 +34,7 @@ module.exports = {
                 '@babel/plugin-transform-react-inline-elements',
                 '@babel/plugin-transform-react-constant-elements',
                 'babel-plugin-transform-react-class-to-function',
+                'babel-plugin-closure-elimination',
             ],
             ignore: ['__snapshots__', '__tests__', 'node_modules'],
         },
