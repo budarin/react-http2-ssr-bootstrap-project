@@ -1,7 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
 import babelConfig from './babelLoaderConfig';
-import nodeExternals from 'webpack-node-externals';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 import env from '../../../src/utils/getEnv';
@@ -74,13 +73,6 @@ const config = {
         modules: ['node_modules'],
     },
     plugins: [
-        new HardSourceWebpackPlugin({
-            cacheDirectory: path.resolve('./node_modules/.cache/server/[confighash]'),
-            recordsPath: path.resolve('./node_modules/.cache/server/[confighash]/records.json'),
-            configHash: function(webpackConfig) {
-                return require('node-object-hash')({ sort: false }).hash(webpackConfig);
-            },
-        }),
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([
             { from: './node_modules/react/umd/react.development.js' },

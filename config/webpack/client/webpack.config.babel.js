@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import webpack from 'webpack';
-import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 
 // import CopyWebpackPlugin from 'copy-webpack-plugin';
 
@@ -76,16 +75,9 @@ const config = {
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
-        modules: ['node_modules', path.resolve('./src')],
+        modules: ['node_modules', 'src'],
     },
     plugins: [
-        new HardSourceWebpackPlugin({
-            cacheDirectory: path.resolve('./node_modules/.cache/client/[confighash]'),
-            recordsPath: path.resolve('./node_modules/.cache/client/[confighash]/records.json'),
-            configHash: function(webpackConfig) {
-                return require('node-object-hash')({ sort: false }).hash(webpackConfig);
-            },
-        }),
         new webpack.DefinePlugin({
             __DEV__: true,
             __PROD__: false,
