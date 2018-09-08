@@ -14,7 +14,7 @@ const config = {
     target: 'web',
     profile: false,
     mode: 'development',
-    devtool: 'inline-cheap-module-eval-source-map',
+    devtool: 'cheap-module-eval-source-map',
     entry: {
         client: ['./src/client/index.tsx'],
     },

@@ -12,7 +12,7 @@ const config = {
     target: 'node',
     profile: false,
     mode: 'development',
-    devtool: 'inline-cheap-module-eval-source-map',
+    devtool: 'cheap-module-eval-source-map',
     entry: ['./src/server/index.ts'],
     output: {
         publicPath: '/',
