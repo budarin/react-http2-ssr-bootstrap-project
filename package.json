@@ -12,8 +12,7 @@
         "upgrade": "prun upgrade",
         "build": "prun build",
         "type-check": "prun type-check",
-        "precommit": "lint-staged",
-        "check-upgrade": "prun check:upgrade"
+        "precommit": "lint-staged"
     },
     "lint-staged": {
         "*.{js,json,css,md}": [
