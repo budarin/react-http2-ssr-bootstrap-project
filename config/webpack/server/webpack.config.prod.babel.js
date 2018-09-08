@@ -11,7 +11,7 @@ const config = {
     profile: true,
     target: 'node',
     mode: 'production',
-    // devtool: 'cheap-module-eval-source-map',
+    devtool: 'none',
     entry: ['./src/server/index.ts'],
     output: {
         publicPath: '/',
@@ -93,6 +93,10 @@ const config = {
             __PROD__: true,
             __SERVER__: true,
             __BROWSER__: false,
+        }),
+        new webpack.SourceMapDevToolPlugin({
+            columns: false,
+            filename: '[name].js.map',
         }),
     ],
 };

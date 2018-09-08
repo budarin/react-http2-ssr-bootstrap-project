@@ -91,6 +91,10 @@ const config = {
             __BROWSER__: true,
             __SERVER__: false,
         }),
+        new webpack.SourceMapDevToolPlugin({
+            columns: false,
+            filename: '[name].js.map',
+        }),
     ],
 };
 
