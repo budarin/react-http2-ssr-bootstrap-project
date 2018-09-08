@@ -1,9 +1,11 @@
 import env from '../utils/getEnv';
 
 // its imported only for testing purpose when App.js changed
-import App from './App';
+// import App from './App';
 
-const { PUPPETEER_URL } = env;
+const { SERVER_URL } = env;
+
+console.log(SERVER_URL);
 
 jest.setTimeout(10000);
 
@@ -16,7 +18,7 @@ describe('Home Page', () => {
         context = await browser.createIncognitoBrowserContext();
         page = await context.newPage();
 
-        await page.goto(`${PUPPETEER_URL}`);
+        await page.goto(`${SERVER_URL}`);
         await page.waitForSelector('body.interactive');
     });
 
