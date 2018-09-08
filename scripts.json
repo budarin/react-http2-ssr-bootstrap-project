@@ -78,8 +78,7 @@
         "command": "jest --detectOpenHandles --no-cache  --forceExit ",
         "env": {
             "NODE_ENV": "test",
-            "__DEV__": true,
-            "__BROWSER__": true
+            "__DEV__": true
         }
     },
     {
@@ -88,7 +87,6 @@
         "env": {
             "NODE_ENV": "test",
             "__DEV__": true,
-            "__BROWSER__": true,
             "JEST_HIDE_USAGE": true
         }
     },
