@@ -2,6 +2,9 @@
     "name": "minimal-react-webpack-babel-setup",
     "version": "1.0.0",
     "description": "React simple bootstrap",
+    "engines": {
+        "node": ">=10.9.0"
+    },
     "scripts": {
         "client": "prun start-client",
         "server": "prun start-server",
