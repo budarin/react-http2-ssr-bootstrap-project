@@ -1,1 +1,1 @@
-module.exports = ['last 1 version'];
+module.exports = ['last 2 version', 'not ie < 12'];
