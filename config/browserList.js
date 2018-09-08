@@ -1,1 +1,1 @@
-module.exports = ['last 1 version', '> 3%', 'not ie < 13'];
+module.exports = ['> 3%', 'not ie < 13', 'not dead'];

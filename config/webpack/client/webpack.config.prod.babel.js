@@ -6,6 +6,7 @@ import MinifyPlugin from 'babel-minify-webpack-plugin';
 import babelConfig from './babelLoaderConfig.js';
 
 const config = {
+    watch: false,
     cache: false,
     target: 'web',
     profile: true,
