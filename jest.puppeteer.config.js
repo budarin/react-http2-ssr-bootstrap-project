@@ -12,7 +12,7 @@ module.exports = {
     moduleNameMapper: {
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
             '../../config/jest/mocks/fileMock.js',
-        '\\.(css)$': '../../config/jest/mocks/styleMock.js',
+        '\\.(css)$': 'identity-obj-proxy',
     },
     testPathIgnorePatterns: ['/node_modules/'],
     globalSetup: '../config/jest/globalSetup.js',
