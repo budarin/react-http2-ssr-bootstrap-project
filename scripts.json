@@ -64,7 +64,7 @@
     },
     {
         "name": "upgrade",
-        "command": "ncu --upgradeAll && npm install"
+        "command": "npm-upgrade && npm install"
     },
     {
         "name": "start-all",
@@ -110,9 +110,5 @@
             "SHOW_BROWSER": false,
             "JEST_HIDE_USAGE": true
         }
-    },
-    {
-        "name": "check:upgrade",
-        "command": "ncu"
     }
 ]
