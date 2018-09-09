@@ -1,8 +1,6 @@
 const packageJson = require('../../../package');
 const browserslist = packageJson.browserslist;
 
-console.log('browserlist', 'last 1 version, ' + browserslist);
-
 module.exports = {
     babelrc: false,
     cacheDirectory: '.tmp/babel/client',
