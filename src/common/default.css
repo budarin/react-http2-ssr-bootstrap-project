@@ -1,9 +1,21 @@
-body {
+html {
+    box-sizing: border-box;
     color: brown;
     font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
+}
+
+body {
+    max-height: 100vh;
 }
 
 #root {
     margin: 1rem;
-    min-height: 100vh;
+    min-height: 100%;
 }
