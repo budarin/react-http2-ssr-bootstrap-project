@@ -1,4 +1,4 @@
-export const legalAssets = __DEV__
+export const legalAssets = process.env.__DEV__
     ? [
           '/default.css',
           '/bundle.js',

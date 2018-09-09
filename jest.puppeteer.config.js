@@ -18,12 +18,12 @@ module.exports = {
     globalSetup: '../config/jest/globalSetup.js',
     globalTeardown: '../config/jest/globalTearDown.js',
     testEnvironment: '../config/jest/puppeteer_environment.js',
-    globals: {
-        __DEV__: true,
-        __PROD__: false,
-        __BROWSER__: true,
-        __SERVER__: false,
-    },
     notify: true,
     notifyMode: 'failure',
+    globals: {
+        'process.env.__DEV__': true,
+        'process.env.__PROD__': false,
+        'process.env.__BROWSER__': false,
+        'process.env.__SERVER__': false,
+    },
 };

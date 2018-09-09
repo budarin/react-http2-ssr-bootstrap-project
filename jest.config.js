@@ -20,16 +20,16 @@ module.exports = {
     },
     testPathIgnorePatterns: ['/node_modules/'],
     testEnvironment: 'jest-environment-jsdom',
-    globals: {
-        __DEV__: true,
-        __PROD__: false,
-        __BROWSER__: false,
-        __SERVER__: false,
-    },
     notify: true,
     notifyMode: 'failure',
 
     collectCoverage: true,
     coverageDirectory: '../.tmp/coverage',
     collectCoverageFrom: ['**/*.{ts,tsx}', '!src/**/*.d.ts'],
+    globals: {
+        'process.env.__DEV__': true,
+        'process.env.__PROD__': false,
+        'process.env.__BROWSER__': false,
+        'process.env.__SERVER__': false,
+    },
 };

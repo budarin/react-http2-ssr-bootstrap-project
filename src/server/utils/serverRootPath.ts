@@ -1,3 +1,3 @@
-const serverRootPath = __DEV__ ? './dist' : '';
+const serverRootPath = process.env.__DEV__ ? './dist' : './';
 
 export default serverRootPath;

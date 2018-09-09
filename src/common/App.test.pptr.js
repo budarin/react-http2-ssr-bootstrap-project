@@ -5,8 +5,6 @@ import App from './App';
 
 const { SERVER_URL } = env;
 
-console.log(SERVER_URL);
-
 jest.setTimeout(10000);
 
 describe('Home Page', () => {

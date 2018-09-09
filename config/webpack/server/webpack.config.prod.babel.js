@@ -89,10 +89,10 @@ const config = {
             { from: './src/common/android-chrome-512x512.png' },
         ]),
         new webpack.DefinePlugin({
-            __DEV__: false,
-            __PROD__: true,
-            __SERVER__: true,
-            __BROWSER__: false,
+            'process.env.__DEV__': false,
+            'process.env.__PROD__': true,
+            'process.env.__SERVER__': true,
+            'process.env.__BROWSER__': false,
         }),
         new webpack.SourceMapDevToolPlugin({
             columns: false,
