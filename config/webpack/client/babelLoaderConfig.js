@@ -1,4 +1,7 @@
-const browserList = require('../../browserList');
+const packageJson = require('../../../package');
+const browserslist = packageJson.browserslist;
+
+console.log('browserlist', 'last 1 version, ' + browserslist);
 
 module.exports = {
     babelrc: false,
@@ -16,7 +19,7 @@ module.exports = {
                     browsers:
                         process.env.NODE_ENV === 'development'
                             ? ['last 1 Chrome versions']
-                            : ['last 1 version'].concat(browserList), // @babel/preset-env has own list of browsers other than others
+                            : 'last 1 version, ' + browserslist, // @babel/preset-env has own list of browsers other than others
                 },
             },
         ],

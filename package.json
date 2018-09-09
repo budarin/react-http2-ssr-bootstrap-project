@@ -17,6 +17,7 @@
         "type-check": "prun type-check",
         "precommit": "lint-staged"
     },
+    "browserslist": "> 3%, not ie < 13, not dead",
     "lint-staged": {
         "*.{js,json,css,md}": [
             "prettier --write",
@@ -49,7 +50,7 @@
         "@babel/preset-typescript": "^7.0.0",
         "@babel/register": "^7.0.0",
         "@babel/runtime": "^7.0.0",
-        "@budarin/simple-button": "^1.1.11",
+        "@budarin/simple-button": "^1.1.12",
         "@budarin/simple-text": "^1.1.6",
         "@types/debug": "0.0.30",
         "@types/git-branch": "^2.0.0",
