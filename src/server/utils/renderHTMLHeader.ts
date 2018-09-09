@@ -1,7 +1,9 @@
+import fs from 'fs';
 import branch from 'git-branch';
 import env from '../../utils/getEnv';
 import * as packageJson from '../../../package.json';
 
+const ress = fs.readFileSync('./node_modules/ress/dist/ress.min.css', { encoding: 'utf-8' });
 const branchName = branch.sync();
 const version = (packageJson as any).version;
 
@@ -21,6 +23,8 @@ function renderHTMLHeader(): string {
             <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width, Downlink">
             <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes,shrink-to-fit=no">
             <link rel="manifest" href="/manifest.json">
+            
+            <style id="ress">${ress}</style>
             
             <!-- for dev mode only -->
             <script src="/react.development.js" defer></script>
