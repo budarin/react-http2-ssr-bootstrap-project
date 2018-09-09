@@ -8,7 +8,9 @@ Array [
     Hello World!
   </span>,
   <br />,
-  <button>
+  <button
+    className="btn"
+  >
     <span
       style={
         Object {
