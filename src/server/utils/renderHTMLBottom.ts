@@ -1,5 +1,5 @@
 const renderHTMLBottom = `</main>
         </body>
-        <html>`;
+        </html>`;
 
 export default renderHTMLBottom;

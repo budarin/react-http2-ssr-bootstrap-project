@@ -16,7 +16,7 @@ function isHttp2(req: Http2ServerRequest): boolean {
     return req.httpVersion.startsWith('2.');
 }
 
-function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): void {
+async function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): Promise<any> {
     log('>> Render app');
 
     if (!isHttp2(req)) {
@@ -26,15 +26,17 @@ function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): void {
     res.writeHead(200, headers);
     res.write(renderHTMLHeader());
 
-    const appString = renderToString(<App />);
     // emulate long ssr
     const longSSRTimeout = 0;
 
-    setTimeout(() => {
+    await new Promise(resolve => {
+        setTimeout(() => resolve(true), longSSRTimeout);
+    }).then(() => {
+        const appString = renderToString(<App />);
         res.write(renderRemoveSplashScript);
         res.write(appString);
         res.end(renderHTMLBottom);
-    }, longSSRTimeout);
+    });
 }
 
 export default renderApp;
