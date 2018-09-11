@@ -60,11 +60,10 @@ const config = {
                         },
                     },
                     {
-                        loader: 'css-loader',
+                        loader: 'typings-for-css-modules-loader',
                         options: {
-                            sourceMap: false,
                             modules: true,
-                            importLoaders: 1,
+                            namedExport: false,
                             localIdentName: '[hash:base64:8]',
                             // cssnano options
                             minimize: {
@@ -92,6 +91,7 @@ const config = {
             'process.env.__BROWSER__': true,
             'process.env.__SERVER__': false,
         }),
+        new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
         new webpack.SourceMapDevToolPlugin({
             columns: false,
             filename: '[name].js.map',

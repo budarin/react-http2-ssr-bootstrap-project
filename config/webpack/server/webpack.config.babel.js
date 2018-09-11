@@ -53,11 +53,12 @@ const config = {
                         loader: 'fake-style-loader',
                     },
                     {
-                        loader: 'css-loader',
+                        loader: 'typings-for-css-modules-loader',
                         options: {
                             modules: true,
-                            minimize: false,
+                            namedExport: false,
                             importLoaders: 1,
+                            minimize: false,
                             localIdentName: '[name].[local]_[hash:7]',
                         },
                     },

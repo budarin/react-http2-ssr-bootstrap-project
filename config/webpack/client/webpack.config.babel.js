@@ -58,10 +58,10 @@ const config = {
                         },
                     },
                     {
-                        loader: 'css-loader',
+                        loader: 'typings-for-css-modules-loader',
                         options: {
                             modules: true,
-                            sourceMap: false,
+                            namedExport: false,
                             importLoaders: 1,
                             localIdentName: '[name].[local]_[hash:7]',
                         },

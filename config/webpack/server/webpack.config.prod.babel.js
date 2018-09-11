@@ -55,9 +55,10 @@ const config = {
                         loader: 'fake-style-loader',
                     },
                     {
-                        loader: 'css-loader',
+                        loader: 'typings-for-css-modules-loader',
                         options: {
                             modules: true,
+                            namedExport: false,
                             importLoaders: 1,
                             localIdentName: '[hash:base64:8]',
                             sourceMap: true,
@@ -94,6 +95,7 @@ const config = {
             'process.env.__SERVER__': true,
             'process.env.__BROWSER__': false,
         }),
+        new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
         new webpack.SourceMapDevToolPlugin({
             columns: false,
             filename: 'server.js.map',

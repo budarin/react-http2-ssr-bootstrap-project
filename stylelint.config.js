@@ -1,3 +1,6 @@
+const packageJson = require('../../../package');
+const browserslist = packageJson.browserslist;
+
 module.exports = {
     extends: ['stylelint-config-recommended', 'stylelint-config-css-modules', 'stylelint-config-prettier'],
     plugins: ['stylelint-order', 'stylelint-no-unsupported-browser-features', 'stylelint-a11y'],
@@ -5,7 +8,7 @@ module.exports = {
         'plugin/no-unsupported-browser-features': [
             true,
             {
-                // browsers: browserlist,
+                browsers: browserslist,
                 severity: 'warning',
             },
         ],
