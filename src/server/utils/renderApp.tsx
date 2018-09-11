@@ -27,11 +27,13 @@ async function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): Pro
     res.write(renderHTMLHeader());
 
     // emulate long ssr
-    const longSSRTimeout = 0;
+    const longSSRTimeout = 50;
 
     await new Promise(resolve => {
         setTimeout(() => resolve(true), longSSRTimeout);
     }).then(() => {
+        log('>> Render app content');
+
         const appString = renderToString(<App />);
         res.write(renderRemoveSplashScript);
         res.write(appString);

@@ -1,7 +1,7 @@
 export const legalAssets = process.env.__DEV__
     ? [
           '/default.css',
-          '/bundle.js',
+          '/client.js',
           '/favicon.ico',
           '/manifest.json',
           '/android-chrome-192x192.png',
@@ -11,7 +11,7 @@ export const legalAssets = process.env.__DEV__
       ]
     : [
           '/default.css',
-          '/bundle.js',
+          '/client.js',
           '/favicon.ico',
           '/manifest.json',
           '/android-chrome-192x192.png',

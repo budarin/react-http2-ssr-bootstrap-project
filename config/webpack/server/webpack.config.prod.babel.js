@@ -83,6 +83,7 @@ const config = {
     },
     plugins: [
         new CopyWebpackPlugin([
+            { from: './src/common/robots.txt' },
             { from: './src/common/default.css' },
             { from: './src/common/manifest.json' },
             { from: './src/common/favicon.ico' },
