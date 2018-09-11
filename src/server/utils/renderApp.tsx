@@ -28,7 +28,7 @@ function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): void {
 
     const appString = renderToString(<App />);
     // emulate long ssr
-    const longSSRTimeout = 350;
+    const longSSRTimeout = 0;
 
     setTimeout(() => {
         res.write(renderRemoveSplashScript);
