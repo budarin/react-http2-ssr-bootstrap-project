@@ -1,4 +1,4 @@
-const packageJson = require('../../../package');
+const packageJson = require('./package');
 const browserslist = packageJson.browserslist;
 
 module.exports = {
