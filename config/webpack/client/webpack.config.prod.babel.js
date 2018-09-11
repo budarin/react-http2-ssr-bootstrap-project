@@ -64,7 +64,9 @@ const config = {
                         options: {
                             modules: true,
                             namedExport: false,
+                            importLoaders: 1,
                             localIdentName: '[hash:base64:8]',
+                            sourceMap: false,
                             // cssnano options
                             minimize: {
                                 // safe: true,
