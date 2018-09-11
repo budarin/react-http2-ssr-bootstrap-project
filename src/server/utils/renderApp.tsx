@@ -26,11 +26,10 @@ async function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): Pro
     res.writeHead(200, headers);
     res.write(renderHTMLHeader());
 
-    // emulate long ssr
-    const longSSRTimeout = 50;
+    const SSRTimeout = 20;
 
     await new Promise(resolve => {
-        setTimeout(() => resolve(true), longSSRTimeout);
+        setTimeout(() => resolve(true), SSRTimeout);
     }).then(() => {
         log('>> Render app content');
 
