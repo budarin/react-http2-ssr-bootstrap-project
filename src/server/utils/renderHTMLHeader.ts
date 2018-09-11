@@ -40,20 +40,9 @@ function renderHTMLHeader(): string {
                 window.splashTimer = setTimeout(() => {
                     const rootEl = document.getElementById('root');
 
-                    const css = document.createElement('style');
-                    css.type = 'text/css';
-
-                    const styles = '#splash { height: 100%; display: flex; align-items: center; justify-content: center }';
-
-                    if (css.styleSheet) {
-                        css.styleSheet.cssText = styles;
-                    } else {
-                        css.appendChild(document.createTextNode(styles));
-                    }
-                    rootEl.append(css);
-
                     const splash = document.createElement('div');
                     splash.id = 'splash';
+                    splash.style = 'height: 100%; display: flex; align-items: center; justify-content: center';
                     splash.textContent = 'Spash Screen!';
 
                     rootEl.append(splash);

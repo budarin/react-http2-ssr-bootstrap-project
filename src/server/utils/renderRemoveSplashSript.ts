@@ -1,5 +1,4 @@
-function renderRemoveSplashScript(): string {
-    return `<script>
+const renderRemoveSplashScript = `<script>
                 window.clearTimeout(window.window.splashTimer);
 
                 function clearSplash() {
@@ -7,19 +6,8 @@ function renderRemoveSplashScript(): string {
                     const splashEl = document.getElementById('splash');
 
                     if (splashEl) {
-                        const css = document.createElement('style');
-                        const styles = '#splash { display: none }';
-
-                        css.type = 'text/css';
-                        if (css.styleSheet) {
-                            css.styleSheet.cssText = styles;
-                        } else {
-                            css.appendChild(document.createTextNode(styles));
-                        }
-
-                        rootEl.append(css);
                         while(rootEl.children.length) {
-                            rootEl.remove(rootEl.firstChild);
+                            rootEl.removeChild(rootEl.children[0]);
                         }
                     }
                 }
@@ -31,6 +19,5 @@ function renderRemoveSplashScript(): string {
                 }
             </script>
         `;
-}
 
 export default renderRemoveSplashScript;

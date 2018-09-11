@@ -27,13 +27,14 @@ function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): void {
     res.write(renderHTMLHeader());
 
     const appString = renderToString(<App />);
-
     // emulate long ssr
+    const longSSRTimeout = 350;
+
     setTimeout(() => {
-        res.write(renderRemoveSplashScript());
+        res.write(renderRemoveSplashScript);
         res.write(appString);
-        res.end(renderHTMLBottom());
-    }, 0);
+        res.end(renderHTMLBottom);
+    }, longSSRTimeout);
 }
 
 export default renderApp;

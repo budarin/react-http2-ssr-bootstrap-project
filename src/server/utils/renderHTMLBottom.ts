@@ -1,7 +1,5 @@
-function renderHTMLBottom(): string {
-    return `</main>
+const renderHTMLBottom = `</main>
         </body>
         <html>`;
-}
 
 export default renderHTMLBottom;
