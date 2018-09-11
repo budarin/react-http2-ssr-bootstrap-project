@@ -18,6 +18,9 @@ function renderRemoveSplashScript(): string {
                         }
 
                         rootEl.append(css);
+                        while(rootEl.children.length) {
+                            rootEl.remove(rootEl.firstChild);
+                        }
                     }
                 }
 
