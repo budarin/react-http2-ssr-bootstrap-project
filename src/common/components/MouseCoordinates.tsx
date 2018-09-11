@@ -1,6 +1,11 @@
 import React from 'react';
 
+export interface ICoordinates {
+    x: number;
+    y: number;
+}
 export type TMouseEventRenderer = (coordinates: ICoordinates) => JSX.Element | null;
+
 type TProps = Readonly<{ children: TMouseEventRenderer }>;
 type TState = Readonly<ICoordinates>;
 
