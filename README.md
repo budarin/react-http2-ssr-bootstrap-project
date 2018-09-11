@@ -6,7 +6,7 @@ Simple React project with SSR
 
 -   React
 -   SSR (Http2 | Http1 fallback)
--   babel 7 - для точной транспиляции под выбранные платформы
+-   babel 7 - для точной транспиляции под выбранные платформы и скорости транспиляции
 -   webpack 4
 -   HMR
 -   typescript (as typecheccker not transpiller)
