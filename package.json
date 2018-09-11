@@ -15,8 +15,7 @@
         "upgrade": "prun upgrade",
         "build": "prun build",
         "type-check": "prun type-check",
-        "precommit": "lint-staged",
-        "prepush": "npm run type-check && npm run test"
+        "precommit": "lint-staged"
     },
     "browserslist": "> 3%, not ie < 13, not dead",
     "lint-staged": {
