@@ -35,7 +35,40 @@ function renderHTMLHeader(): string {
             <link rel="stylesheet" type="text/css" href="/default.css" />
         </head>
         <body>
-            <main id="root">`;
+            <main id="root">
+            <script>
+                window.splashTimer = setTimeout(() => {
+                    const rootEl = document.getElementById('root');
+
+                    const css = document.createElement('style');
+                    css.type = 'text/css';
+
+                    const styles = '#splash { height: 100%; display: flex; align-items: center; justify-content: center }';
+
+                    if (css.styleSheet) {
+                        css.styleSheet.cssText = styles;
+                    } else {
+                        css.appendChild(document.createTextNode(styles));
+                    }
+                    rootEl.append(css);
+
+                    const splash = document.createElement('div');
+                    splash.id = 'splash';
+                    splash.textContent = 'Spash Screen!';
+
+                    rootEl.append(splash);
+
+                    window.showingSpash = true;
+
+                    setTimeout(() => {
+                        window.showingSpash = false;
+                        if (window.onEndOfShowingSplash) {
+                            window.onEndOfShowingSplash();
+                        }
+                    }, 300);
+                }, 150);
+            </script>
+            `;
 }
 
 export default renderHTMLHeader;
