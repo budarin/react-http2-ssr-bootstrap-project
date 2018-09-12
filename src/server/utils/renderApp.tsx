@@ -26,7 +26,7 @@ async function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): Pro
     res.writeHead(200, headers);
     res.write(renderHTMLHeader());
 
-    const SSRTimeout = 320;
+    const SSRTimeout = 20;
 
     await new Promise(resolve => {
         setTimeout(() => resolve(true), SSRTimeout);

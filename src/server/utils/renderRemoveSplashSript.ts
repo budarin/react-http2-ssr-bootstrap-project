@@ -10,7 +10,6 @@ const renderRemoveSplashScript = `<script>
                             rootEl.removeChild(rootEl.children[0]);
                         }
                     }
-
                 }
 
                 if (window.showingSpash) {
