@@ -1,5 +1,5 @@
 const renderRemoveSplashScript = `<script>
-                window.clearTimeout(window.window.splashTimer);
+                window.clearTimeout(window.splashTimer);
 
                 function clearSplash() {
                     const rootEl = document.getElementById('root');
@@ -10,6 +10,10 @@ const renderRemoveSplashScript = `<script>
                             rootEl.removeChild(rootEl.children[0]);
                         }
                     }
+
+                    delete window.splashTimer;
+                    delete window.clearSplashTimer;
+                    delete window.onEndOfShowingSplash;
                 }
 
                 if (window.showingSpash) {

@@ -40,6 +40,7 @@ function renderHTMLHeader(): string {
             <main id="root">
             <script>
                 window.clearTimeout(window.splashTimer);
+
                 window.splashTimer = setTimeout(() => {
                     const rootEl = document.getElementById('root');
                     const splash = document.createElement('div');
@@ -48,8 +49,8 @@ function renderHTMLHeader(): string {
                     splash.innerHTML = '${svgIcon}';
                     rootEl.append(splash);
                     window.showingSpash = true;
+                    
                     window.clearTimeout(window.clearSplashTimer);
-
                     window.clearSplashTimer = setTimeout(() => {
                         if (window.onEndOfShowingSplash) {
                             window.onEndOfShowingSplash();
@@ -58,14 +59,11 @@ function renderHTMLHeader(): string {
                                 window.renderClient();
                                 delete window.renderClient;
                             }
-
-                            delete window.onEndOfShowingSplash;
                         }
 
                         window.showingSpash = false;
-                        delete window.clearSplashTimer;
-                    }, 500);
-                }, 200);
+                    }, 400);
+                }, 250);
             </script>
             `;
 }

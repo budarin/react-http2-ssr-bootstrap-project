@@ -32,8 +32,11 @@ async function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): Pro
         setTimeout(() => resolve(true), SSRTimeout);
     }).then(() => {
         log('>> Render app content');
+
+        const appString = renderToString(<App />);
+
         res.write(renderRemoveSplashScript);
-        res.write(renderToString(<App />));
+        res.write(appString);
         res.end(renderHTMLBottom);
     });
 }
