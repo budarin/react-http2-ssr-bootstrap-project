@@ -10,7 +10,7 @@ type TProps = Readonly<{ children: TMouseEventRenderer }>;
 type TState = Readonly<ICoordinates>;
 
 class MouseCoordinates extends React.Component<TProps, TState> {
-    readonly state: TState = { x: -1, y: -1 };
+    readonly state: TState = { x: 0, y: 0 };
 
     componentDidMount() {
         document.addEventListener('mousemove', this.handleMouseMove);
