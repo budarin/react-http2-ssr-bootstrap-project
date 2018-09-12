@@ -26,16 +26,14 @@ async function renderApp(req: Http2ServerRequest, res: Http2ServerResponse): Pro
     res.writeHead(200, headers);
     res.write(renderHTMLHeader());
 
-    const SSRTimeout = 20;
+    const SSRTimeout = 320;
 
     await new Promise(resolve => {
         setTimeout(() => resolve(true), SSRTimeout);
     }).then(() => {
         log('>> Render app content');
-
-        const appString = renderToString(<App />);
         res.write(renderRemoveSplashScript);
-        res.write(appString);
+        res.write(renderToString(<App />));
         res.end(renderHTMLBottom);
     });
 }

@@ -55,7 +55,6 @@ function renderHTMLHeader(): string {
                     window.clearTimeout(window.clearSplashTimer);
 
                     window.clearSplashTimer = setTimeout(() => {
-                        window.showingSpash = false;
                         if (window.onEndOfShowingSplash) {
                             window.onEndOfShowingSplash();
                             delete window.onEndOfShowingSplash;
@@ -65,9 +64,11 @@ function renderHTMLHeader(): string {
                                 delete window.renderClient;
                             }
                         }
+                        
+                        window.showingSpash = false;
                         delete window.clearSplashTimer;
-                    }, 500);
-                }, 150);
+                    }, 350);
+                }, 200);
             </script>
             `;
 }
