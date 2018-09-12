@@ -45,7 +45,7 @@ function getEnv(): IEnv {
         STATIC_PORT: 4440,
         STATIC_HOST: 'localhost',
         STATIC_URL: 'https://localhost:4440/',
-        KEYS_FOLDER: '/Users/vadim_budarin/projects/react-ssr-bootstrap-project/certs',
+        KEYS_FOLDER: '/Users/vadim_budarin/projects/react-http2-ssr-bootstrap-project/certs',
     };
     /* tslint:enable object-literal-sort-keys */
 

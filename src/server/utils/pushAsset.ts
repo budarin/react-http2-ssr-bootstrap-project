@@ -16,21 +16,21 @@ const pushAsset = (stream: ServerHttp2Stream, file: IFile): void => {
         { parent: stream.id },
         (err: Error | null, pushStream: ServerHttp2Stream) => {
             if (err) {
-                log('>> Pushing error:', err);
+                log('>> Pushing error:', file.path, '\n', err);
 
                 return;
             }
 
             log('>> Pushing:', file.path);
 
-            pushStream.on('error', (err1: Error) => respondToStreamError(err1, pushStream));
+            pushStream.on('error', (err1: Error) => respondToStreamError(err1, pushStream, file.filePath));
 
             const absFilePath = path.resolve(path.join(serverRootPath, file.filePath));
 
             try {
                 pushStream.respondWithFile(absFilePath, file.headers);
             } catch (err) {
-                log('pushing error', err);
+                log('pushing error', file.path, '\n', err);
             }
         },
     );
