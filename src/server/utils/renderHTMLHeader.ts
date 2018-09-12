@@ -1,5 +1,6 @@
 import branch from 'git-branch';
 import env from '../../utils/getEnv';
+import disableDevToolsInProd from '../../utils/disableDevToolsInProd';
 import * as packageJson from '../../../package.json';
 
 const branchName = branch.sync();
@@ -31,7 +32,7 @@ function renderHTMLHeader(): string {
             
             <link rel="stylesheet" type="text/css" href="/ress.min.css" />
             <link rel="stylesheet" type="text/css" href="/default.css" />
-            
+            ${disableDevToolsInProd}
             ${reactDevModules}
             <script src="${env.STATIC_URL}client.js" defer></script>
         </head>
