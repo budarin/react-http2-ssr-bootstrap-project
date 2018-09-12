@@ -8,12 +8,13 @@
     "scripts": {
         "client": "prun start-client",
         "server": "prun start-server",
+        "server:prod": "prun server:prod",
+        "build": "prun build",
         "test": "prun test",
         "test-watch": "prun test-watch",
         "test-puppeteer": "prun test-puppeteer",
         "test-puppeteer-watch": "prun test-puppeteer-watch",
         "upgrade": "prun upgrade",
-        "build": "prun build",
         "type-check": "prun type-check",
         "precommit": "lint-staged"
     },
@@ -36,7 +37,7 @@
     "license": "ISC",
     "devDependencies": {
         "@babel/cli": "^7.0.0",
-        "@babel/core": "^7.0.0",
+        "@babel/core": "^7.0.1",
         "@babel/node": "^7.0.0",
         "@babel/plugin-proposal-class-properties": "^7.0.0",
         "@babel/plugin-syntax-dynamic-import": "^7.0.0",
@@ -88,6 +89,9 @@
         "prettier": "^1.14.2",
         "prun": "^1.0.1",
         "puppeteer": "^1.8.0",
+        "react": "^16.5.0",
+        "react-dom": "^16.5.0",
+        "ress": "^1.2.2",
         "react-hot-loader": "^4.3.6",
         "react-test-renderer": "^16.5.0",
         "style-loader": "^0.23.0",
@@ -110,10 +114,7 @@
         "webpack-serve-overlay": "^0.3.0"
     },
     "dependencies": {
-        "debug": "^4.0.0",
-        "mime-types": "^2.1.20",
-        "react": "^16.5.0",
-        "react-dom": "^16.5.0",
-        "ress": "^1.2.2"
+        "debug": "^4.0.1",
+        "mime-types": "^2.1.20"
     }
 }

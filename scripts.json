@@ -57,7 +57,7 @@
     },
     {
         "name": "build",
-        "command": "prun clean && webpack --config ./config/webpack/webpack.config.prod.babel.js",
+        "command": "webpack --config ./config/webpack/webpack.config.prod.babel.js",
         "env": {
             "NODE_ENV": "production"
         }
@@ -103,6 +103,14 @@
             "NODE_ENV": "test",
             "SHOW_BROWSER": false,
             "JEST_HIDE_USAGE": true
+        }
+    },
+    {
+        "name": "server:prod",
+        "command": "cd ./dist && node ./server",
+        "env": {
+            "NODE_ENV": "production",
+            "DEBUG": "app:*"
         }
     }
 ]

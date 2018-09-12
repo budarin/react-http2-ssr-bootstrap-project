@@ -2,9 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import parseJSON from './parseJSON';
 
-const defaultEnvPath = '.env.json';
-const devEnvPath = '.env.development.json';
-const prodEnvPath = '.env.production.json';
+const defaultEnvPath = './.env.json';
+const devEnvPath = './.env.development.json';
+const prodEnvPath = './.env.production.json';
 
 interface IEnv {
     SERVER_PROTOCOL: string;
@@ -15,6 +15,7 @@ interface IEnv {
     STATIC_PORT: number;
     STATIC_HOST: string;
     STATIC_URL: string;
+    KEYS_FOLDER: string;
 }
 
 function getParsedEnv(envPath: string): IEnv {
@@ -39,11 +40,12 @@ function getEnv(): IEnv {
         SERVER_PROTOCOL: 'https',
         SERVER_PORT: 4430,
         SERVER_HOST: 'localhost',
-        SERVER_URL: 'https://localhost:4430',
+        SERVER_URL: 'https://localhost:4430/',
         STATIC_PROTOCOL: 'https',
         STATIC_PORT: 4440,
         STATIC_HOST: 'localhost',
-        STATIC_URL: 'https://localhost:4440',
+        STATIC_URL: 'https://localhost:4440/',
+        KEYS_FOLDER: '/Users/vadim_budarin/projects/react-ssr-bootstrap-project/certs',
     };
     /* tslint:enable object-literal-sort-keys */
 

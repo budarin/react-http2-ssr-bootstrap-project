@@ -20,11 +20,11 @@ const app = async (req: Http2ServerRequest, res: Http2ServerResponse) => {
         return renderApp(req, res);
     }
 
-    if (process.env.__DEV__) {
-        // handle static files for non pushed assets
-        // nginx will do it in production
-        sendStaticFile(req, res);
-    }
+    // if (process.env.__DEV__) {
+    // handle static files for non pushed assets
+    // nginx will do it in production
+    sendStaticFile(req, res);
+    // }
 };
 
 export default app;

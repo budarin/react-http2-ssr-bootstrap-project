@@ -1,3 +1,3 @@
-const serverRootPath = process.env.__DEV__ ? './dist' : './';
+const serverRootPath = process.env.NODE_ENV === 'development' ? './dist' : './';
 
 export default serverRootPath;

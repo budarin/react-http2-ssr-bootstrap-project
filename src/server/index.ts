@@ -7,14 +7,14 @@ import appServer from './appServer';
 
 const log = debug('app:server');
 const logError = debug('app:server:error');
-const { SERVER_PORT, SERVER_HOST, SERVER_URL } = env;
+const { SERVER_PORT, SERVER_HOST, SERVER_URL, KEYS_FOLDER } = env;
 
 const server = http2.createSecureServer(
     {
         allowHTTP1: true,
-        ca: fs.readFileSync('certs/cacert.crt'),
-        cert: fs.readFileSync('certs/server.crt'),
-        key: fs.readFileSync('certs/server.key'),
+        ca: fs.readFileSync(`${KEYS_FOLDER}/cacert.crt`),
+        cert: fs.readFileSync(`${KEYS_FOLDER}/server.crt`),
+        key: fs.readFileSync(`${KEYS_FOLDER}/server.key`),
     },
     appServer,
 );
