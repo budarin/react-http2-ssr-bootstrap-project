@@ -13,6 +13,7 @@ export const legalAssets =
               '/react-dom.development.js',
           ]
         : [
+              '/client.js.map',
               '/ress.min.css',
               '/default.css',
               '/client.js',
