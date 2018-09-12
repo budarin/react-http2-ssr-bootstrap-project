@@ -58,13 +58,13 @@ function renderHTMLHeader(): string {
                                 window.renderClient();
                                 delete window.renderClient;
                             }
-                            
+
                             delete window.onEndOfShowingSplash;
                         }
 
                         window.showingSpash = false;
                         delete window.clearSplashTimer;
-                    }, 350);
+                    }, 500);
                 }, 200);
             </script>
             `;
