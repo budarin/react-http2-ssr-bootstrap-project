@@ -39,6 +39,7 @@ function renderHTMLHeader(): string {
         <body>
             <main id="root">
             <script>
+                window.clearTimeout(window.splashTimer);
                 window.splashTimer = setTimeout(() => {
                     const rootEl = document.getElementById('root');
 
@@ -51,13 +52,21 @@ function renderHTMLHeader(): string {
                     rootEl.append(splash);
 
                     window.showingSpash = true;
+                    window.clearTimeout(window.clearSplashTimer);
 
-                    setTimeout(() => {
+                    window.clearSplashTimer = setTimeout(() => {
                         window.showingSpash = false;
                         if (window.onEndOfShowingSplash) {
                             window.onEndOfShowingSplash();
+                            delete window.onEndOfShowingSplash;
+
+                            if (window.renderClient) {
+                                window.renderClient();
+                                delete window.renderClient;
+                            }
                         }
-                    }, 300);
+                        delete window.clearSplashTimer;
+                    }, 500);
                 }, 150);
             </script>
             `;

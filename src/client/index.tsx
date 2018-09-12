@@ -20,7 +20,11 @@ function renderApp() {
     });
 }
 
-renderApp();
+if ((window as any).showingSpash) {
+    (window as any).renderClient = renderApp;
+} else {
+    renderApp();
+}
 
 if (process.env.__DEV__) {
     require('webpack-serve-overlay'); // tslint:disable-line
