@@ -7,7 +7,7 @@ import babelConfig from './babelLoaderConfig';
 
 const config = {
     watch: false,
-    cache: false,
+    // cache: false,
     profile: true,
     target: 'node',
     mode: 'production',
