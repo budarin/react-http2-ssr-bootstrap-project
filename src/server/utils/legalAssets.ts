@@ -1,6 +1,7 @@
 export const legalAssets =
     process.env.NODE_ENV === 'development'
         ? [
+              '/server.js.map',
               '/ress.min.css',
               '/default.css',
               '/client.js',
@@ -13,6 +14,7 @@ export const legalAssets =
               '/react-dom.development.js',
           ]
         : [
+              '/server.js.map',
               '/client.js.map',
               '/ress.min.css',
               '/default.css',

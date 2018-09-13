@@ -93,10 +93,12 @@ const config = {
             'process.env.__BROWSER__': true,
             'process.env.__SERVER__': false,
         }),
-        new webpack.WatchIgnorePlugin([/css\.d\.ts$/]), // due to slow building ignore changes
+        new webpack.WatchIgnorePlugin([/css\.d\.ts$/]),
         new webpack.SourceMapDevToolPlugin({
             columns: false,
-            filename: '[name].js.map',
+            filename: '[file].map',
+            publicPath: 'https://localhost:4430/',
+            // append: false
         }),
     ],
 };
