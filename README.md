@@ -4,6 +4,7 @@
 
 Simple React project with SSR
 
+-   HTTP2 with pushing
 -   React
 -   SSR
 -   babel 7 - для точной транспиляции под выбранные платформы и скорости транспиляции
