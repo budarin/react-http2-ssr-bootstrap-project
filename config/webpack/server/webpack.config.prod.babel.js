@@ -55,19 +55,12 @@ const config = {
                         loader: 'fake-style-loader',
                     },
                     {
-                        loader: 'typings-for-css-modules-loader',
+                        loader: 'css-loader',
                         options: {
                             modules: true,
-                            namedExport: false,
                             importLoaders: 1,
                             localIdentName: '[hash:base64:8]',
                             sourceMap: true,
-                            // cssnano options
-                            minimize: {
-                                // safe: true,
-                                zindex: false,
-                                discardComments: { removeAll: true },
-                            },
                         },
                     },
                     {
