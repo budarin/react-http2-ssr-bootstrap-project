@@ -60,10 +60,12 @@ const config = {
                         },
                     },
                     {
-                        loader: 'typings-for-css-modules-loader',
+                        loader: '@budarin/ts-css-loader',
                         options: {
                             modules: true,
-                            namedExport: false,
+                            usable: true,
+                            server: true,
+                            camelCase: true,
                             importLoaders: 1,
                             localIdentName: '[hash:base64:8]',
                             sourceMap: false,
