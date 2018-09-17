@@ -57,7 +57,7 @@
     },
     {
         "name": "build",
-        "command": "webpack --config ./config/webpack/webpack.config.prod.babel.js",
+        "command": "prun clean && webpack --config ./config/webpack/webpack.config.prod.babel.js",
         "env": {
             "NODE_ENV": "production"
         }
@@ -107,7 +107,7 @@
     },
     {
         "name": "server:prod",
-        "command": "prun clean && npm run build && cd ./dist && node ./server",
+        "command": "tsc && npm run build && cd ./dist && node ./server",
         "env": {
             "NODE_ENV": "production",
             "DEBUG": "app:*"

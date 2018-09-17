@@ -64,12 +64,6 @@ const config = {
                             importLoaders: 1,
                             localIdentName: '[hash:base64:8]',
                             sourceMap: true,
-                            // cssnano options
-                            minimize: {
-                                // safe: true,
-                                zindex: false,
-                                discardComments: { removeAll: true },
-                            },
                         },
                     },
                     {
